@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Global Default Colors-->
+    <item name="channel1_color" type="color">#ffffffff</item>
+    <item name="channel2_color" type="color">#ffffffff</item>
+    <item name="channel3_color" type="color">#ffffffff</item>
+    <item name="channel4_color" type="color">#ffffffff</item>
+    <item name="channel5_color" type="color">#ffffffff</item>
+
+    <!--Main Menu Colors-->
+    <item name="main_menu_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="main_menu_headerbackground_color" type="color">#00ffffff</item>
+    <item name="main_menu_generalbackground_color" type="color">#ff000000</item>
+
+    <!--Lightning Menu Colors-->
+    <item name="lightning_menu_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="lightning_menu_headerbackground_color" type="color">#00ffffff</item>
+    <item name="lightning_menu_generalbackground_color" type="color">#ff000000</item>
+
+    <!--Temperature Screen Colors-->
+    <item name="temperature_headerbackground_color" type="color">#00ffffff</item>
+    <item name="temperature_generalbackground_color" type="color">#ff000000</item>
+    <item name="temperature_arrows_background_color" type="color">#00000000</item>
+    <item name="temperature_chart_background_color" type="color">#ffffffff</item>
+
+
+    <item name="temperature_chart_line_color" type="color">#ff008d00</item>
+    <item name="temperature_chart_circle_color" type="color">#ff008d00</item>
+    <item name="temperature_chart_XGrid_color" type="color">#ffff8d00</item>
+    <item name="temperature_chart_YGrid_color" type="color">#ffff8d00</item>
+    <item name="temperature_chart_XAxis_color" type="color">#ffa0a0a0</item>
+    <item name="temperature_chart_YAxis_color" type="color">#ffa0a0a0</item>
+    <item name="temperature_chart_XLabels_color" type="color">#ff000000</item>
+    <item name="temperature_chart_YLabels_color" type="color">#ff000000</item>
+    <item name="temperature_chart_minLimit_color" type="color">#ffff0000</item>
+    <item name="temperature_chart_maxLimit_color" type="color">#ffff0000</item>
+
+    <item name="temperature_minTemp_textview_color" type="color">#ff000000</item>
+    <item name="temperature_minTemp_edittext_color" type="color">#ff000000</item>
+    <item name="temperature_maxTemp_textview_color" type="color">#ff000000</item>
+    <item name="temperature_maxTemp_edittext_color" type="color">#ff000000</item>
+    <item name="temperature_currentTemp_textview_color" type="color">#ff000000</item>
+    <item name="temperature_minTemp2_textview_color" type="color">#ff000000</item>
+    <item name="temperature_maxTemp2_textview_color" type="color">#ff000000</item>
+    <item name="temperature_chart_minLimit_label_color" type="color">#ff000000</item>
+    <item name="temperature_chart_maxLimit_label_color" type="color">#ff000000</item>
+
+    <!--Settings Menu Colors-->
+    <item name="settings_menu_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="settings_menu_headerbackground_color" type="color">#00ffffff</item>
+    <item name="settings_menu_generalbackground_color" type="color">#ff000000</item>
+
+    <!--Settings Light Colors-->
+    <item name="settings_light_headerbackground_color" type="color">#00ffffff</item>
+    <item name="settings_light_generalbackground_color" type="color">#ff000000</item>
+    <item name="settings_light_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="settings_light_text_color" type="color">#ffff0000</item>
+
+    <!--Splash Screen Colors-->
+    <item name="splash_screen_background_color" type="color">#660033</item>
+
+    <!--Login Screen Colors-->
+    <item name="login_screen_background_color" type="color">#b0e0e6</item>
+    <item name="login_screen_user_textview_color" type="color">#660033</item>
+    <item name="login_screen_user_edittext_color" type="color">#660033</item>
+    <item name="login_screen_password_textview_color" type="color">#660033</item>
+    <item name="login_screen_password_edittext_color" type="color">#660033</item>
+    <item name="login_screen_buttontext_color" type="color">#660033</item>
+    <item name="login_screen_buttonbackground_color" type="color">#336699</item>
+    <item name="login_screen_registertext_color" type="color">#336699</item>
+    <item name="login_screen_forgotpasswordtext_color" type="color">#336699</item>
+
+    <!--Register Screen Colors-->
+    <item name="register_screen_background_color" type="color">#b0e0e6</item>
+    <item name="register_screen_name_textview_color" type="color">#660033</item>
+    <item name="register_screen_name_edittext_color" type="color">#660033</item>
+    <item name="register_screen_user_textview_color" type="color">#660033</item>
+    <item name="register_screen_user_edittext_color" type="color">#660033</item>
+    <item name="register_screen_password_textview_color" type="color">#660033</item>
+    <item name="register_screen_password_edittext_color" type="color">#660033</item>
+    <item name="register_screen_buttontext_color" type="color">#660033</item>
+    <item name="register_screen_buttonbackground_color" type="color">#336699</item>
+    <item name="register_screen_hasaccount_color" type="color">#336699</item>
+</resources>

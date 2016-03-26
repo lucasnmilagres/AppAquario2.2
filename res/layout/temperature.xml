@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/temperature_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/temperature_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/temperature_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/temperature_header"
+        android:background="@color/temperature_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/temperature_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/temperature_body_background">
+        <LinearLayout
+            android:id="@+id/temperature_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/temperature_container_top_margin_dimension"
+            android:layout_marginBottom="@dimen/temperature_container_bottom_margin_dimension"
+            android:layout_marginRight="@dimen/temperature_container_lateral_margins_dimension"
+            android:layout_marginLeft="@dimen/temperature_container_lateral_margins_dimension"
+            android:orientation="vertical"
+            android:background="@drawable/temperature_container_background">
+            <LinearLayout
+                android:id="@+id/temperature_row1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/temperature_temp_top_margin_dimension"
+                android:layout_marginLeft="@dimen/temperature_temp_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/temperature_temp_lateral_margins_dimension">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/temperature_screen_minTemp"
+                    android:id="@+id/temperature_minTemp_TextView"
+                    android:textColor="@color/temperature_minTemp_textview_color"
+                    android:layout_marginRight="@dimen/temperature_temp_between_margin_dimension"
+                    android:textSize="@dimen/temperature_temp_textview_dimension"
+                    android:singleLine="true"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/temperature_minTemp_EditText"
+                    android:textColor="@color/temperature_minTemp_edittext_color"
+                    android:textSize="@dimen/temperature_temp_edittext_dimension"
+                    android:singleLine="true"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/temperature_row2"
+                android:layout_marginTop="@dimen/temperature_temp_top2_margin_dimension"
+                android:layout_marginLeft="@dimen/temperature_temp_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/temperature_temp_lateral_margins_dimension">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/temperature_screen_maxTemp"
+                    android:id="@+id/temperature_maxTemp_TextView"
+                    android:textColor="@color/temperature_maxTemp_textview_color"
+                    android:layout_marginRight="@dimen/temperature_temp_between_margin_dimension"
+                    android:textSize="@dimen/temperature_temp_textview_dimension"
+                    android:singleLine="true"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/temperature_maxTemp_EditText"
+                    android:textColor="@color/temperature_maxTemp_edittext_color"
+                    android:gravity="center"
+                    android:textSize="@dimen/temperature_temp_edittext_dimension"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="26°C"
+                android:id="@+id/temperature_currentTemp_TextView"
+                android:textColor="@color/temperature_currentTemp_textview_color"
+                android:layout_marginTop="@dimen/temperature_currentTemp_top_margin_dimension"
+                android:textSize="@dimen/temperature_currentTemp_textview_dimension"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/temperature_row4"
+                android:layout_marginTop="@dimen/temperature_temp2_top_margin_dimension">
+
+                <ImageView
+                    android:layout_width="@dimen/temperature_arrows_dimension"
+                    android:layout_height="@dimen/temperature_arrows_dimension"
+                    android:id="@+id/temperature_upArrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/temperature_arrow_to_temp2_margin_dimension"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/temperature_up_arrow"
+                    android:background="@color/temperature_arrows_background_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28°C"
+                    android:id="@+id/temperature_maxTemp2_TextView"
+                    android:textColor="@color/temperature_maxTemp2_textview_color"
+                    android:textSize="@dimen/temperature_temp2_textview_dimension"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/temperature_temp2_between_margin_dimension"/>
+
+                <ImageView
+                    android:layout_width="@dimen/temperature_arrows_dimension"
+                    android:layout_height="@dimen/temperature_arrows_dimension"
+                    android:id="@+id/temperature_downArrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/temperature_arrow_to_temp2_margin_dimension"
+                    android:src="@drawable/temperature_down_arrow"
+                    android:scaleType="fitXY"
+                    android:background="@color/temperature_arrows_background_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24ºC"
+                    android:id="@+id/temperature_minTemp2_TextView"
+                    android:textColor="@color/temperature_minTemp2_textview_color"
+                    android:textSize="@dimen/temperature_temp2_textview_dimension"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/temperature_chart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/temperature_chart_left_margin_dimension"
+                android:layout_marginTop="@dimen/temperature_chart_top_margin_dimension"
+                android:layout_marginRight="@dimen/temperature_chart_right_margin_dimension"
+                android:layout_marginBottom="@dimen/temperature_chart_bottom_margin_dimension" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="app_name">AndroidLoginAndRegistration</string>
+
+    <!--Global Default Strings-->
+    <string name="channel1_name">Channel 1</string>
+    <string name="channel2_name">Channel 2</string>
+    <string name="channel3_name">Channel 3</string>
+    <string name="channel4_name">Channel 4</string>
+    <string name="channel5_name">Channel 5</string>
+    <string name="color1Index">0</string>
+    <string name="color2Index">1</string>
+    <string name="color3Index">2</string>
+    <string name="color4Index">3</string>
+    <string name="color5Index">4</string>
+
+    <!--Temperature Screen Strings-->
+    <string name="temperature_screen_minTemp">Min. Temperature [ºC]:</string>
+    <string name="temperature_screen_maxTemp">Max. Temperature [ºC]:</string>
+    <string name="temperature_screen_chartLineLabel">Temperature</string>
+    <string name="temperature_screen_chartMinLimit">Min. Limit</string>
+    <string name="temperature_screen_chartMaxLimit">Max. Limit</string>
+    <string name="temperature_screen_dialogTitle">Warning!</string>
+    <string name="temperature_screen_dialogMessage">Are you sure you want to submit the changes done?</string>
+    <string name="temperature_screen_dialogPositiveButton">Yes</string>
+    <string name="temperature_screen_dialogNegativeButton">Cancel</string>
+
+    <!--Settings Light Strings-->
+    <string name="settings_light_colorPicker_title">Choose Channel Color</string>
+    <string name="settings_light_colorPicker_ok_button">Ok</string>
+    <string name="settings_light_colorPicker_cancel_button">Cancel</string>
+
+    <!--Login Screen Strings-->
+    <string name="login_screen_username">Email</string>
+    <string name="login_screen_password">Password</string>
+    <string name="login_screen_register">New to Twitter? Register here</string>
+    <string name="login_screen_forgot_password">Forgot your password?</string>
+    <string name="login_screen_login">Login</string>
+
+    <!--Register Screen Strings-->
+    <string name="register_screen_username">Email</string>
+    <string name="register_screen_password">Password</string>
+    <string name="register_screen_name">Full Name</string>
+    <string name="register_screen_button">Register New Account</string>
+    <string name="register_screen_has_account">Already has account? Login here</string>
+</resources>

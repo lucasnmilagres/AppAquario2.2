@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/settings_menu_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/settings_light_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settings_menu_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings_light_header"
+        android:background="@color/settings_light_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/settingslight_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/settings_light_body_background">
+        <LinearLayout
+            android:id="@+id/settings_light_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/settings_light_container_top_margin_dimension"
+            android:layout_marginBottom="@dimen/settings_light_container_bottom_margin_dimension"
+            android:layout_marginRight="@dimen/settings_light_container_lateral_margins_dimension"
+            android:layout_marginLeft="@dimen/settings_light_container_lateral_margins_dimension"
+            android:orientation="vertical"
+            android:background="@drawable/settings_light_container_background">
+            <LinearLayout
+                android:id="@+id/settings_light_row1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/settings_light_rows_top_margin_dimension"
+                android:layout_marginLeft="@dimen/settings_light_rows_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/settings_light_rows_lateral_margins_dimension">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_light_channel1_name"
+                    android:layout_marginRight="@dimen/settings_light_row_between_margin_dimension"
+                    android:textColor="@color/settings_light_text_color"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/settings_light_channels_text_dimension"
+                    android:text="@string/channel1_name"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:maxLength="@integer/channel_names_max_lenght"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_color_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_color_buttons_dimension"
+                    android:id="@+id/settings_light_color_button1"
+                    android:tag="@string/color1Index"
+                    android:background="@color/channel1_color"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_light_color_icon"
+                    android:onClick="colorChange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_light_row2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/settings_light_rows_top2_margin_dimension"
+                android:layout_marginLeft="@dimen/settings_light_rows_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/settings_light_rows_lateral_margins_dimension">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_light_channel2_name"
+                    android:layout_marginRight="@dimen/settings_light_row_between_margin_dimension"
+                    android:textColor="@color/settings_light_text_color"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/settings_light_channels_text_dimension"
+                    android:text="@string/channel2_name"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_color_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_color_buttons_dimension"
+                    android:id="@+id/settings_light_color_button2"
+                    android:background="@color/channel2_color"
+                    android:tag="@string/color2Index"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_light_color_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_light_row3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/settings_light_rows_top2_margin_dimension"
+                android:layout_marginLeft="@dimen/settings_light_rows_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/settings_light_rows_lateral_margins_dimension">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_light_channel3_name"
+                    android:layout_marginRight="@dimen/settings_light_row_between_margin_dimension"
+                    android:textColor="@color/settings_light_text_color"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/settings_light_channels_text_dimension"
+                    android:text="@string/channel3_name"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_color_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_color_buttons_dimension"
+                    android:id="@+id/settings_light_color_button3"
+                    android:tag="@string/color3Index"
+                    android:background="@color/channel3_color"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_light_color_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_light_row4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/settings_light_rows_top2_margin_dimension"
+                android:layout_marginLeft="@dimen/settings_light_rows_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/settings_light_rows_lateral_margins_dimension">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_light_channel4_name"
+                    android:layout_marginRight="@dimen/settings_light_row_between_margin_dimension"
+                    android:textColor="@color/settings_light_text_color"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/settings_light_channels_text_dimension"
+                    android:text="@string/channel4_name"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_color_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_color_buttons_dimension"
+                    android:id="@+id/settings_light_color_button4"
+                    android:tag="@string/color4Index"
+                    android:background="@color/channel4_color"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_light_color_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_light_row5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/settings_light_rows_top2_margin_dimension"
+                android:layout_marginLeft="@dimen/settings_light_rows_lateral_margins_dimension"
+                android:layout_marginRight="@dimen/settings_light_rows_lateral_margins_dimension">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_light_channel5_name"
+                    android:layout_marginRight="@dimen/settings_light_row_between_margin_dimension"
+                    android:textColor="@color/settings_light_text_color"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/settings_light_channels_text_dimension"
+                    android:text="@string/channel5_name"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_color_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_color_buttons_dimension"
+                    android:id="@+id/settings_light_color_button5"
+                    android:tag="@string/color5Index"
+                    android:background="@color/channel5_color"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_light_color_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_light_row6"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/settings_light_ok_and_cancel_button_top_margin_dimension"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_ok_and_cancel_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_ok_and_cancel_buttons_dimension"
+                    android:id="@+id/settings_light_ok_button"
+                    android:layout_marginRight="@dimen/settings_light_ok_to_cancel_button_between_margin_dimension"
+                    android:scaleType="fitXY"
+                    android:background="@color/settings_light_ok_and_cancel_background_color"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ok_icon"
+                    android:onClick="acceptChanges"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/settings_light_ok_and_cancel_buttons_dimension"
+                    android:layout_height="@dimen/settings_light_ok_and_cancel_buttons_dimension"
+                    android:id="@+id/settings_light_cancel_button"
+                    android:background="@color/settings_light_ok_and_cancel_background_color"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cancel_icon"
+                    android:onClick="finishActivity"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
