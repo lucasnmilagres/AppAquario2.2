@@ -12,7 +12,7 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ArrayList<String> channelNames = new ArrayList<>();
+        /*ArrayList<String> channelNames = new ArrayList<>();
         channelNames.add("A");
         channelNames.add("B");
         channelNames.add("C");
@@ -23,11 +23,11 @@ public class SplashActivity extends Activity {
         colorsList.add(0xffffff00);
         colorsList.add(0xffff00ff);
         colorsList.add(0xff00ffff);
-        //colorsList.add(0xff00ff00);
+        //colorsList.add(0xff00ff00);*/
 
-        Intent intent = new Intent(this, SetttingsLightActivity.class);
-        intent.putExtra("channelsNamesList", channelNames);
-        intent.putExtra("colorsList", colorsList);
+        Intent intent = new Intent(this, SettingActivity.class);
+        //intent.putExtra("channelsNamesList", channelNames);
+        //intent.putExtra("colorsList", colorsList);
         startActivity(intent);
         finish();
     }

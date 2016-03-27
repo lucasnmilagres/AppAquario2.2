@@ -76,4 +76,16 @@
     <item name="settings_light_row_between_margin_dimension" type="dimen">20dp</item>
     <item name="settings_light_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
     <item name="settings_light_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--About Sizes-->
+    <item name="about_header_height_dimension" type="dimen">50dp</item>
+    <item name="about_copyright_height_dimension" type="dimen">30dp</item>
+    <!--About Texts-->
+    <item name="about_body_text_dimension" type="dimen">15sp</item>
+    <item name="about_copyright_text_dimension" type="dimen">10sp</item>
+    <!--About Margins-->
+    <item name="about_body_top_margin_dimension" type="dimen">20dp</item>
+    <item name="about_body_right_margin_dimension" type="dimen">70dp</item>
+    <item name="about_body_left_margin_dimension" type="dimen">20dp</item>
+    <item name="about_body_bottom_margin_dimension" type="dimen">10dp</item>
 </resources>

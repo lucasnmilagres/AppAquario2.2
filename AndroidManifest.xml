@@ -45,6 +45,11 @@
             android:label="Settings Light"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
         <!--  Entry for RegisterActivity.class -->
         <activity android:name=".RegisterActivity"
                   android:label="Register New Account"

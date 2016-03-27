@@ -55,7 +55,27 @@
     <item name="settings_light_headerbackground_color" type="color">#00ffffff</item>
     <item name="settings_light_generalbackground_color" type="color">#ff000000</item>
     <item name="settings_light_ok_and_cancel_background_color" type="color">#00000000</item>
-    <item name="settings_light_text_color" type="color">#ffff0000</item>
+    <item name="settings_light_pallete1" type="color">#ff0ff000</item>
+    <item name="settings_light_pallete2" type="color">#ff000ff0</item>
+    <item name="settings_light_pallete3" type="color">#ffff00ff</item>
+    <item name="settings_light_pallete4" type="color">#fff15f00</item>
+    <item name="settings_light_pallete5" type="color">#ff00dadf</item>
+    <item name="settings_light_pallete6" type="color">#ffab2150</item>
+    <item name="settings_light_pallete7" type="color">#ff002545</item>
+    <item name="settings_light_pallete8" type="color">#ff113698</item>
+    <item name="settings_light_pallete9" type="color">#ff11ff55</item>
+    <item name="settings_light_pallete10" type="color">#ff000000</item>
+    <item name="settings_light_pallete11" type="color">#ffffffff</item>
+    <item name="settings_light_pallete12" type="color">#ff550021</item>
+    <item name="settings_light_pallete13" type="color">#ff561256</item>
+    <item name="settings_light_pallete14" type="color">#ff012500</item>
+    <item name="settings_light_pallete15" type="color">#ff666666</item>
+    <item name="settings_light_text_color" type="color">#ff125369</item>
+
+    <!--About Screen Colors-->
+    <item name="about_body_background_color" type="color">#ffbb7766</item>
+    <item name="about_body_text_color" type="color">#ff000000</item>
+    <item name="about_copyright_text_color" type="color">#ff000000</item>
 
     <!--Splash Screen Colors-->
     <item name="splash_screen_background_color" type="color">#660033</item>

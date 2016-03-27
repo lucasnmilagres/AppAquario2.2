@@ -4,6 +4,10 @@
     <string name="app_name">AndroidLoginAndRegistration</string>
 
     <!--Global Default Strings-->
+    <string name="website">https://pt.wikipedia.org/wiki/Red</string>
+    <string name="helpPage">https://pt.wikipedia.org/wiki/Blue</string>
+    <string name="about_body">[Nome do app] [Versão]\n[Data]\n\n[Empresa]\n[Autor]\n\n[Tipo de licença]</string>
+    <string name="about_copyright">[Copyright]</string>
     <string name="channel1_name">Channel 1</string>
     <string name="channel2_name">Channel 2</string>
     <string name="channel3_name">Channel 3</string>

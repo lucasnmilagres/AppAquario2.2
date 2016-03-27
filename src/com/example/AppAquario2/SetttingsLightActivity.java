@@ -3,11 +3,15 @@ package com.example.AppAquario2;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import petrov.kristiyan.colorpicker.ColorPicker;
+import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerDialog;
+import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerPalette;
+import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerPreference;
+import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerSwatch;
 
 import java.util.ArrayList;
 
@@ -147,12 +151,33 @@ public class SetttingsLightActivity extends Activity
     private void showColorPicker(int colorIndex, int id)
     {
         //Sets ColorPickerDialog settings
-        final ColorPicker colorPicker = new ColorPicker(this);
-        colorPicker.setTitle(getResources().getString(R.string.settings_light_colorPicker_title));
-        colorPicker.setRoundButton(true);
-        colorPicker.setOnChooseColorListener(new ColorPicker.OnChooseColorListener() {
+        //Sets the pallete colors
+        int[] mColors = new int[15];
+        mColors[0]=getResources().getColor(R.color.settings_light_pallete1);
+        mColors[1]=getResources().getColor(R.color.settings_light_pallete2);
+        mColors[2]=getResources().getColor(R.color.settings_light_pallete3);
+        mColors[3]=getResources().getColor(R.color.settings_light_pallete4);
+        mColors[4]=getResources().getColor(R.color.settings_light_pallete5);
+        mColors[5]=getResources().getColor(R.color.settings_light_pallete6);
+        mColors[6]=getResources().getColor(R.color.settings_light_pallete7);
+        mColors[7]=getResources().getColor(R.color.settings_light_pallete8);
+        mColors[8]=getResources().getColor(R.color.settings_light_pallete9);
+        mColors[9]=getResources().getColor(R.color.settings_light_pallete10);
+        mColors[10]=getResources().getColor(R.color.settings_light_pallete11);
+        mColors[11]=getResources().getColor(R.color.settings_light_pallete12);
+        mColors[12]=getResources().getColor(R.color.settings_light_pallete13);
+        mColors[13]=getResources().getColor(R.color.settings_light_pallete14);
+        mColors[14]=getResources().getColor(R.color.settings_light_pallete15);
+
+        ColorPickerDialog colorPicker = ColorPickerDialog.newInstance(it.gmariotti.android.example.colorpicker.R.string.color_picker_default_title,
+                getResources().getIntArray(it.gmariotti.android.example.colorpicker.R.array.default_color_choice_values),
+                Color.WHITE,
+                5, ColorPickerDialog.SIZE_SMALL);
+        colorPicker.setOnColorSelectedListener(new ColorPickerSwatch.OnColorSelectedListener()
+        {
             @Override
-            public void onChooseColor(int position,int color) {
+            public void onColorSelected(int color)
+            {
                 //Updates colorList to actual values
                 colorsList.set(colorIndex, color);
 
@@ -163,7 +188,7 @@ public class SetttingsLightActivity extends Activity
         });
 
         //Shows ColorPickerDialog
-        colorPicker.show();
+        colorPicker.show(getFragmentManager(), "cal");
     }
 
     /**

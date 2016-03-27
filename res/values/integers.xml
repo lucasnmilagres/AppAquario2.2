@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="channel_names_max_lenght">15</integer>
-    <integer name="settings_light_colorPicker_density">12</integer>
+    <integer name="settings_light_colorPicker_columns">5</integer>
+    <integer name="settings_light_colorPicker_default_color">1</integer>
 </resources>

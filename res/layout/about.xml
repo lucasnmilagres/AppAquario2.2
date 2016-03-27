@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/about_body_background_color">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_header_height_dimension"
+        android:id="@+id/about_header"
+        android:scaleType="fitXY"
+        android:src="@drawable/about_header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_body"
+            android:layout_marginTop="@dimen/about_body_top_margin_dimension"
+            android:layout_marginRight="@dimen/about_body_right_margin_dimension"
+            android:layout_marginLeft="@dimen/about_body_left_margin_dimension"
+            android:layout_marginBottom="@dimen/about_body_bottom_margin_dimension"
+            android:textSize="@dimen/about_body_text_dimension"
+            android:id="@+id/about_body"
+            android:gravity="center_vertical"
+            android:textColor="@color/about_body_text_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_copyright_height_dimension"
+        android:text="@string/about_copyright"
+        android:gravity="center"
+        android:textSize="@dimen/about_copyright_text_dimension"
+        android:id="@+id/about_copyright"
+        android:singleLine="true"
+        android:background="@drawable/about_footer_background"
+        android:textColor="@color/about_copyright_text_color"/>
+</LinearLayout>
