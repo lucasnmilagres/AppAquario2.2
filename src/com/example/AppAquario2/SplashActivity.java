@@ -25,7 +25,7 @@ public class SplashActivity extends Activity {
         colorsList.add(0xff00ffff);
         //colorsList.add(0xff00ff00);*/
 
-        Intent intent = new Intent(this, SettingActivity.class);
+        Intent intent = new Intent(this, LightningActivity.class);
         //intent.putExtra("channelsNamesList", channelNames);
         //intent.putExtra("colorsList", colorsList);
         startActivity(intent);

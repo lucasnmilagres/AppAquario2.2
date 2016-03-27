@@ -17,15 +17,12 @@
         android:id="@+id/Main_menu_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:background="@drawable/menu_body_background">
         <LinearLayout
             android:id="@+id/Main_menu_buttons_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/main_menu_container_top_margin_dimension"
-            android:layout_marginBottom="@dimen/main_menu_container_bottom_margin_dimension"
-            android:layout_marginRight="@dimen/main_menu_container_lateral_margins_dimension"
-            android:layout_marginLeft="@dimen/main_menu_container_lateral_margins_dimension"
+            android:layout_width="@dimen/main_menu_container_width"
+            android:layout_height="@dimen/main_menu_container_height"
             android:orientation="vertical"
             android:background="@drawable/menu_container_background">
             <LinearLayout

@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="@color/lightning_menu_generalbackground_color">
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/lightning_menu_generalbackground_color">
 
     <ImageView
-        android:id="@+id/lightning_menu_header"
+        android:id="@+id/Light_menu_header"
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/lightning_menu_header_height_dimension"
+        android:layout_height="@dimen/main_menu_header_height_dimension"
         android:scaleType="fitXY"
         android:src="@drawable/lightning_menu_header"
         android:background="@color/lightning_menu_headerbackground_color"/>
 
     <LinearLayout
-        android:id="@+id/lightning_menu_body"
+        android:id="@+id/Lightning_menu_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:background="@drawable/lightning_menu_body_background">
         <LinearLayout
             android:id="@+id/lightning_menu_buttons_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/lightning_menu_container_top_margin_dimension"
-            android:layout_marginBottom="@dimen/lightning_menu_container_bottom_margin_dimension"
-            android:layout_marginRight="@dimen/lightning_menu_container_lateral_margins_dimension"
-            android:layout_marginLeft="@dimen/lightning_menu_container_lateral_margins_dimension"
+            android:layout_width="@dimen/lightning_menu_container_width"
+            android:layout_height="@dimen/lightning_menu_container_height"
             android:orientation="vertical"
-            android:background="@drawable/lightning_menu_container_background">
+            android:background="@drawable/menu_container_background">
             <LinearLayout
                 android:id="@+id/lightning_menu_row1"
                 android:layout_width="fill_parent"
@@ -40,16 +37,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/lightning_menu_button_margins_dimension"
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
                         android:layout_gravity="center"
-                        android:id="@+id/imageButton"
+                        android:id="@+id/buttonFree"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/menu_settings_icon"/>
+                        android:src="@drawable/lightning_menu_free_icon"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -57,16 +54,33 @@
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/lightning_menu_button_margins_dimension"
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
                         android:layout_gravity="center"
-                        android:id="@+id/imageButton2"
+                        android:id="@+id/buttonPlay"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/menu_lamp_icon"/>
+                        android:src="@drawable/lightning_menu_play_icon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lightning_menu_row1_column3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_gravity="center"
+                        android:id="@+id/buttonRandom"
+                        android:background="@color/lightning_menu_buttonsbackground_color"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lightning_menu_random_icon" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -76,39 +90,53 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_weight="1">
-
                 <LinearLayout
                     android:id="@+id/lightning_menu_row2_column1"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/lightning_menu_button_margins_dimension"
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
                         android:layout_gravity="center"
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/buttonProgrammed"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/menu_temperature_icon"/>
+                        android:src="@drawable/lightning_menu_programmed_icon" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/lightning_menu_row2_column2"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/lightning_menu_button_margins_dimension"
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
                         android:layout_gravity="center"
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/buttonLocation"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/menu_void_icon"/>
+                        android:src="@drawable/lightning_menu_location_icon" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lightning_menu_row2_column3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_gravity="center"
+                        android:id="@+id/buttonSeasons"
+                        android:background="@color/lightning_menu_buttonsbackground_color"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lightning_menu_seasons_icon" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -123,16 +151,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/lightning_menu_button_margins_dimension"
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
                         android:layout_gravity="center"
-                        android:id="@+id/imageButton5"
+                        android:id="@+id/buttonMoon"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_cloud_icon"/>
+                        android:src="@drawable/lightning_menu_moon_icon" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -140,16 +168,33 @@
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
                     <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/lightning_menu_button_margins_dimension"
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
                         android:layout_gravity="center"
-                        android:id="@+id/imageButton6"
+                        android:id="@+id/buttonClouds"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_thunder_icon"/>
+                        android:src="@drawable/lightning_menu_cloud_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lightning_menu_row3_column3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_height="@dimen/lightning_menu_buttons_dimension"
+                        android:layout_gravity="center"
+                        android:id="@+id/buttonThunder"
+                        android:background="@color/lightning_menu_buttonsbackground_color"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lightning_menu_thunder_icon"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

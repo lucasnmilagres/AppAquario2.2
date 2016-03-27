@@ -2,20 +2,15 @@
 <resources>
     <!--Main Menu Sizes-->
     <item name="main_menu_header_height_dimension" type="dimen">80dp</item>
+    <item name="main_menu_container_height" type="dimen">360dp</item>
+    <item name="main_menu_container_width" type="dimen">300dp</item>
     <item name="main_menu_buttons_dimension" type="dimen">70dp</item>
-    <!--Main Menu Margins-->
-    <item name="main_menu_container_top_margin_dimension" type="dimen">40dp</item>
-    <item name="main_menu_container_lateral_margins_dimension" type="dimen">40dp</item>
-    <item name="main_menu_container_bottom_margin_dimension" type="dimen">40dp</item>
 
     <!--Lightning Menu Sizes-->
     <item name="lightning_menu_header_height_dimension" type="dimen">80dp</item>
+    <item name="lightning_menu_container_height" type="dimen">360dp</item>
+    <item name="lightning_menu_container_width" type="dimen">300dp</item>
     <item name="lightning_menu_buttons_dimension" type="dimen">80dp</item>
-    <!--Lightning Menu Margins-->
-    <item name="lightning_menu_button_margins_dimension" type="dimen">20dp</item>
-    <item name="lightning_menu_container_top_margin_dimension" type="dimen">40dp</item>
-    <item name="lightning_menu_container_lateral_margins_dimension" type="dimen">40dp</item>
-    <item name="lightning_menu_container_bottom_margin_dimension" type="dimen">40dp</item>
 
     <!--Temperature Screen Sizes-->
     <item name="temperature_header_height_dimension" type="dimen">80dp</item>
@@ -55,21 +50,19 @@
 
     <!--Settings Menu Sizes-->
     <item name="settings_menu_header_height_dimension" type="dimen">80dp</item>
+    <item name="settings_menu_container_height" type="dimen">360dp</item>
+    <item name="settings_menu_container_width" type="dimen">300dp</item>
     <item name="settings_menu_buttons_dimension" type="dimen">70dp</item>
     <!--Settings Menu Margins-->
-    <item name="settings_menu_container_top_margin_dimension" type="dimen">40dp</item>
-    <item name="settings_menu_container_lateral_margins_dimension" type="dimen">40dp</item>
-    <item name="settings_menu_container_bottom_margin_dimension" type="dimen">40dp</item>
 
     <!--Settings Light Sizes-->
+    <item name="settings_light_container_height" type="dimen">360dp</item>
+    <item name="settings_light_container_width" type="dimen">300dp</item>
     <item name="settings_light_color_buttons_dimension" type="dimen">20dp</item>
     <item name="settings_light_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
     <!--Settings Light Text-->
     <item name="settings_light_channels_text_dimension" type="dimen">15sp</item>
     <!--Settings Light Margins-->
-    <item name="settings_light_container_top_margin_dimension" type="dimen">70dp</item>
-    <item name="settings_light_container_lateral_margins_dimension" type="dimen">40dp</item>
-    <item name="settings_light_container_bottom_margin_dimension" type="dimen">70dp</item>
     <item name="settings_light_rows_top_margin_dimension" type="dimen">20dp</item>
     <item name="settings_light_rows_top2_margin_dimension" type="dimen">10dp</item>
     <item name="settings_light_rows_lateral_margins_dimension" type="dimen">20dp</item>
