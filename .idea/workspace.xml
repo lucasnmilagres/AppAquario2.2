@@ -32,21 +32,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2df0c7d-2e06-4eb7-897a-24311002cad9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/seekbar_progressbar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/seekbar_thumb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/light_free.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/bools.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.apk" afterPath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/Thumbs.db" afterPath="$PROJECT_DIR$/res/drawable/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/about_footer_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/about_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/light_free_body_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/light_free_channel_body_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/light_free_channel_header_background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/light_free_container_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/light_free_footer_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/light_free_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_cloud_icon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_free_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_location_icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_moon_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_play_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_programmed_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_random_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_seasons_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/lightning_menu_thunder_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/LightFreeActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml" afterPath="$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimensions.xml" afterPath="$PROJECT_DIR$/res/values/dimensions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" />
     </list>
     <ignored path="AppAquario2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -151,8 +155,8 @@
       <file leaf-file-name="LightFreeActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LightFreeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.796875">
-              <caret line="234" column="69" selection-start-line="234" selection-start-column="69" selection-end-line="234" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.1328125">
+              <caret line="219" column="80" selection-start-line="219" selection-start-column="80" selection-end-line="219" selection-end-column="80" />
               <folding>
                 <element signature="e#5063#5106#0" expanded="true" />
               </folding>
@@ -824,12 +828,18 @@
       <option name="project" value="LOCAL" />
       <updated>1459107562877</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-Created &quot;Light Free&quot; layout ;&#10;-Created seekBar style in seekbar_progress.xml  (to Light Free layout);&#10;-Created thumb style in seekbar_thumb.xml (to Light Free layout);&#10;-Finished &quot;Light Free&quot; layout ;&#10;-Created LightFreeActivity;&#10;-LightFreeActivity interaction methods done (it only misses the communication methods now);&#10;-Created bools.xml (boolean values doc);&#10;-New strings, dimensions and colors added to project.&#10;">
+      <created>1459174374297</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1459174374297</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -843,9 +853,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.39485627" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.39636913" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.39636913" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -893,7 +903,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-Created action to &quot;Website&quot; button onClick;&#10;-Created action to &quot;Help&quot; button onClick;&#10;-Created AboutActivity and &quot;About Screen&quot; layout;&#10;-New strings, dimensions and colors added to project;&#10;-Some failed tries to make ColorPicker to work." />
     <MESSAGE value="-Finished &quot;Lightning Menu&quot; layout ;&#10;-Changed all menus layout to use container height and width, instead its margins;&#10;-New strings, dimensions and colors added to project.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Finished &quot;Lightning Menu&quot; layout ;&#10;-Changed all menus layout to use container height and width, instead its margins;&#10;-New strings, dimensions and colors added to project.&#10;" />
+    <MESSAGE value="-Created &quot;Light Free&quot; layout ;&#10;-Created seekBar style in seekbar_progress.xml  (to Light Free layout);&#10;-Created thumb style in seekbar_thumb.xml (to Light Free layout);&#10;-Finished &quot;Light Free&quot; layout ;&#10;-Created LightFreeActivity;&#10;-LightFreeActivity interaction methods done (it only misses the communication methods now);&#10;-Created bools.xml (boolean values doc);&#10;-New strings, dimensions and colors added to project.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Created &quot;Light Free&quot; layout ;&#10;-Created seekBar style in seekbar_progress.xml  (to Light Free layout);&#10;-Created thumb style in seekbar_thumb.xml (to Light Free layout);&#10;-Finished &quot;Light Free&quot; layout ;&#10;-Created LightFreeActivity;&#10;-LightFreeActivity interaction methods done (it only misses the communication methods now);&#10;-Created bools.xml (boolean values doc);&#10;-New strings, dimensions and colors added to project.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1490,8 +1501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LightFreeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.796875">
-          <caret line="234" column="69" selection-start-line="234" selection-start-column="69" selection-end-line="234" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.1328125">
+          <caret line="219" column="80" selection-start-line="219" selection-start-column="80" selection-end-line="219" selection-end-column="80" />
           <folding>
             <element signature="e#5063#5106#0" expanded="true" />
           </folding>
