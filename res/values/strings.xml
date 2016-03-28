@@ -19,6 +19,9 @@
     <string name="color4Index">3</string>
     <string name="color5Index">4</string>
 
+    <!--Light Default Mode Strings-->
+    <string name="FreeMode">FreeMode</string>
+
     <!--Temperature Screen Strings-->
     <string name="temperature_screen_minTemp">Min. Temperature [ºC]:</string>
     <string name="temperature_screen_maxTemp">Max. Temperature [ºC]:</string>

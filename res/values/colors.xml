@@ -8,6 +8,13 @@
     <item name="channel4_color" type="color">#ffffffff</item>
     <item name="channel5_color" type="color">#ffffffff</item>
 
+    <!--Progress Bar Colors-->
+    <item name="progressBar_progress_default_start_color" type="color">#00000000</item>
+    <item name="progressBar_progress_default_end_color" type="color">#ffffffff</item>
+    <item name="progressBar_progress_disabled_color" type="color">#aa555555</item>
+    <item name="progressBar_bar_background_color" type="color">#55000000</item>
+    <item name="progressBar_default_thumb_color" type="color">#ff333333</item>
+
     <!--Main Menu Colors-->
     <item name="main_menu_buttonsbackground_color" type="color">#00ffffff</item>
     <item name="main_menu_headerbackground_color" type="color">#00ffffff</item>
@@ -17,6 +24,12 @@
     <item name="lightning_menu_buttonsbackground_color" type="color">#00ffffff</item>
     <item name="lightning_menu_headerbackground_color" type="color">#00ffffff</item>
     <item name="lightning_menu_generalbackground_color" type="color">#ff000000</item>
+
+    <!--Light Free Screen Colors-->
+    <item name="light_free_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_free_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_free_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_free_channel_title_text_color" type="color">#ff000000</item>
 
     <!--Temperature Screen Colors-->
     <item name="temperature_headerbackground_color" type="color">#00ffffff</item>

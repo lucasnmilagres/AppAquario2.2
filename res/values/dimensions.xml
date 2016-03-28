@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Progress Bar Rectangle Sizes-->
+    <item name="progressBar_rectangle_height_dimension" type="dimen">5dp</item>
+    <item name="progressBar_rectangle_radius_dimension" type="dimen">5dp</item>
+    <!--Progress Bar Thumb Sizes-->
+    <item name="progressBar_thumb_height_dimension" type="dimen">15dp</item>
+    <item name="progressBar_thumb_width_dimension" type="dimen">15dp</item>
+    <item name="progressBar_thumb_radius_dimension" type="dimen">3dp</item>
+
     <!--Main Menu Sizes-->
     <item name="main_menu_header_height_dimension" type="dimen">80dp</item>
     <item name="main_menu_container_height" type="dimen">360dp</item>
@@ -11,6 +19,23 @@
     <item name="lightning_menu_container_height" type="dimen">360dp</item>
     <item name="lightning_menu_container_width" type="dimen">300dp</item>
     <item name="lightning_menu_buttons_dimension" type="dimen">80dp</item>
+
+    <!--Light Free Screen Sizes-->
+    <item name="light_free_channel_screen_width" type="dimen">280dp</item>
+    <item name="light_free_header_height_dimension" type="dimen">80dp</item>
+    <item name="light_free_channel_header_height" type="dimen">25dp</item>
+    <item name="light_free_channel_body_height" type="dimen">30dp</item>
+    <item name="light_free_container_height" type="dimen">320dp</item>
+    <item name="light_free_footer_height_dimension" type="dimen">50dp</item>
+    <item name="light_free_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Light Free Screen Text-->
+    <item name="light_free_channel_title_text" type="dimen">15sp</item>
+    <!--Light Free Screen Margins-->
+    <item name="light_free_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+    <item name="light_free_channel_top_margin" type="dimen">20dp</item>
+    <item name="light_free_channel_bottom_margin" type="dimen">20dp</item>
+    <item name="light_free_channel_body_lateral_margins" type="dimen">10dp</item>
+    <item name="light_free_channel_header_left_margin" type="dimen">10dp</item>
 
     <!--Temperature Screen Sizes-->
     <item name="temperature_header_height_dimension" type="dimen">80dp</item>

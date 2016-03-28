@@ -17,15 +17,12 @@
         android:id="@+id/settingslight_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:background="@drawable/settings_light_body_background">
         <LinearLayout
             android:id="@+id/settings_light_buttons_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/settings_light_container_top_margin_dimension"
-            android:layout_marginBottom="@dimen/settings_light_container_bottom_margin_dimension"
-            android:layout_marginRight="@dimen/settings_light_container_lateral_margins_dimension"
-            android:layout_marginLeft="@dimen/settings_light_container_lateral_margins_dimension"
+            android:layout_width="@dimen/settings_light_container_width"
+            android:layout_height="@dimen/settings_light_container_height"
             android:orientation="vertical"
             android:background="@drawable/settings_light_container_background">
             <LinearLayout

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/progressBar_rectangle_radius_dimension"/>
+            <solid android:color="@color/progressBar_bar_background_color"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/progressBar_rectangle_radius_dimension"/>
+                <gradient android:angle="0"
+                          android:startColor="@color/progressBar_progress_default_start_color"
+                          android:endColor="@color/progressBar_progress_default_end_color"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/progressBar_rectangle_radius_dimension"/>
+                <gradient android:angle="0"
+                          android:startColor="@color/progressBar_progress_default_start_color"
+                          android:endColor="@color/progressBar_progress_default_end_color"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

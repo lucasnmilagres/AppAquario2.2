@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/progressBar_thumb_height_dimension"
+             android:width="@dimen/progressBar_thumb_width_dimension"/>
+            <corners android:radius="@dimen/progressBar_thumb_radius_dimension"/>
+            <solid android:color="@color/progressBar_default_thumb_color"/>
+        </shape>
+    </item>
+</layer-list>

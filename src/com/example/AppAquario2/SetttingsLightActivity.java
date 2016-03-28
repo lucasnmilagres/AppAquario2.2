@@ -12,7 +12,6 @@ import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerDialog;
 import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerPalette;
 import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerPreference;
 import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerSwatch;
-
 import java.util.ArrayList;
 
 /**
@@ -95,14 +94,14 @@ public class SetttingsLightActivity extends Activity
         //Sets backgrounds to actual channel colors.If colorList is null, keep default channels backgrounds
         if((colorsList != null)&&(colorsList.size()==5))
         {
-            //Finds all channel name fields in the activity
+            //Finds all colors fields in the activity
             ImageButton channelColor1Field = (ImageButton)findViewById(R.id.settings_light_color_button1);
             ImageButton channelColor2Field = (ImageButton)findViewById(R.id.settings_light_color_button2);
             ImageButton channelColor3Field = (ImageButton)findViewById(R.id.settings_light_color_button3);
             ImageButton channelColor4Field = (ImageButton)findViewById(R.id.settings_light_color_button4);
             ImageButton channelColor5Field = (ImageButton)findViewById(R.id.settings_light_color_button5);
 
-            //Sets actual channel names text
+            //Sets actual channel colors
             channelColor1Field.setBackgroundColor(colorsList.get(0));
             channelColor2Field.setBackgroundColor(colorsList.get(1));
             channelColor3Field.setBackgroundColor(colorsList.get(2));

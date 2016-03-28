@@ -5,6 +5,11 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/light_free.xml">
+        <config>
+          <theme>@android:style/Theme.Holo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/res/layout/lightning.xml">
         <config>
           <theme>@android:style/Theme.Holo</theme>
@@ -27,16 +32,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2df0c7d-2e06-4eb7-897a-24311002cad9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/lightning_cloud_icon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/lightning_menu_play_icon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/lightning_menu_world_icon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/lightning_thunder_icon.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/seekbar_progressbar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/seekbar_thumb.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/light_free.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/bools.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.apk" afterPath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/Thumbs.db" afterPath="$PROJECT_DIR$/res/drawable/Thumbs.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/lightning.xml" afterPath="$PROJECT_DIR$/res/layout/lightning.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings.xml" afterPath="$PROJECT_DIR$/res/layout/settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml" afterPath="$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimensions.xml" afterPath="$PROJECT_DIR$/res/values/dimensions.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" />
     </list>
     <ignored path="AppAquario2.2.iws" />
@@ -66,13 +75,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <file leaf-file-name="light_free.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/light_free.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.090909">
-              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+            <state vertical-scroll-proportion="-4.1272726">
+              <caret line="321" column="54" selection-start-line="321" selection-start-column="54" selection-end-line="321" selection-end-column="54" />
               <folding>
-                <element signature="e#973#1007#0" expanded="true" />
+                <element signature="e#467#510#0" expanded="true" />
+                <element signature="e#1292#1330#0" expanded="true" />
+                <element signature="e#1496#1536#0" expanded="true" />
+                <element signature="e#1837#1878#0" expanded="true" />
+                <element signature="e#2338#2384#0" expanded="true" />
+                <element signature="e#2756#2779#0" expanded="true" />
+                <element signature="e#2987#3025#0" expanded="true" />
+                <element signature="e#3391#3430#0" expanded="true" />
+                <element signature="e#3756#3803#0" expanded="true" />
+                <element signature="e#3846#3893#0" expanded="true" />
+                <element signature="e#4006#4054#0" expanded="true" />
+                <element signature="e#4106#4154#0" expanded="true" />
+                <element signature="e#4967#5007#0" expanded="true" />
+                <element signature="e#5308#5349#0" expanded="true" />
+                <element signature="e#5809#5855#0" expanded="true" />
+                <element signature="e#6227#6250#0" expanded="true" />
+                <element signature="e#6458#6496#0" expanded="true" />
+                <element signature="e#6862#6901#0" expanded="true" />
+                <element signature="e#7227#7274#0" expanded="true" />
+                <element signature="e#7317#7364#0" expanded="true" />
+                <element signature="e#7477#7525#0" expanded="true" />
+                <element signature="e#7577#7625#0" expanded="true" />
+                <element signature="e#8438#8478#0" expanded="true" />
+                <element signature="e#8779#8820#0" expanded="true" />
+                <element signature="e#9280#9326#0" expanded="true" />
+                <element signature="e#9698#9721#0" expanded="true" />
+                <element signature="e#9929#9967#0" expanded="true" />
+                <element signature="e#10333#10372#0" expanded="true" />
+                <element signature="e#10698#10745#0" expanded="true" />
+                <element signature="e#10788#10835#0" expanded="true" />
+                <element signature="e#10948#10996#0" expanded="true" />
+                <element signature="e#11048#11096#0" expanded="true" />
+                <element signature="e#11909#11949#0" expanded="true" />
+                <element signature="e#12250#12291#0" expanded="true" />
+                <element signature="e#12751#12797#0" expanded="true" />
+                <element signature="e#13169#13192#0" expanded="true" />
+                <element signature="e#13400#13438#0" expanded="true" />
+                <element signature="e#13804#13843#0" expanded="true" />
+                <element signature="e#14169#14216#0" expanded="true" />
+                <element signature="e#14259#14306#0" expanded="true" />
+                <element signature="e#14419#14467#0" expanded="true" />
+                <element signature="e#14519#14567#0" expanded="true" />
+                <element signature="e#15255#15296#0" expanded="true" />
+                <element signature="e#15462#15502#0" expanded="true" />
+                <element signature="e#15803#15844#0" expanded="true" />
+                <element signature="e#16304#16350#0" expanded="true" />
+                <element signature="e#16722#16745#0" expanded="true" />
+                <element signature="e#16953#16991#0" expanded="true" />
+                <element signature="e#17357#17396#0" expanded="true" />
+                <element signature="e#17722#17769#0" expanded="true" />
+                <element signature="e#17812#17859#0" expanded="true" />
+                <element signature="e#17972#18020#0" expanded="true" />
+                <element signature="e#18072#18120#0" expanded="true" />
+                <element signature="e#18691#18734#0" expanded="true" />
+                <element signature="e#18892#18943#0" expanded="true" />
+                <element signature="e#18978#19029#0" expanded="true" />
+                <element signature="e#19120#19184#0" expanded="true" />
+                <element signature="e#19406#19457#0" expanded="true" />
+                <element signature="e#19492#19543#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,45 +148,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lightning.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/lightning.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6538463">
-              <caret line="174" column="86" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
-              <folding>
-                <element signature="e#1054#1093#0" expanded="true" />
-                <element signature="e#1128#1168#0" expanded="true" />
-                <element signature="e#1988#2029#0" expanded="true" />
-                <element signature="e#2076#2117#0" expanded="true" />
-                <element signature="e#2905#2946#0" expanded="true" />
-                <element signature="e#2993#3034#0" expanded="true" />
-                <element signature="e#3822#3863#0" expanded="true" />
-                <element signature="e#3910#3951#0" expanded="true" />
-                <element signature="e#5048#5089#0" expanded="true" />
-                <element signature="e#5136#5177#0" expanded="true" />
-                <element signature="e#5977#6018#0" expanded="true" />
-                <element signature="e#6065#6106#0" expanded="true" />
-                <element signature="e#6902#6943#0" expanded="true" />
-                <element signature="e#6990#7031#0" expanded="true" />
-                <element signature="e#8130#8171#0" expanded="true" />
-                <element signature="e#8218#8259#0" expanded="true" />
-                <element signature="e#9048#9089#0" expanded="true" />
-                <element signature="e#9969#10010#0" expanded="true" />
-                <element signature="e#10057#10098#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dimensions.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/dimensions.xml">
+      <file leaf-file-name="LightFreeActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LightFreeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-              <folding />
+            <state vertical-scroll-proportion="0.796875">
+              <caret line="234" column="69" selection-start-line="234" selection-start-column="69" selection-end-line="234" selection-end-column="69" />
+              <folding>
+                <element signature="e#5063#5106#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,25 +164,9 @@
         <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6538463">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding>
-                <element signature="e#1015#1053#0" expanded="true" />
-                <element signature="e#1088#1127#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -155,9 +175,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
         <option value="Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -195,23 +216,28 @@
         <option value="$PROJECT_DIR$/libs/colorpicker-0.0.10/library/src/main/java/com/flask/colorpicker/ColorPickerView.java" />
         <option value="$PROJECT_DIR$/libs/colorpicker-0.0.10/library/src/main/java/com/flask/colorpicker/ColorPickerPreference.java" />
         <option value="$PROJECT_DIR$/libs/colorpicker-0.0.10/library/src/main/java/com/flask/colorpicker/builder/ColorPickerDialogBuilder.java" />
-        <option value="$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/TemperatureActivity.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy" />
         <option value="$PROJECT_DIR$/../colorpicker-master/colorpicker-library/src/main/java/petrov/kristiyan/colorpicker/ColorPicker.java" />
         <option value="$PROJECT_DIR$/res/values/integers.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/res/layout/settings_about.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/AboutActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SettingActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/res/values/dimensions.xml" />
         <option value="$PROJECT_DIR$/res/layout/lightning.xml" />
         <option value="$PROJECT_DIR$/res/layout/settings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/seekbar_progressbar.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/seekbar_thumb.xml" />
+        <option value="$PROJECT_DIR$/res/values/dimensions.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/bools.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/light_free.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/LightFreeActivity.java" />
       </list>
     </option>
   </component>
@@ -350,6 +376,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppAquario2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppAquario2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -774,7 +818,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459070093895</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-Finished &quot;Lightning Menu&quot; layout ;&#10;-Changed all menus layout to use container height and width, instead its margins;&#10;-New strings, dimensions and colors added to project.&#10;">
+      <created>1459107562877</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1459107562877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -783,48 +833,50 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.37897125" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.3267776" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5506808" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.60363084" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4462935" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.39485627" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4493192" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.39636913" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.43267778" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.3267776" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.60363084" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.39485627" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.39636913" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.43267778" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -840,11 +892,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-Created action to &quot;Website&quot; button onClick;&#10;-Created action to &quot;Help&quot; button onClick;&#10;-Created AboutActivity and &quot;About Screen&quot; layout;&#10;-New strings, dimensions and colors added to project;&#10;-Some failed tries to make ColorPicker to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="-Created action to &quot;Website&quot; button onClick;&#10;-Created action to &quot;Help&quot; button onClick;&#10;-Created AboutActivity and &quot;About Screen&quot; layout;&#10;-New strings, dimensions and colors added to project;&#10;-Some failed tries to make ColorPicker to work." />
+    <MESSAGE value="-Finished &quot;Lightning Menu&quot; layout ;&#10;-Changed all menus layout to use container height and width, instead its margins;&#10;-New strings, dimensions and colors added to project.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Finished &quot;Lightning Menu&quot; layout ;&#10;-Changed all menus layout to use container height and width, instead its margins;&#10;-New strings, dimensions and colors added to project.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="AppAquario2.2">
@@ -859,59 +912,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/TemperatureActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="192" column="4" selection-start-line="192" selection-start-column="4" selection-end-line="200" selection-end-column="7" />
-          <folding>
-            <element signature="e#9485#9486#0" expanded="false" />
-            <element signature="e#9532#9533#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/dimensions.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1068,17 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/temperature.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/example/AppAquario2/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1167,17 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../colorpickercollection-master/ColorPicker/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1199,16 +1177,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1775457">
-          <caret line="172" column="84" selection-start-line="172" selection-start-column="84" selection-end-line="172" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,60 +1206,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.153846">
-          <caret line="75" column="67" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/about.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding>
-            <element signature="e#445#483#0" expanded="true" />
-            <element signature="e#745#765#0" expanded="true" />
-            <element signature="e#803#843#0" expanded="true" />
-            <element signature="e#883#925#0" expanded="true" />
-            <element signature="e#964#1005#0" expanded="true" />
-            <element signature="e#1046#1089#0" expanded="true" />
-            <element signature="e#1119#1153#0" expanded="true" />
-            <element signature="e#1393#1434#0" expanded="true" />
-            <element signature="e#1540#1579#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LightningActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="16" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.230769">
-          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
-          <folding>
-            <element signature="e#306#324#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/AboutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,60 +1225,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24773414">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/dimensions.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6538463">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#1015#1053#0" expanded="true" />
-            <element signature="e#1088#1127#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.090909">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-          <folding>
-            <element signature="e#973#1007#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/lightning.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6538463">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-47.072727">
           <caret line="174" column="86" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
           <folding>
             <element signature="e#1054#1093#0" expanded="true" />
@@ -1384,8 +1252,250 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/temperature.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings_edit_channel_labels.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.327273">
+          <caret line="219" column="16" selection-start-line="219" selection-start-column="16" selection-end-line="238" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="e#973#1007#0" expanded="true" />
+            <element signature="e#1042#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/about.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6538463">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#1015#1053#0" expanded="true" />
+            <element signature="e#1088#1127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/AboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#306#324#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/seekbar_progressbar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#236#283#0" expanded="false" />
+            <element signature="e#548#595#0" expanded="false" />
+            <element signature="e#1025#1072#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/seekbar_thumb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding>
+            <element signature="e#197#240#0" expanded="false" />
+            <element signature="e#268#310#0" expanded="false" />
+            <element signature="e#349#392#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimensions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SetttingsLightActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8229167">
+          <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.283019">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/bools.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/light_free.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1272726">
+          <caret line="321" column="54" selection-start-line="321" selection-start-column="54" selection-end-line="321" selection-end-column="54" />
+          <folding>
+            <element signature="e#467#510#0" expanded="true" />
+            <element signature="e#1292#1330#0" expanded="true" />
+            <element signature="e#1496#1536#0" expanded="true" />
+            <element signature="e#1837#1878#0" expanded="true" />
+            <element signature="e#2338#2384#0" expanded="true" />
+            <element signature="e#2756#2779#0" expanded="true" />
+            <element signature="e#2987#3025#0" expanded="true" />
+            <element signature="e#3391#3430#0" expanded="true" />
+            <element signature="e#3756#3803#0" expanded="true" />
+            <element signature="e#3846#3893#0" expanded="true" />
+            <element signature="e#4006#4054#0" expanded="true" />
+            <element signature="e#4106#4154#0" expanded="true" />
+            <element signature="e#4967#5007#0" expanded="true" />
+            <element signature="e#5308#5349#0" expanded="true" />
+            <element signature="e#5809#5855#0" expanded="true" />
+            <element signature="e#6227#6250#0" expanded="true" />
+            <element signature="e#6458#6496#0" expanded="true" />
+            <element signature="e#6862#6901#0" expanded="true" />
+            <element signature="e#7227#7274#0" expanded="true" />
+            <element signature="e#7317#7364#0" expanded="true" />
+            <element signature="e#7477#7525#0" expanded="true" />
+            <element signature="e#7577#7625#0" expanded="true" />
+            <element signature="e#8438#8478#0" expanded="true" />
+            <element signature="e#8779#8820#0" expanded="true" />
+            <element signature="e#9280#9326#0" expanded="true" />
+            <element signature="e#9698#9721#0" expanded="true" />
+            <element signature="e#9929#9967#0" expanded="true" />
+            <element signature="e#10333#10372#0" expanded="true" />
+            <element signature="e#10698#10745#0" expanded="true" />
+            <element signature="e#10788#10835#0" expanded="true" />
+            <element signature="e#10948#10996#0" expanded="true" />
+            <element signature="e#11048#11096#0" expanded="true" />
+            <element signature="e#11909#11949#0" expanded="true" />
+            <element signature="e#12250#12291#0" expanded="true" />
+            <element signature="e#12751#12797#0" expanded="true" />
+            <element signature="e#13169#13192#0" expanded="true" />
+            <element signature="e#13400#13438#0" expanded="true" />
+            <element signature="e#13804#13843#0" expanded="true" />
+            <element signature="e#14169#14216#0" expanded="true" />
+            <element signature="e#14259#14306#0" expanded="true" />
+            <element signature="e#14419#14467#0" expanded="true" />
+            <element signature="e#14519#14567#0" expanded="true" />
+            <element signature="e#15255#15296#0" expanded="true" />
+            <element signature="e#15462#15502#0" expanded="true" />
+            <element signature="e#15803#15844#0" expanded="true" />
+            <element signature="e#16304#16350#0" expanded="true" />
+            <element signature="e#16722#16745#0" expanded="true" />
+            <element signature="e#16953#16991#0" expanded="true" />
+            <element signature="e#17357#17396#0" expanded="true" />
+            <element signature="e#17722#17769#0" expanded="true" />
+            <element signature="e#17812#17859#0" expanded="true" />
+            <element signature="e#17972#18020#0" expanded="true" />
+            <element signature="e#18072#18120#0" expanded="true" />
+            <element signature="e#18691#18734#0" expanded="true" />
+            <element signature="e#18892#18943#0" expanded="true" />
+            <element signature="e#18978#19029#0" expanded="true" />
+            <element signature="e#19120#19184#0" expanded="true" />
+            <element signature="e#19406#19457#0" expanded="true" />
+            <element signature="e#19492#19543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LightFreeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.796875">
+          <caret line="234" column="69" selection-start-line="234" selection-start-column="69" selection-end-line="234" selection-end-column="69" />
+          <folding>
+            <element signature="e#5063#5106#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
