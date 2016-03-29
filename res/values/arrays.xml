@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="moon_default_list"><![CDATA[<Unset>]]></string-array>
+    <string-array name="location_default_list"><![CDATA[<Unset>]]></string-array>
+    <string-array name="season_default_list"><![CDATA[<Unset>]]></string-array>
+    <string-array name="routine_default_list"><![CDATA[<Unset>]]></string-array>
+</resources>

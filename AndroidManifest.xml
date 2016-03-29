@@ -36,6 +36,26 @@
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         </activity>
         <activity
+            android:name=".LightMoonActivity"
+            android:label="Light Moon"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".LightLocationActivity"
+            android:label="Light Location"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".LightSeasonActivity"
+            android:label="Light Season"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".LightRoutineActivity"
+            android:label="Light Routine"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
             android:name=".TemperatureActivity"
             android:label="Temperature"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">

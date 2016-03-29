@@ -15,6 +15,12 @@
     <item name="progressBar_bar_background_color" type="color">#55000000</item>
     <item name="progressBar_default_thumb_color" type="color">#ff333333</item>
 
+    <!--Spinner Colors-->
+    <item name="spinner_text_color" type="color">#ff000000</item>
+    <item name="spinner_dropdown_text_color" type="color">#ffffffff</item>
+    <item name="spinner_dropdown_background_color" type="color">#ff000000</item>
+    <item name="spinner_dropdown_shadow_color" type="color">#ffffffff</item>
+
     <!--Main Menu Colors-->
     <item name="main_menu_buttonsbackground_color" type="color">#00ffffff</item>
     <item name="main_menu_headerbackground_color" type="color">#00ffffff</item>
@@ -30,6 +36,30 @@
     <item name="light_free_headerbackground_color" type="color">#ff000000</item>
     <item name="light_free_ok_and_cancel_background_color" type="color">#00000000</item>
     <item name="light_free_channel_title_text_color" type="color">#ff000000</item>
+
+    <!--Light Moon Screen Colors-->
+    <item name="light_moon_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_moon_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_moon_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_moon_channel_title_text_color" type="color">#ff000000</item>
+
+    <!--Light Location Screen Colors-->
+    <item name="light_location_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_location_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_location_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_location_channel_title_text_color" type="color">#ff000000</item>
+
+    <!--Light Season Screen Colors-->
+    <item name="light_season_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_season_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_season_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_season_channel_title_text_color" type="color">#ff000000</item>
+
+    <!--Light Routine Screen Colors-->
+    <item name="light_routine_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_routine_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_routine_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_routine_channel_title_text_color" type="color">#ff000000</item>
 
     <!--Temperature Screen Colors-->
     <item name="temperature_headerbackground_color" type="color">#00ffffff</item>

@@ -21,6 +21,13 @@
 
     <!--Light Default Mode Strings-->
     <string name="FreeMode">FreeMode</string>
+    <string name="MoonMode">MoonMode</string>
+    <string name="LocationMode">LocationMode</string>
+    <string name="SeasonMode">SeasonMode</string>
+    <string name="RoutineMode">RoutineMode</string>
+
+    <!--Light Default Program Strings-->
+    <string name="Unset"><![CDATA[<Unset>]]></string>
 
     <!--Temperature Screen Strings-->
     <string name="temperature_screen_minTemp">Min. Temperature [ºC]:</string>

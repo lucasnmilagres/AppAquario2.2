@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="light_free_default_checkbox_checked">true</bool>
+    <bool name="light_moon_default_checkbox_checked">false</bool>
+    <bool name="light_location_default_checkbox_checked">false</bool>
+    <bool name="light_season_default_checkbox_checked">false</bool>
+    <bool name="light_routine_default_checkbox_checked">false</bool>
 </resources>

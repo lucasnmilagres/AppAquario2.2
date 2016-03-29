@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/light_season_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/light_season_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/light_season_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/light_season_header"
+        android:background="@color/light_season_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/light_season_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/light_season_body_background"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/light_season_row1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/light_season_channel_top_margin">
+            <LinearLayout
+                android:id="@+id/light_season_channel1"
+                android:orientation="vertical"
+                android:layout_width="@dimen/light_season_channel_screen_width"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/light_season_channel1_header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_header_height"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/light_season_channel_header_background">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_checkBox1"
+                        android:singleLine="false"
+                        android:layout_marginLeft="@dimen/light_season_channel_header_left_margin"
+                        android:checked="@bool/light_season_default_checkbox_checked"
+                        android:tag="0"
+                        android:onClick="changeChecked"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/channel1_name"
+                        android:id="@+id/light_season_channel1_name"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/light_season_channel_title_text"
+                        android:textColor="@color/light_season_channel_title_text_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/light_season_channel1_body"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_body_height"
+                    android:gravity="center"
+                    android:background="@drawable/light_season_channel_body_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_spinner1"
+                        android:layout_marginLeft="@dimen/light_season_channel_body_lateral_margins"
+                        android:layout_marginRight="@dimen/light_season_channel_body_lateral_margins"
+                        android:spinnerMode="dropdown"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/light_season_row2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/light_season_channel2"
+                android:orientation="vertical"
+                android:layout_width="@dimen/light_season_channel_screen_width"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/light_season_channel2_header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_header_height"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/light_season_channel_header_background">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_checkBox2"
+                        android:singleLine="false"
+                        android:layout_marginLeft="@dimen/light_season_channel_header_left_margin"
+                        android:checked="@bool/light_season_default_checkbox_checked"
+                        android:tag="1"
+                        android:onClick="changeChecked"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/channel2_name"
+                        android:id="@+id/light_season_channel2_name"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/light_season_channel_title_text"
+                        android:textColor="@color/light_season_channel_title_text_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/light_season_channel2_body"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_body_height"
+                    android:gravity="center"
+                    android:background="@drawable/light_season_channel_body_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_spinner2"
+                        android:layout_marginLeft="@dimen/light_season_channel_body_lateral_margins"
+                        android:layout_marginRight="@dimen/light_season_channel_body_lateral_margins"
+                        android:spinnerMode="dropdown"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/light_season_row3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/light_season_channel3"
+                android:orientation="vertical"
+                android:layout_width="@dimen/light_season_channel_screen_width"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/light_season_channel3_header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_header_height"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/light_season_channel_header_background">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_checkBox3"
+                        android:singleLine="false"
+                        android:layout_marginLeft="@dimen/light_season_channel_header_left_margin"
+                        android:checked="@bool/light_season_default_checkbox_checked"
+                        android:tag="2"
+                        android:onClick="changeChecked"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/channel3_name"
+                        android:id="@+id/light_season_channel3_name"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/light_season_channel_title_text"
+                        android:textColor="@color/light_season_channel_title_text_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/light_season_channel3_body"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_body_height"
+                    android:gravity="center"
+                    android:background="@drawable/light_season_channel_body_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_spinner3"
+                        android:layout_marginLeft="@dimen/light_season_channel_body_lateral_margins"
+                        android:layout_marginRight="@dimen/light_season_channel_body_lateral_margins"
+                        android:spinnerMode="dropdown"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/light_season_row4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/light_season_channel4"
+                android:orientation="vertical"
+                android:layout_width="@dimen/light_season_channel_screen_width"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/light_season_channel4_header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_header_height"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/light_season_channel_header_background">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_checkBox4"
+                        android:singleLine="false"
+                        android:layout_marginLeft="@dimen/light_season_channel_header_left_margin"
+                        android:checked="@bool/light_season_default_checkbox_checked"
+                        android:tag="3"
+                        android:onClick="changeChecked"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/channel4_name"
+                        android:id="@+id/light_season_channel4_name"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/light_season_channel_title_text"
+                        android:textColor="@color/light_season_channel_title_text_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/light_season_channel4_body"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_body_height"
+                    android:gravity="center"
+                    android:background="@drawable/light_season_channel_body_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_spinner4"
+                        android:layout_marginLeft="@dimen/light_season_channel_body_lateral_margins"
+                        android:layout_marginRight="@dimen/light_season_channel_body_lateral_margins"
+                        android:spinnerMode="dropdown"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/light_season_row5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/light_season_channel_bottom_margin">
+            <LinearLayout
+                android:id="@+id/light_season_channel5"
+                android:orientation="vertical"
+                android:layout_width="@dimen/light_season_channel_screen_width"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/light_season_channel5_header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_header_height"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/light_season_channel_header_background">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_checkBox5"
+                        android:singleLine="false"
+                        android:layout_marginLeft="@dimen/light_season_channel_header_left_margin"
+                        android:checked="@bool/light_season_default_checkbox_checked"
+                        android:tag="4"
+                        android:onClick="changeChecked"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/channel5_name"
+                        android:id="@+id/light_season_channel5_name"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/light_season_channel_title_text"
+                        android:textColor="@color/light_season_channel_title_text_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/light_season_channel5_body"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/light_season_channel_body_height"
+                    android:gravity="center"
+                    android:background="@drawable/light_season_channel_body_background">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/light_season_spinner5"
+                        android:layout_marginLeft="@dimen/light_season_channel_body_lateral_margins"
+                        android:layout_marginRight="@dimen/light_season_channel_body_lateral_margins"
+                        android:spinnerMode="dropdown"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/light_season_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/light_season_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/light_season_footer_background">
+
+        <ImageButton
+            android:layout_width="@dimen/light_season_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/light_season_ok_and_cancel_buttons_dimension"
+            android:id="@+id/light_season_ok_button"
+            android:layout_marginRight="@dimen/light_season_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/light_season_ok_and_cancel_background_color"
+            android:src="@drawable/ok_icon"/>
+
+        <ImageButton
+            android:layout_width="@dimen/light_season_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/light_season_ok_and_cancel_buttons_dimension"
+            android:id="@+id/light_season_cancel_button"
+            android:background="@color/light_season_ok_and_cancel_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="finishActivity"/>
+    </LinearLayout>
+</LinearLayout>
