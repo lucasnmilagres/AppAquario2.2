@@ -25,6 +25,7 @@
     <string name="LocationMode">LocationMode</string>
     <string name="SeasonMode">SeasonMode</string>
     <string name="RoutineMode">RoutineMode</string>
+    <string name="RandomMode">RandomMode</string>
 
     <!--Light Default Program Strings-->
     <string name="Unset"><![CDATA[<Unset>]]></string>

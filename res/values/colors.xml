@@ -61,6 +61,12 @@
     <item name="light_routine_ok_and_cancel_background_color" type="color">#00000000</item>
     <item name="light_routine_channel_title_text_color" type="color">#ff000000</item>
 
+    <!--Light Random Screen Colors-->
+    <item name="light_random_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_random_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_random_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_random_channel_title_text_color" type="color">#ff000000</item>
+
     <!--Temperature Screen Colors-->
     <item name="temperature_headerbackground_color" type="color">#00ffffff</item>
     <item name="temperature_generalbackground_color" type="color">#ff000000</item>

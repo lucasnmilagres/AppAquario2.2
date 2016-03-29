@@ -5,4 +5,5 @@
     <bool name="light_location_default_checkbox_checked">false</bool>
     <bool name="light_season_default_checkbox_checked">false</bool>
     <bool name="light_routine_default_checkbox_checked">false</bool>
+    <bool name="light_random_default_checkbox_checked">false</bool>
 </resources>

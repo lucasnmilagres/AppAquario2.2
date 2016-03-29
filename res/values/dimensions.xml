@@ -113,6 +113,25 @@
     <item name="light_routine_channel_body_lateral_margins" type="dimen">10dp</item>
     <item name="light_routine_channel_header_left_margin" type="dimen">10dp</item>
 
+    <!--Light Random Screen Sizes-->
+    <item name="light_random_channel_screen_width" type="dimen">280dp</item>
+    <item name="light_random_header_height_dimension" type="dimen">80dp</item>
+    <item name="light_random_channel_header_height" type="dimen">25dp</item>
+    <item name="light_random_channel_body_height" type="dimen">30dp</item>
+    <item name="light_random_container_height" type="dimen">320dp</item>
+    <item name="light_random_footer_height_dimension" type="dimen">50dp</item>
+    <item name="light_random_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Light Random Screen Text-->
+    <item name="light_random_channel_title_text" type="dimen">15sp</item>
+    <item name="light_random_channel_spinner_text" type="dimen">10sp</item>
+    <item name="light_random_channel_spinner_dropdown_text" type="dimen">10sp</item>
+    <!--Light Random Screen Margins-->
+    <item name="light_random_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+    <item name="light_random_channel_top_margin" type="dimen">20dp</item>
+    <item name="light_random_channel_bottom_margin" type="dimen">20dp</item>
+    <item name="light_random_channel_body_lateral_margins" type="dimen">10dp</item>
+    <item name="light_random_channel_header_left_margin" type="dimen">10dp</item>
+
     <!--Temperature Screen Sizes-->
     <item name="temperature_header_height_dimension" type="dimen">80dp</item>
     <item name="temperature_arrows_dimension" type="dimen">10dp</item>

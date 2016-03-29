@@ -31,11 +31,11 @@ public class SplashActivity extends Activity {
         lightLastValueList.add(75);
         lightLastValueList.add(100);
         ArrayList<String> lightModeList = new ArrayList<>();
-        lightModeList.add("RoutineMode");
+        lightModeList.add("RandomMode");
         lightModeList.add("FreeMode");
         lightModeList.add("SeasonMode");
         lightModeList.add("LocationMode");
-        lightModeList.add("RoutineMode");
+        lightModeList.add("RandomMode");
         ArrayList<String> moonList = new ArrayList<>();
         moonList.add(getResources().getString(R.string.Unset));
         moonList.add("Rising Moon");
@@ -64,14 +64,20 @@ public class SplashActivity extends Activity {
         routineList.add("Chill");
         routineList.add("Hot");
         routineList.add("Dirty Venus");
+        ArrayList<String> randomList = new ArrayList<>();
+        randomList.add(getResources().getString(R.string.Unset));
+        randomList.add("Standard Random");
+        randomList.add("Long Duration");
+        randomList.add("Short Duration");
+        randomList.add("Blinking");
         ArrayList<String> lightProgramList = new ArrayList<>();
         lightProgramList.add("Deserto");
         lightProgramList.add("Recife");
         lightProgramList.add("kajs");
-        lightProgramList.add("Rising Moon");
-        lightProgramList.add("Psycodelic");
+        lightProgramList.add("Blinking");
+        lightProgramList.add("Long Duration");
 
-        Intent intent = new Intent(this, LightRoutineActivity.class);
+        Intent intent = new Intent(this, LightRandomActivity.class);
         intent.putExtra("channelsNamesList", channelNames);
         intent.putExtra("colorsList", colorsList);
         intent.putExtra("lightLastValueList", lightLastValueList);
@@ -80,6 +86,7 @@ public class SplashActivity extends Activity {
         intent.putExtra("locationList", locationList);
         intent.putExtra("seasonList", seasonList);
         intent.putExtra("routineList", routineList);
+        intent.putExtra("randomList", randomList);
         intent.putExtra("lightProgramList", lightProgramList);
         startActivity(intent);
         finish();

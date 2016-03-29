@@ -56,6 +56,11 @@
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         </activity>
         <activity
+            android:name=".LightRandomActivity"
+            android:label="Light Random"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
             android:name=".TemperatureActivity"
             android:label="Temperature"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
