@@ -132,6 +132,42 @@
     <item name="light_random_channel_body_lateral_margins" type="dimen">10dp</item>
     <item name="light_random_channel_header_left_margin" type="dimen">10dp</item>
 
+    <!--Light Cloud Screen Sizes-->
+    <item name="light_cloud_channel_screen_width" type="dimen">280dp</item>
+    <item name="light_cloud_header_height_dimension" type="dimen">80dp</item>
+    <item name="light_cloud_channel_header_height" type="dimen">25dp</item>
+    <item name="light_cloud_channel_body_height" type="dimen">30dp</item>
+    <item name="light_cloud_container_height" type="dimen">320dp</item>
+    <item name="light_cloud_footer_height_dimension" type="dimen">50dp</item>
+    <item name="light_cloud_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Light Cloud Screen Text-->
+    <item name="light_cloud_channel_title_text" type="dimen">15sp</item>
+    <item name="light_cloud_channel_button_text" type="dimen">10sp</item>
+    <!--Light Cloud Screen Margins-->
+    <item name="light_cloud_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+    <item name="light_cloud_channel_top_margin" type="dimen">20dp</item>
+    <item name="light_cloud_channel_bottom_margin" type="dimen">20dp</item>
+    <item name="light_cloud_channel_body_lateral_margins" type="dimen">10dp</item>
+    <item name="light_cloud_channel_header_left_margin" type="dimen">10dp</item>
+
+    <!--Light Thunder Screen Sizes-->
+    <item name="light_thunder_channel_screen_width" type="dimen">280dp</item>
+    <item name="light_thunder_header_height_dimension" type="dimen">80dp</item>
+    <item name="light_thunder_channel_header_height" type="dimen">25dp</item>
+    <item name="light_thunder_channel_body_height" type="dimen">30dp</item>
+    <item name="light_thunder_container_height" type="dimen">320dp</item>
+    <item name="light_thunder_footer_height_dimension" type="dimen">50dp</item>
+    <item name="light_thunder_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Light Thunder Screen Text-->
+    <item name="light_thunder_channel_title_text" type="dimen">15sp</item>
+    <item name="light_thunder_channel_button_text" type="dimen">10sp</item>
+    <!--Light Thunder Screen Margins-->
+    <item name="light_thunder_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+    <item name="light_thunder_channel_top_margin" type="dimen">20dp</item>
+    <item name="light_thunder_channel_bottom_margin" type="dimen">20dp</item>
+    <item name="light_thunder_channel_body_lateral_margins" type="dimen">10dp</item>
+    <item name="light_thunder_channel_header_left_margin" type="dimen">10dp</item>
+    
     <!--Temperature Screen Sizes-->
     <item name="temperature_header_height_dimension" type="dimen">80dp</item>
     <item name="temperature_arrows_dimension" type="dimen">10dp</item>

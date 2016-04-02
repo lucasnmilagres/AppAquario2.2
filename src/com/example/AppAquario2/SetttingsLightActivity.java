@@ -8,10 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerDialog;
+/*import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerDialog;
 import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerPalette;
 import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerPreference;
-import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerSwatch;
+import it.gmariotti.android.example.colorpicker.calendarstock.ColorPickerSwatch;*/
 import java.util.ArrayList;
 
 /**
@@ -168,7 +168,7 @@ public class SetttingsLightActivity extends Activity
         mColors[13]=getResources().getColor(R.color.settings_light_pallete14);
         mColors[14]=getResources().getColor(R.color.settings_light_pallete15);
 
-        ColorPickerDialog colorPicker = ColorPickerDialog.newInstance(it.gmariotti.android.example.colorpicker.R.string.color_picker_default_title,
+        /*ColorPickerDialog colorPicker = ColorPickerDialog.newInstance(it.gmariotti.android.example.colorpicker.R.string.color_picker_default_title,
                 getResources().getIntArray(it.gmariotti.android.example.colorpicker.R.array.default_color_choice_values),
                 Color.WHITE,
                 5, ColorPickerDialog.SIZE_SMALL);
@@ -187,7 +187,7 @@ public class SetttingsLightActivity extends Activity
         });
 
         //Shows ColorPickerDialog
-        colorPicker.show(getFragmentManager(), "cal");
+        colorPicker.show(getFragmentManager(), "cal");*/
     }
 
     /**

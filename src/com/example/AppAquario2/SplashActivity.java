@@ -76,8 +76,10 @@ public class SplashActivity extends Activity {
         lightProgramList.add("kajs");
         lightProgramList.add("Blinking");
         lightProgramList.add("Long Duration");
+        boolean[] cloudEnabledArray = {true, false, true, false, true};
+        boolean[] thunderEnabledArray = {true, false, true, false, true};
 
-        Intent intent = new Intent(this, LightRandomActivity.class);
+        Intent intent = new Intent(this, LightCloudActivity.class);
         intent.putExtra("channelsNamesList", channelNames);
         intent.putExtra("colorsList", colorsList);
         intent.putExtra("lightLastValueList", lightLastValueList);
@@ -88,6 +90,8 @@ public class SplashActivity extends Activity {
         intent.putExtra("routineList", routineList);
         intent.putExtra("randomList", randomList);
         intent.putExtra("lightProgramList", lightProgramList);
+        intent.putExtra("cloudEnabledArray", cloudEnabledArray);
+        intent.putExtra("thunderEnabledArray", thunderEnabledArray);
         startActivity(intent);
         finish();
     }

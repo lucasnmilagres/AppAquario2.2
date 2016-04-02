@@ -61,6 +61,16 @@
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         </activity>
         <activity
+            android:name=".LightThunderActivity"
+            android:label="Light Thunder"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".LightCloudActivity"
+            android:label="Light Cloud"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
             android:name=".TemperatureActivity"
             android:label="Temperature"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">

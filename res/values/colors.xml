@@ -67,6 +67,22 @@
     <item name="light_random_ok_and_cancel_background_color" type="color">#00000000</item>
     <item name="light_random_channel_title_text_color" type="color">#ff000000</item>
 
+    <!--Light Cloud Screen Colors-->
+    <item name="light_cloud_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_cloud_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_cloud_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_cloud_channel_title_text_color" type="color">#ff000000</item>
+    <item name="light_cloud_channel_button_text_color" type="color">#ffffffff</item>
+    <item name="light_cloud_channel_button_background_color" type="color">#ff000000</item>
+
+    <!--Light Thunder Screen Colors-->
+    <item name="light_thunder_generalbackground_color" type="color">#ff000000</item>
+    <item name="light_thunder_headerbackground_color" type="color">#ff000000</item>
+    <item name="light_thunder_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="light_thunder_channel_title_text_color" type="color">#ff000000</item>
+    <item name="light_thunder_channel_button_text_color" type="color">#ffffffff</item>
+    <item name="light_thunder_channel_button_background_color" type="color">#ff000000</item>
+
     <!--Temperature Screen Colors-->
     <item name="temperature_headerbackground_color" type="color">#00ffffff</item>
     <item name="temperature_generalbackground_color" type="color">#ff000000</item>

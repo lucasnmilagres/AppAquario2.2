@@ -16,6 +16,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mpandroidchartlibrary-2-1-6" level="project" />
-    <orderEntry type="module" module-name="ColorPicker" exported="" />
   </component>
 </module>

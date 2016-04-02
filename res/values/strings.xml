@@ -30,6 +30,12 @@
     <!--Light Default Program Strings-->
     <string name="Unset"><![CDATA[<Unset>]]></string>
 
+    <!--Light Cloud Screen Strings-->
+    <string name="light_cloud_button_text">Cloud It!</string>
+
+    <!--Light Thunder Screen Strings-->
+    <string name="light_thunder_button_text">Thunder!</string>
+
     <!--Temperature Screen Strings-->
     <string name="temperature_screen_minTemp">Min. Temperature [ºC]:</string>
     <string name="temperature_screen_maxTemp">Max. Temperature [ºC]:</string>
