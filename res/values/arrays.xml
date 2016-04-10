@@ -5,4 +5,18 @@
     <string-array name="season_default_list"><![CDATA[<Unset>]]></string-array>
     <string-array name="routine_default_list"><![CDATA[<Unset>]]></string-array>
     <string-array name="random_default_list"><![CDATA[<Unset>]]></string-array>
+    <string-array name="my_account_expandableListView_parents_list">
+        <item>My Account</item>
+        <item>Aquariums</item>
+        <item>Device</item>
+    </string-array>
+    <string-array name="registered_devices_expandableListView_parents_list">
+        <item>Light Devices</item>
+        <item>Temperature Devices</item>
+        <item>Salinity Devices</item>
+        <item>PH Devices</item>
+        <item>Feed Devices</item>
+        <item>Cam Devices</item>
+        <item>Other</item>
+    </string-array>
 </resources>

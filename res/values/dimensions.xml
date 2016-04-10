@@ -8,6 +8,23 @@
     <item name="progressBar_thumb_width_dimension" type="dimen">15dp</item>
     <item name="progressBar_thumb_radius_dimension" type="dimen">3dp</item>
 
+    <!--Expandable ListView Parent Sizes-->
+    <item name="listview_parent_lateral_margins" type="dimen">10dp</item>
+    <item name="listview_parent_top_padding" type="dimen">10dp</item>
+    <item name="listview_parent_lateral_padding" type="dimen">10dp</item>
+    <item name="listview_parent_bottom_padding" type="dimen">10dp</item>
+    <!--Expandable ListView Parent Text-->
+    <item name="listview_parent_text" type="dimen">15sp</item>
+
+    <!--Expandable ListView Child Sizes-->
+    <item name="listview_child_height" type="dimen">50dp</item>
+    <item name="listview_child_separator_thickness" type="dimen">2dp</item>
+    <!--Expandable ListView Child Text-->
+    <item name="listview_child_text" type="dimen">15sp</item>
+    <!--Expandable ListView Child Margin-->
+    <item name="listview_child_lateral_margins" type="dimen">10dp</item>
+    <item name="listview_child_text_lateral_margins" type="dimen">20dp</item>
+
     <!--Main Menu Sizes-->
     <item name="main_menu_header_height_dimension" type="dimen">80dp</item>
     <item name="main_menu_container_height" type="dimen">360dp</item>
@@ -167,7 +184,7 @@
     <item name="light_thunder_channel_bottom_margin" type="dimen">20dp</item>
     <item name="light_thunder_channel_body_lateral_margins" type="dimen">10dp</item>
     <item name="light_thunder_channel_header_left_margin" type="dimen">10dp</item>
-    
+
     <!--Temperature Screen Sizes-->
     <item name="temperature_header_height_dimension" type="dimen">80dp</item>
     <item name="temperature_arrows_dimension" type="dimen">10dp</item>
@@ -225,6 +242,36 @@
     <item name="settings_light_row_between_margin_dimension" type="dimen">20dp</item>
     <item name="settings_light_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
     <item name="settings_light_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--My Account Screen Sizes-->
+    <item name="my_account_header_height_dimension" type="dimen">80dp</item>
+    <item name="my_account_container_height" type="dimen">400dp</item>
+    <item name="my_account_container_width" type="dimen">300dp</item>
+    <!--My Account Screen Margins-->
+    <item name="my_account_listview_top_margin" type="dimen">10dp</item>
+    <item name="my_account_listview_lateral_margins" type="dimen">10dp</item>
+    <item name="my_account_listview_bottom_margin" type="dimen">10dp</item>
+
+    <!--My Account Systems Screen Sizes-->
+    <item name="my_account_systems_header_height_dimension" type="dimen">80dp</item>
+    <item name="my_account_systems_container_height" type="dimen">400dp</item>
+    <item name="my_account_systems_container_width" type="dimen">300dp</item>
+    <item name="my_account_systems_footer_height_dimension" type="dimen">50dp</item>
+    <item name="my_account_systems_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--My Account Systems Screen Margins-->
+    <item name="my_account_systems_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--Registered Devices Screen Sizes-->
+    <item name="registered_devices_header_height_dimension" type="dimen">80dp</item>
+    <item name="registered_devices_container_height" type="dimen">380dp</item>
+    <item name="registered_devices_container_width" type="dimen">300dp</item>
+    <item name="registered_devices_footer_height_dimension" type="dimen">50dp</item>
+    <item name="registered_devices_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--My Account Screen Margins-->
+    <item name="registered_devices_listview_top_margin" type="dimen">10dp</item>
+    <item name="registered_devices_listview_lateral_margins" type="dimen">10dp</item>
+    <item name="registered_devices_listview_bottom_margin" type="dimen">10dp</item>
+    <item name="registered_devices_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
 
     <!--About Sizes-->
     <item name="about_header_height_dimension" type="dimen">50dp</item>

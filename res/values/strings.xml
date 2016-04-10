@@ -18,6 +18,8 @@
     <string name="color3Index">2</string>
     <string name="color4Index">3</string>
     <string name="color5Index">4</string>
+    <string name="login_data_file">4</string>
+    <string name="login_data_error_msg">There was an error with your account information. Please, login again.</string>
 
     <!--Light Default Mode Strings-->
     <string name="FreeMode">FreeMode</string>
@@ -51,6 +53,13 @@
     <string name="settings_light_colorPicker_title">Choose Channel Color</string>
     <string name="settings_light_colorPicker_ok_button">Ok</string>
     <string name="settings_light_colorPicker_cancel_button">Cancel</string>
+
+    <!--My Account Strings-->
+    <string name="my_account_account_type">Account Type: </string>
+    <string name="my_account_logout">Logout</string>
+    <string name="my_account_selected_aquarium">Selected Aquarium: </string>
+    <string name="my_account_assembled_aquariums">Assembled Aquariums</string>
+    <string name="my_account_registered_devices">Registered Devices</string>
 
     <!--Login Screen Strings-->
     <string name="login_screen_username">Email</string>

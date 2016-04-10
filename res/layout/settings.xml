@@ -47,7 +47,7 @@
                         android:id="@+id/settings_imageButton1"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_edit_icon"/>
+                        android:src="@drawable/settings_menu_my_account_icon"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -64,7 +64,7 @@
                         android:id="@+id/settings_imageButton2"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_copy_icon"/>
+                        android:src="@drawable/settings_menu_edit_icon"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -81,7 +81,7 @@
                         android:id="@+id/settings_imageButton3"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_controler_icon" />
+                        android:src="@drawable/settings_menu_system_icon" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -105,7 +105,7 @@
                         android:id="@+id/settings_imageButton4"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_add_device_icon" />
+                        android:src="@drawable/settings_menu_connection_icon" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/settings_menu_row2_column2"
@@ -121,7 +121,7 @@
                         android:id="@+id/settings_imageButton5"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_website_icon"
+                        android:src="@drawable/settings_menu_shop_icon"
                         android:onClick="openWebsite"/>
                 </LinearLayout>
                 <LinearLayout
@@ -138,7 +138,7 @@
                         android:id="@+id/settings_imageButton6"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_recovery_icon" />
+                        android:src="@drawable/settings_menu_help_icon" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -163,7 +163,7 @@
                         android:id="@+id/settings_imageButton7"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_help_icon"
+                        android:src="@drawable/settings_menu_evaluation_icon"
                         android:onClick="openHelpPage"/>
                 </LinearLayout>
 
@@ -181,7 +181,7 @@
                         android:id="@+id/settings_imageButton8"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_logout_icon" />
+                        android:src="@drawable/settings_menu_legal_icon" />
                 </LinearLayout>
 
                 <LinearLayout

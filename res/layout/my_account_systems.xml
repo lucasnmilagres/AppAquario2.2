@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/my_account_systems_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/my_account_systems_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/my_account_systems_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/my_account_systems_header"
+        android:background="@color/my_account_systems_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/my_account_systems_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/my_account_systems_body_background"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/my_account_systems_buttons_container"
+            android:layout_width="@dimen/my_account_systems_container_width"
+            android:layout_height="@dimen/my_account_systems_container_height"
+            android:orientation="vertical"
+            android:background="@drawable/my_account_systems_container_background">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_account_systems_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_account_systems_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/my_account_systems_footer_background">
+
+        <ImageButton
+            android:layout_width="@dimen/my_account_systems_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/my_account_systems_ok_and_cancel_buttons_dimension"
+            android:id="@+id/my_account_systems_ok_button"
+            android:layout_marginRight="@dimen/my_account_systems_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/my_account_systems_ok_and_cancel_background_color"
+            android:src="@drawable/ok_icon"/>
+
+        <ImageButton
+            android:layout_width="@dimen/my_account_systems_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/my_account_systems_ok_and_cancel_buttons_dimension"
+            android:id="@+id/my_account_systems_cancel_button"
+            android:background="@color/my_account_systems_ok_and_cancel_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="finishActivity"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/registered_devices_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/registered_devices_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/registered_devices_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/registered_devices_header"
+        android:background="@color/registered_devices_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/registered_devices_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/registered_devices_body_background"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/registered_devices_buttons_container"
+            android:layout_width="@dimen/registered_devices_container_width"
+            android:layout_height="@dimen/registered_devices_container_height"
+            android:orientation="vertical"
+            android:background="@drawable/registered_devices_container_background"
+            >
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registered_devices_expandableListView"
+                android:layout_marginTop="@dimen/registered_devices_listview_top_margin"
+                android:layout_marginRight="@dimen/registered_devices_listview_lateral_margins"
+                android:layout_marginLeft="@dimen/registered_devices_listview_lateral_margins"
+                android:layout_marginBottom="@dimen/registered_devices_listview_bottom_margin"
+                android:choiceMode="none"
+                android:clickable="true"
+                android:background="@color/listview_general_background_color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registered_devices_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/registered_devices_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/registered_devices_footer_background">
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_add_button"
+            android:layout_marginRight="@dimen/registered_devices_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/registered_devices_ok_and_cancel_background_color"
+            android:src="@drawable/add_icon"/>
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_remove_button"
+            android:background="@color/registered_devices_ok_and_cancel_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/remove_icon"
+            android:layout_marginRight="@dimen/registered_devices_ok_to_cancel_button_between_margin_dimension"/>
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_edit_button"
+            android:background="@color/registered_devices_ok_and_cancel_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/edit_icon"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/my_account_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/my_account_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/my_account_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/my_account_header"
+        android:background="@color/my_account_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/my_account_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/my_account_body_background"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/my_account_buttons_container"
+            android:layout_width="@dimen/my_account_container_width"
+            android:layout_height="@dimen/my_account_container_height"
+            android:orientation="vertical"
+            android:background="@drawable/my_account_container_background"
+            >
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_account_expandableListView"
+                android:layout_marginTop="@dimen/my_account_listview_top_margin"
+                android:layout_marginRight="@dimen/my_account_listview_lateral_margins"
+                android:layout_marginLeft="@dimen/my_account_listview_lateral_margins"
+                android:layout_marginBottom="@dimen/my_account_listview_bottom_margin"
+                android:choiceMode="none"
+                android:clickable="true"
+                android:background="@color/listview_general_background_color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

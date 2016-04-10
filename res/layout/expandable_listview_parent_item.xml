@@ -1,0 +1,14 @@
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textViewGroupName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/listview_parent_lateral_margins"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/listview_parent_text"
+    android:textColor="@color/listview_parent_text_color"
+    android:paddingTop="@dimen/listview_parent_top_padding"
+    android:paddingBottom="@dimen/listview_parent_bottom_padding"
+    android:paddingLeft="@dimen/listview_parent_lateral_padding"
+    android:background="@color/listview_parent_background_color"
+    android:textStyle="bold" />

@@ -78,8 +78,14 @@ public class SplashActivity extends Activity {
         lightProgramList.add("Long Duration");
         boolean[] cloudEnabledArray = {true, false, true, false, true};
         boolean[] thunderEnabledArray = {true, false, true, false, true};
+        ArrayList<RegisteredDeviceItem> registeredDevicesList=new ArrayList<>();
+        registeredDevicesList.add(new RegisteredDeviceItem("TM001","Sensor Temp. Marinho","Temperature Devices"));
+        registeredDevicesList.add(new RegisteredDeviceItem("TM002","Sensor Temp. Plantado1","Temperature Devices"));
+        registeredDevicesList.add(new RegisteredDeviceItem("TM003","Sensor Temp. Plantado2","Temperature Devices"));
+        registeredDevicesList.add(new RegisteredDeviceItem("LT001","Luz 1","Light Devices"));
+        registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices"));
 
-        Intent intent = new Intent(this, LightCloudActivity.class);
+        Intent intent = new Intent(this, RegisteredDevicesActivity.class);
         intent.putExtra("channelsNamesList", channelNames);
         intent.putExtra("colorsList", colorsList);
         intent.putExtra("lightLastValueList", lightLastValueList);
@@ -92,6 +98,7 @@ public class SplashActivity extends Activity {
         intent.putExtra("lightProgramList", lightProgramList);
         intent.putExtra("cloudEnabledArray", cloudEnabledArray);
         intent.putExtra("thunderEnabledArray", thunderEnabledArray);
+        intent.putExtra("registeredDevicesList",registeredDevicesList);
         startActivity(intent);
         finish();
     }

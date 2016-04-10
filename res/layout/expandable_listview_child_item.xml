@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/listview_child_height"
+              android:background="@color/listview_child_background_color"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:gravity="center_vertical"
+    android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/textViewChild"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/listview_child_text_lateral_margins"
+            android:layout_marginRight="@dimen/listview_child_text_lateral_margins"
+            android:singleLine="true"
+            android:textSize="@dimen/listview_child_text"
+            android:textColor="@color/listview_child_text_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:layout_marginLeft="@dimen/listview_child_lateral_margins"
+        android:layout_marginRight="@dimen/listview_child_lateral_margins"
+        android:layout_height="@dimen/listview_child_separator_thickness"
+        android:background="@color/listview_child_separator_color"/>
+
+</LinearLayout>
