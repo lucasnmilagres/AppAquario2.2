@@ -21,6 +21,7 @@ public class MyExpandableAdapter extends BaseExpandableListAdapter
     private ArrayList<Object> childtems;
     private LayoutInflater inflater;
     private ArrayList<String> parentItems, child;
+    private String selectedItem=null;
 
     // constructor
     public MyExpandableAdapter(ArrayList<String> parents, ArrayList<Object> childern)
@@ -58,8 +59,8 @@ public class MyExpandableAdapter extends BaseExpandableListAdapter
 
             @Override
             public void onClick(View view) {
-               Toast.makeText(activity, ((ArrayList<String>)childtems.get(groupPosition)).get(childPosition),
-                        Toast.LENGTH_SHORT).show();
+               selectedItem=((ArrayList<String>)childtems.get(groupPosition)).get(childPosition);
+                view.setSelected(true);
             }
         });
         return convertView;
@@ -141,4 +142,13 @@ public class MyExpandableAdapter extends BaseExpandableListAdapter
         return false;
     }
 
+
+
+    public String getSelectedItem() {
+        return selectedItem;
+    }
+
+    public void setSelectedItem(String selectedItem) {
+        this.selectedItem = selectedItem;
+    }
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/registered_devices_remove_width_dimension"
+              android:layout_height="@dimen/registered_devices_remove_height_dimension"
+              android:layout_gravity="center"
+              android:background="@color/registered_devices_remove_body_background_color">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/registered_devices_remove_header_height_dimension"
+        android:id="@+id/registered_devices_remove_header"
+        android:scaleType="fitXY"
+        android:src="@drawable/registered_devices_remove_header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:layout_marginTop="@dimen/registered_devices_remove_body_top_margin_dimension"
+        android:layout_marginRight="@dimen/registered_devices_remove_body_lateral_margins_dimension"
+        android:layout_marginLeft="@dimen/registered_devices_remove_body_lateral_margins_dimension"
+        android:textSize="@dimen/registered_devices_remove_body_text_dimension"
+        android:id="@+id/registered_devices_remove_body"
+        android:gravity="center_vertical"
+        android:textColor="@color/registered_devices_remove_body_text_color"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/registered_devices_remove_row6"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/registered_devices_remove_footer_height_dimension"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="@dimen/registered_devices_remove_ok_and_cancel_button_top_margin_dimension"
+        android:gravity="center"
+        android:layout_margin="1dp"
+        >
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_remove_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_remove_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_remove_ok_button"
+            android:layout_marginRight="@dimen/registered_devices_remove_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/registered_devices_remove_ok_and_cancel_background_color"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ok_icon"
+            android:onClick="Remove"/>
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_remove_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_remove_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_remove_cancel_button"
+            android:background="@color/registered_devices_remove_ok_and_cancel_background_color"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="Cancel"/>
+    </LinearLayout>
+</LinearLayout>

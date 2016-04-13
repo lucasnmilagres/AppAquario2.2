@@ -1,11 +1,17 @@
 package com.example.AppAquario2;
 
 import android.app.Activity;
+import android.app.ExpandableListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ExpandableListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 /**
@@ -19,25 +25,50 @@ import java.util.ArrayList;
  */
 public class RegisteredDevicesActivity extends Activity
 {
+    // Views
+    ExpandableListView expandableList=null;
+
+    // Objects
+    MyExpandableAdapter adapter=null;
+    Bundle budle=null;
+
     // Create ArrayList to hold parent Items and Child Items
     private ArrayList<String> parentItems = new ArrayList<>();
     private ArrayList<Object> childItems = new ArrayList<>();
+    private ArrayList<RegisteredDeviceItem> registeredDevicesList;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        budle=savedInstanceState;
         setContentView(R.layout.registered_devices);
+
         // Create Expandable List and set it's properties
-        ExpandableListView expandableList = (ExpandableListView) findViewById(R.id.registered_devices_expandableListView);
+        expandableList = (ExpandableListView) findViewById(R.id.registered_devices_expandableListView);
         expandableList.setGroupIndicator(null);
+
+        SetExpandable();
+    }
+
+    /**
+     * Function: SetExpandable
+     * Version: 1.0
+     * Parameters: Void
+     * Return: void
+     * Perform: Sets expandable values.
+     * Created: 10/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void SetExpandable()
+    {
         // Set the Items of Parent
         setGroupParents();
         // Set The Child Data
         setChildData();
 
         // Create the Adapter
-        MyExpandableAdapter adapter = new MyExpandableAdapter(parentItems, childItems);
+        adapter = new MyExpandableAdapter(parentItems, childItems);
         adapter.setInflater((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE), this);
 
         // Set the Adapter to expandableList
@@ -46,7 +77,6 @@ public class RegisteredDevicesActivity extends Activity
         // Expands all parents
         ExpandAllParents(expandableList);
     }
-
 
     /**
      * Function: setGroupParents
@@ -80,7 +110,7 @@ public class RegisteredDevicesActivity extends Activity
     {
         // Reads actual registered devices list
         Intent sendIntent= getIntent();
-        ArrayList<RegisteredDeviceItem> registeredDevicesList = sendIntent.getParcelableArrayListExtra("registeredDevicesList");
+        registeredDevicesList = sendIntent.getParcelableArrayListExtra("registeredDevicesList");
 
         // Categorize correctly registered devices parent types
         ArrayList<String>[] children=new ArrayList[parentItems.size()];
@@ -92,7 +122,9 @@ public class RegisteredDevicesActivity extends Activity
 
         for (int count=0;count<registeredDevicesList.size();count++)
             if(parentItems.contains(registeredDevicesList.get(count).getParentType()))
-                children[parentItems.indexOf(registeredDevicesList.get(count).getParentType())].add(registeredDevicesList.get(count).getName());
+            {
+                children[parentItems.indexOf(registeredDevicesList.get(count).getParentType())].add(registeredDevicesList.get(count).getCode()+" - "+registeredDevicesList.get(count).getName());
+            }
 
         // Add child Items
         for (ArrayList<String> child:children)
@@ -114,6 +146,75 @@ public class RegisteredDevicesActivity extends Activity
         int parents=expandableList.getCount();
         for(int pos=0;pos<parents;pos++)
             expandableList.expandGroup(pos,false);
+    }
+
+    /**
+     * Function: callRemove
+     * Version: 1.0
+     * Parameters: Void
+     * Return: void
+     * Perform: - Finds child name;
+     *          - Calls remove dialog.
+     * Created: 10/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void callRemove(View view)
+    {
+        if(adapter.getSelectedItem()!=null)
+        {
+        // Finds child name
+        String name=adapter.getSelectedItem();
+
+        // Calls remove dialog
+            Intent sendIntent = new Intent(this,RegisteredDevicesRemoveActivity.class);
+            sendIntent.putExtra("name", name);
+            startActivityForResult(sendIntent, 0);
+        }
+    }
+
+    /**
+     * Function: onActivityResult
+     * Version: 1.0
+     * Parameters: - requestCode;
+     *             - resultCode;
+     *             - data.
+     * Return: void
+     * Perform: - Treatment of RemoveActivity result;
+     * Created: 10/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Treatment of RemoveActivity result
+        if(requestCode==0)
+        {
+            // Treatment of "OK" result
+            if(resultCode==RESULT_OK)
+            {
+                String code=data.getStringExtra("code");
+                if(code!=null)
+                {
+                    // Removes item from registeredDevicesList
+                    for (int count = 0; count < registeredDevicesList.size(); count++)
+                        if (registeredDevicesList.get(count).getCode().equals(code))
+                        {
+                            registeredDevicesList.remove(registeredDevicesList.get(count));
+                            count=registeredDevicesList.size();
+
+                            // Refresh ExpandableListView
+                            SetExpandable();
+                            this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                            this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                        }
+                }
+                else
+                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.RegisteredDeviceRemoveNullCodeError),Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 }
 

@@ -17,7 +17,8 @@
             android:layout_marginRight="@dimen/listview_child_text_lateral_margins"
             android:singleLine="true"
             android:textSize="@dimen/listview_child_text"
-            android:textColor="@color/listview_child_text_color"/>
+            android:textColor="@color/listview_child_text_color"
+            android:textColorHighlight="@color/listview_child_text_highlighted_color"/>
 
     <View
         android:layout_width="match_parent"

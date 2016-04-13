@@ -267,11 +267,26 @@
     <item name="registered_devices_container_width" type="dimen">300dp</item>
     <item name="registered_devices_footer_height_dimension" type="dimen">50dp</item>
     <item name="registered_devices_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
-    <!--My Account Screen Margins-->
+    <!--Registered Devices Screen Margins-->
     <item name="registered_devices_listview_top_margin" type="dimen">10dp</item>
     <item name="registered_devices_listview_lateral_margins" type="dimen">10dp</item>
     <item name="registered_devices_listview_bottom_margin" type="dimen">10dp</item>
     <item name="registered_devices_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--Registered Devices Remove Screen Sizes-->
+    <item name="registered_devices_remove_height_dimension" type="dimen">200dp</item>
+    <item name="registered_devices_remove_width_dimension" type="dimen">280dp</item>
+    <item name="registered_devices_remove_header_height_dimension" type="dimen">50dp</item>
+    <item name="registered_devices_remove_footer_height_dimension" type="dimen">50dp</item>
+    <item name="registered_devices_remove_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Registered Devices Remove Screen Texts-->
+    <item name="registered_devices_remove_body_text_dimension" type="dimen">15sp</item>
+    <item name="registered_devices_remove_copyright_text_dimension" type="dimen">10sp</item>
+    <!--Registered Devices Remove Screen Margins-->
+    <item name="registered_devices_remove_body_top_margin_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_remove_body_lateral_margins_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_remove_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
+    <item name="registered_devices_remove_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
 
     <!--About Sizes-->
     <item name="about_header_height_dimension" type="dimen">50dp</item>

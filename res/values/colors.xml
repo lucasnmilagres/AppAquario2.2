@@ -28,6 +28,7 @@
     <!--Expandable ListView Child Colors-->
     <item name="listview_child_background_color" type="color">#ffbbbbbb</item>
     <item name="listview_child_text_color" type="color">#ff000000</item>
+    <item name="listview_child_text_highlighted_color" type="color">#ff0000ff</item>
     <item name="listview_child_separator_color" type="color">#ff777777</item>
 
     <!--Main Menu Colors-->
@@ -163,6 +164,14 @@
     <item name="registered_devices_headerbackground_color" type="color">#00ffffff</item>
     <item name="registered_devices_generalbackground_color" type="color">#ff000000</item>
     <item name="registered_devices_ok_and_cancel_background_color" type="color">#00000000</item>
+
+    <!--Registered Devices Remove Colors-->
+    <item name="registered_devices_remove_body_background_color" type="color">#ffbb7766</item>
+    <item name="registered_devices_remove_body_text_color" type="color">#ff000000</item>
+    <item name="registered_devices_remove_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="registered_devices_remove_headerbackground_color" type="color">#00ffffff</item>
+    <item name="registered_devices_remove_generalbackground_color" type="color">#ff000000</item>
+    <item name="registered_devices_remove_ok_and_cancel_background_color" type="color">#00000000</item>
     
     <!--About Screen Colors-->
     <item name="about_body_background_color" type="color">#ffbb7766</item>

@@ -19,6 +19,9 @@
     <string name="color4Index">3</string>
     <string name="color5Index">4</string>
     <string name="login_data_file">4</string>
+
+    <!--Error Messages-->
+    <string name="RegisteredDeviceRemoveNullCodeError">There was an error about your device code. Try again.</string>
     <string name="login_data_error_msg">There was an error with your account information. Please, login again.</string>
 
     <!--Light Default Mode Strings-->
@@ -60,6 +63,9 @@
     <string name="my_account_selected_aquarium">Selected Aquarium: </string>
     <string name="my_account_assembled_aquariums">Assembled Aquariums</string>
     <string name="my_account_registered_devices">Registered Devices</string>
+
+    <!--Registered Devices Remove Strings-->
+    <string name="registered_devices_remove_body">Are you sure you want to remove </string>
 
     <!--Login Screen Strings-->
     <string name="login_screen_username">Email</string>

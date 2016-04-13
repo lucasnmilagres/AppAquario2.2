@@ -35,7 +35,7 @@
                 android:layout_marginRight="@dimen/registered_devices_listview_lateral_margins"
                 android:layout_marginLeft="@dimen/registered_devices_listview_lateral_margins"
                 android:layout_marginBottom="@dimen/registered_devices_listview_bottom_margin"
-                android:choiceMode="none"
+                android:choiceMode="singleChoice"
                 android:clickable="true"
                 android:background="@color/listview_general_background_color"/>
         </LinearLayout>
@@ -65,7 +65,8 @@
             android:background="@color/registered_devices_ok_and_cancel_background_color"
             android:scaleType="fitXY"
             android:src="@drawable/remove_icon"
-            android:layout_marginRight="@dimen/registered_devices_ok_to_cancel_button_between_margin_dimension"/>
+            android:layout_marginRight="@dimen/registered_devices_ok_to_cancel_button_between_margin_dimension"
+            android:onClick="callRemove"/>
 
         <ImageButton
             android:layout_width="@dimen/registered_devices_ok_and_cancel_buttons_dimension"
