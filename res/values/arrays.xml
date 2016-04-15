@@ -10,13 +10,14 @@
         <item>Aquariums</item>
         <item>Device</item>
     </string-array>
-    <string-array name="registered_devices_expandableListView_parents_list">
+    <string-array name="registered_devices_code_list">
         <item>Light Devices</item>
         <item>Temperature Devices</item>
-        <item>Salinity Devices</item>
-        <item>PH Devices</item>
-        <item>Feed Devices</item>
-        <item>Cam Devices</item>
-        <item>Other</item>
+        <item>Digital Outputs</item>
+    </string-array>
+    <string-array name="registered_devices_code_prefix_list">
+        <item>LG</item>
+        <item>TM</item>
+        <item>DO</item>
     </string-array>
 </resources>

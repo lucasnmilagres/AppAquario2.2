@@ -172,6 +172,14 @@
     <item name="registered_devices_remove_headerbackground_color" type="color">#00ffffff</item>
     <item name="registered_devices_remove_generalbackground_color" type="color">#ff000000</item>
     <item name="registered_devices_remove_ok_and_cancel_background_color" type="color">#00000000</item>
+
+    <!--Non Registered Devices Colors-->
+    <item name="non_registered_devices_body_background_color" type="color">#ffbb7766</item>
+    <item name="non_registered_devices_body_text_color" type="color">#ff000000</item>
+    <item name="non_registered_devices_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="non_registered_devices_headerbackground_color" type="color">#00ffffff</item>
+    <item name="non_registered_devices_generalbackground_color" type="color">#ff000000</item>
+    <item name="non_registered_devices_ok_and_cancel_background_color" type="color">#00000000</item>
     
     <!--About Screen Colors-->
     <item name="about_body_background_color" type="color">#ffbb7766</item>

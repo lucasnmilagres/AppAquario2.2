@@ -30,7 +30,6 @@ public class RegisteredDevicesActivity extends Activity
 
     // Objects
     MyExpandableAdapter adapter=null;
-    Bundle budle=null;
 
     // Create ArrayList to hold parent Items and Child Items
     private ArrayList<String> parentItems = new ArrayList<>();
@@ -41,7 +40,6 @@ public class RegisteredDevicesActivity extends Activity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        budle=savedInstanceState;
         setContentView(R.layout.registered_devices);
 
         // Create Expandable List and set it's properties
@@ -89,7 +87,7 @@ public class RegisteredDevicesActivity extends Activity
      */
     public void setGroupParents()
     {
-        for (String parentString:getResources().getStringArray(R.array.registered_devices_expandableListView_parents_list))
+        for (String parentString:getResources().getStringArray(R.array.registered_devices_code_list))
         {
             parentItems.add(parentString);
         }
@@ -170,6 +168,23 @@ public class RegisteredDevicesActivity extends Activity
             sendIntent.putExtra("name", name);
             startActivityForResult(sendIntent, 0);
         }
+    }
+
+    /**
+     * Function: callAddDevice
+     * Version: 1.0
+     * Parameters: Void
+     * Return: void
+     * Perform: Calls add device dialog.
+     * Created: 15/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void callAddDevice(View view)
+    {
+            // Calls add device dialog
+            Intent sendIntent = new Intent(this,NonRegisteredDevicesActivity.class);
+        sendIntent.putExtra("registeredDevicesList",registeredDevicesList);
+            startActivityForResult(sendIntent, 0);
     }
 
     /**

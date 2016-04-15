@@ -15,14 +15,12 @@ public class RegisteredDeviceItem implements Parcelable {
     private String code;
     private String name;
     private String parentType;
-    private int index;
 
     public RegisteredDeviceItem(String code, String name, String parentType)
     {
         this.code = code;
         this.name = name;
         this.parentType = parentType;
-        this.index=0;
     }
 
     public String getCode() {return code;}
@@ -45,15 +43,10 @@ public class RegisteredDeviceItem implements Parcelable {
         this.parentType = parentType;
     }
 
-    public int getIndex() {return index;}
-
-    public void setIndex(int index) {this.index = index;}
-
     protected RegisteredDeviceItem(Parcel in) {
         code=in.readString();
         name = in.readString();
         parentType = in.readString();
-        index=in.readInt();
     }
 
     @Override
@@ -66,7 +59,6 @@ public class RegisteredDeviceItem implements Parcelable {
         dest.writeString(code);
         dest.writeString(name);
         dest.writeString(parentType);
-        dest.writeInt(index);
     }
 
     @SuppressWarnings("unused")

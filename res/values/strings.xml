@@ -19,6 +19,7 @@
     <string name="color4Index">3</string>
     <string name="color5Index">4</string>
     <string name="login_data_file">4</string>
+    <string name="network_id_tag">CREELED</string>
 
     <!--Error Messages-->
     <string name="RegisteredDeviceRemoveNullCodeError">There was an error about your device code. Try again.</string>
