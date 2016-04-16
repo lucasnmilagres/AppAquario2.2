@@ -85,7 +85,7 @@ public class SplashActivity extends Activity {
         registeredDevicesList.add(new RegisteredDeviceItem("LT001","Luz 1","Light Devices","WifiA","123456"));
         registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices","WifiB","654321"));
 
-        Intent intent = new Intent(this, RegisteredDevicesActivity.class);
+        Intent intent = new Intent(this, SettingActivity.class);
         intent.putExtra("channelsNamesList", channelNames);
         intent.putExtra("colorsList", colorsList);
         intent.putExtra("lightLastValueList", lightLastValueList);

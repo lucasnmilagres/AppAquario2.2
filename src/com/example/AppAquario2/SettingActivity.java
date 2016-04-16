@@ -51,6 +51,21 @@ public class SettingActivity extends Activity {
     }
 
     /**
+     * Function: sendRatingtActivity
+     * Version: 1.0
+     * Parameters: button "Rating"
+     * Returns: Void
+     * Performs: Opens RatingActivity
+     * Created: 27/03/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void sendRatingActivity(View view)
+    {
+        Intent ratingIntent = new Intent(this, RatingActivity.class);
+        startActivity(ratingIntent);
+    }
+
+    /**
      * Function: sendAboutActivity
      * Version: 1.0
      * Parameters: button "About"

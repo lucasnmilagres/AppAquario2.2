@@ -21,6 +21,8 @@
     <string name="login_data_file">4</string>
     <string name="network_id_tag">CREELED</string>
 
+    <!--Messages-->
+    <string name="RatingThanksMsg">Thank you for your rating. Your opinion will help us to get even better!</string>
     <!--Error Messages-->
     <string name="RegisteredDeviceRemoveNullCodeError">There was an error about your device code. Try again.</string>
     <string name="RegisteredDeviceEditNullCodeError">There was an error about your device. Try again.</string>
@@ -74,6 +76,9 @@
     <string name="registered_devices_edit_name_label">Name: </string>
     <string name="registered_devices_edit_ssid_label">Wifi SSID: </string>
     <string name="registered_devices_edit_password_label">Wifi Password: </string>
+
+    <!--Rating Strings-->
+    <string name="rating_body">Write your opinion about our app ;)</string>
 
     <!--Login Screen Strings-->
     <string name="login_screen_username">Email</string>

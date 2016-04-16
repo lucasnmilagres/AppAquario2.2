@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/rating_width_dimension"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@color/rating_body_background_color">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rating_header_height_dimension"
+        android:id="@+id/rating_header"
+        android:scaleType="fitXY"
+        android:src="@drawable/rating_header"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="0.1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rating_body_height"
+        android:text="@string/rating_body"
+        android:layout_marginTop="@dimen/rating_body_top_margin_dimension"
+        android:layout_marginRight="@dimen/rating_body_lateral_margins_dimension"
+        android:layout_marginLeft="@dimen/rating_body_lateral_margins_dimension"
+        android:textSize="@dimen/rating_body_text_dimension"
+        android:id="@+id/rating_body"
+        android:textColor="@color/rating_body_text_color"
+        android:layout_weight="0"
+        android:gravity="top|left"
+        android:editable="true"
+        android:onClick="cleanText"/>
+
+    <LinearLayout
+        android:id="@+id/rating_row6"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/rating_footer_height_dimension"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="@dimen/rating_ok_and_cancel_button_top_margin_dimension"
+        android:gravity="center"
+        android:layout_margin="1dp"
+        >
+
+        <ImageButton
+            android:layout_width="@dimen/rating_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/rating_ok_and_cancel_buttons_dimension"
+            android:id="@+id/rating_ok_button"
+            android:layout_marginRight="@dimen/rating_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/rating_ok_and_cancel_background_color"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ok_icon"
+            android:onClick="SendRating"/>
+
+        <ImageButton
+            android:layout_width="@dimen/rating_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/rating_ok_and_cancel_buttons_dimension"
+            android:id="@+id/rating_cancel_button"
+            android:background="@color/rating_ok_and_cancel_background_color"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="Cancel"/>
+    </LinearLayout>
+</LinearLayout>

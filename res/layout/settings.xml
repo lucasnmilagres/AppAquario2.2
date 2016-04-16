@@ -138,7 +138,8 @@
                         android:id="@+id/settings_imageButton6"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_help_icon" />
+                        android:src="@drawable/settings_menu_help_icon"
+                        android:onClick="openHelpPage"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -164,7 +165,7 @@
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
                         android:src="@drawable/settings_menu_evaluation_icon"
-                        android:onClick="openHelpPage"/>
+                        android:onClick="sendRatingActivity"/>
                 </LinearLayout>
 
                 <LinearLayout

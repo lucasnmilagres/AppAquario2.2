@@ -330,6 +330,21 @@
     <item name="registered_devices_edit_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
     <item name="registered_devices_edit_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
     <item name="registered_devices_edit_body_lateral_margins" type="dimen">10dp</item>
+
+    <!--Rating Screen Sizes-->
+    <item name="rating_width_dimension" type="dimen">280dp</item>
+    <item name="rating_body_height" type="dimen">100dp</item>
+    <item name="rating_header_height_dimension" type="dimen">50dp</item>
+    <item name="rating_footer_height_dimension" type="dimen">50dp</item>
+    <item name="rating_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Rating Screen Texts-->
+    <item name="rating_body_text_dimension" type="dimen">15sp</item>
+    <item name="rating_copyright_text_dimension" type="dimen">10sp</item>
+    <!--Rating Screen Margins-->
+    <item name="rating_body_top_margin_dimension" type="dimen">10dp</item>
+    <item name="rating_body_lateral_margins_dimension" type="dimen">20dp</item>
+    <item name="rating_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
+    <item name="rating_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
     
     <!--About Sizes-->
     <item name="about_header_height_dimension" type="dimen">50dp</item>
