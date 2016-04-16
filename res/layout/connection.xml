@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/connection_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/connection_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/connection_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/connection_header"
+        android:background="@color/connection_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/connection_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/connection_body_background"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/connection_buttons_container"
+            android:layout_width="@dimen/connection_container_width"
+            android:layout_height="@dimen/connection_container_height"
+            android:orientation="vertical"
+            android:background="@drawable/connection_container_background"
+            >
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/connection_expandableListView"
+                android:layout_marginTop="@dimen/connection_listview_top_margin"
+                android:layout_marginRight="@dimen/connection_listview_lateral_margins"
+                android:layout_marginLeft="@dimen/connection_listview_lateral_margins"
+                android:layout_marginBottom="@dimen/connection_listview_bottom_margin"
+                android:choiceMode="singleChoice"
+                android:clickable="true"
+                android:background="@color/listview_general_background_color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connection_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/connection_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/connection_footer_background">
+
+        <ImageButton
+            android:layout_width="@dimen/connection_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/connection_ok_and_cancel_buttons_dimension"
+            android:id="@+id/connection_ok_button"
+            android:scaleType="fitXY"
+            android:background="@color/connection_ok_and_cancel_background_color"
+            android:src="@drawable/ok_icon"
+            android:onClick="finishActivity"/>
+    </LinearLayout>
+</LinearLayout>

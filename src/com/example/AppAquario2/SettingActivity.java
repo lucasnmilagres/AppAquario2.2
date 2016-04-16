@@ -13,6 +13,9 @@ public class SettingActivity extends Activity {
     /**
      * Called when the activity is first created.
      */
+    // Objects
+    private AquariumItem aquariumItem;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +66,25 @@ public class SettingActivity extends Activity {
     {
         Intent ratingIntent = new Intent(this, RatingActivity.class);
         startActivity(ratingIntent);
+    }
+
+    /**
+     * Function: sendConnectionActivity
+     * Version: 1.0
+     * Parameters: button "Connection"
+     * Returns: Void
+     * Performs: Opens ConnectionActivity
+     * Created: 16/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void sendConnectionActivity(View view)
+    {
+        Intent sendIntent=getIntent();
+        aquariumItem=sendIntent.getParcelableExtra("aquariumItem");
+
+        Intent connectionIntent = new Intent(this, ConnectionActivity.class);
+        connectionIntent.putExtra("aquariumItem",aquariumItem);
+        startActivity(connectionIntent);
     }
 
     /**

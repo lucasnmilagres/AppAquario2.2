@@ -105,7 +105,8 @@
                         android:id="@+id/settings_imageButton4"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_connection_icon" />
+                        android:src="@drawable/settings_menu_connection_icon"
+                        android:onClick="sendConnectionActivity"/>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/settings_menu_row2_column2"

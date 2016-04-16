@@ -201,6 +201,12 @@
     <item name="rating_headerbackground_color" type="color">#00ffffff</item>
     <item name="rating_generalbackground_color" type="color">#ff000000</item>
     <item name="rating_ok_and_cancel_background_color" type="color">#00000000</item>
+
+    <!--Connection Colors-->
+    <item name="connection_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="connection_headerbackground_color" type="color">#00ffffff</item>
+    <item name="connection_generalbackground_color" type="color">#ff000000</item>
+    <item name="connection_ok_and_cancel_background_color" type="color">#00000000</item>
     
     <!--About Screen Colors-->
     <item name="about_body_background_color" type="color">#ffbb7766</item>

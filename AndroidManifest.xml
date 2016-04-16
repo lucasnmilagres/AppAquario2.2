@@ -121,6 +121,11 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
         </activity>
         <activity
+            android:name=".ConnectionActivity"
+            android:label="Connection"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
             android:name=".AboutActivity"
             android:label="About"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">

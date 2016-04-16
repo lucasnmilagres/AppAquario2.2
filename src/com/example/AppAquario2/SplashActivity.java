@@ -84,6 +84,7 @@ public class SplashActivity extends Activity {
         registeredDevicesList.add(new RegisteredDeviceItem("TM003","Sensor Temp. Plantado2","Temperature Devices",null,null));
         registeredDevicesList.add(new RegisteredDeviceItem("LT001","Luz 1","Light Devices","WifiA","123456"));
         registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices","WifiB","654321"));
+        AquariumItem aquariumItem=new AquariumItem(registeredDevicesList);
 
         Intent intent = new Intent(this, SettingActivity.class);
         intent.putExtra("channelsNamesList", channelNames);
@@ -99,6 +100,7 @@ public class SplashActivity extends Activity {
         intent.putExtra("cloudEnabledArray", cloudEnabledArray);
         intent.putExtra("thunderEnabledArray", thunderEnabledArray);
         intent.putExtra("registeredDevicesList",registeredDevicesList);
+        intent.putExtra("aquariumItem",aquariumItem);
         startActivity(intent);
         finish();
     }
