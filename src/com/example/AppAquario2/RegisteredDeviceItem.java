@@ -15,12 +15,16 @@ public class RegisteredDeviceItem implements Parcelable {
     private String code;
     private String name;
     private String parentType;
+    private String ssid;
+    private String password;
 
-    public RegisteredDeviceItem(String code, String name, String parentType)
+    public RegisteredDeviceItem(String code, String name, String parentType,String ssid,String password)
     {
         this.code = code;
         this.name = name;
         this.parentType = parentType;
+        this.ssid=ssid;
+        this.password=password;
     }
 
     public String getCode() {return code;}
@@ -43,10 +47,20 @@ public class RegisteredDeviceItem implements Parcelable {
         this.parentType = parentType;
     }
 
+    public String getPassword() { return password; }
+
+    public void setPassword(String password) { this.password = password; }
+
+    public String getSsid() { return ssid; }
+
+    public void setSsid(String ssid) { this.ssid = ssid; }
+
     protected RegisteredDeviceItem(Parcel in) {
         code=in.readString();
         name = in.readString();
         parentType = in.readString();
+        ssid=in.readString();
+        password=in.readString();
     }
 
     @Override
@@ -59,6 +73,8 @@ public class RegisteredDeviceItem implements Parcelable {
         dest.writeString(code);
         dest.writeString(name);
         dest.writeString(parentType);
+        dest.writeString(ssid);
+        dest.writeString(password);
     }
 
     @SuppressWarnings("unused")

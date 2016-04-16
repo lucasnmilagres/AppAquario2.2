@@ -57,8 +57,8 @@
             android:scaleType="fitXY"
             android:background="@color/non_registered_devices_ok_and_cancel_background_color"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/ok_icon"
-            android:onClick="Remove"/>
+            android:src="@drawable/add_icon"
+            android:onClick="callEdit"/>
 
         <ImageButton
             android:layout_width="@dimen/non_registered_devices_ok_and_cancel_buttons_dimension"

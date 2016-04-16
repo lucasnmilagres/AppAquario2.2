@@ -23,6 +23,7 @@
 
     <!--Error Messages-->
     <string name="RegisteredDeviceRemoveNullCodeError">There was an error about your device code. Try again.</string>
+    <string name="RegisteredDeviceEditNullCodeError">There was an error about your device. Try again.</string>
     <string name="login_data_error_msg">There was an error with your account information. Please, login again.</string>
 
     <!--Light Default Mode Strings-->
@@ -67,6 +68,12 @@
 
     <!--Registered Devices Remove Strings-->
     <string name="registered_devices_remove_body">Are you sure you want to remove </string>
+
+    <!--Registered Devices Edit Strings-->
+    <string name="registered_devices_edit_code_default"><![CDATA[<Default>]]></string>
+    <string name="registered_devices_edit_name_label">Name: </string>
+    <string name="registered_devices_edit_ssid_label">Wifi SSID: </string>
+    <string name="registered_devices_edit_password_label">Wifi Password: </string>
 
     <!--Login Screen Strings-->
     <string name="login_screen_username">Email</string>

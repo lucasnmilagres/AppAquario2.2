@@ -163,7 +163,7 @@ public class RegisteredDevicesActivity extends Activity
         // Finds child name
         String name=adapter.getSelectedItem();
 
-        // Calls remove dialog
+        // Calls remove dialog (request 0)
             Intent sendIntent = new Intent(this,RegisteredDevicesRemoveActivity.class);
             sendIntent.putExtra("name", name);
             startActivityForResult(sendIntent, 0);
@@ -181,10 +181,42 @@ public class RegisteredDevicesActivity extends Activity
      */
     public void callAddDevice(View view)
     {
-            // Calls add device dialog
+            // Calls add device dialog (request 2)
             Intent sendIntent = new Intent(this,NonRegisteredDevicesActivity.class);
-        sendIntent.putExtra("registeredDevicesList",registeredDevicesList);
-            startActivityForResult(sendIntent, 0);
+            sendIntent.putExtra("registeredDevicesList",registeredDevicesList);
+            startActivityForResult(sendIntent, 2);
+    }
+
+    /**
+     * Function: callEdit
+     * Version: 1.0
+     * Parameters: Void
+     * Return: void
+     * Perform: - Finds registeredDeviceItem;
+     *          - Calls edit activity.
+     * Created: 16/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void callEdit(View view)
+    {
+        if(adapter.getSelectedItem()!=null)
+        {
+            // Finds registeredDeviceItem
+            RegisteredDeviceItem registeredDeviceItem=new RegisteredDeviceItem(null,null,null,null,null);
+            String name=adapter.getSelectedItem();
+            String code=name.substring(0,name.indexOf(" - "));
+            for (int count = 0; count < registeredDevicesList.size(); count++)
+                if (registeredDevicesList.get(count).getCode().equals(code))
+                {
+                    registeredDeviceItem=registeredDevicesList.get(count);
+                    count=registeredDevicesList.size();
+                }
+
+            // Calls edit dialog (request 1)
+            Intent sendIntent = new Intent(this,RegisteredDeviceEditActivity.class);
+            sendIntent.putExtra("registeredDeviceItem", registeredDeviceItem);
+            startActivityForResult(sendIntent, 1);
+        }
     }
 
     /**
@@ -195,39 +227,54 @@ public class RegisteredDevicesActivity extends Activity
      *             - data.
      * Return: void
      * Perform: - Treatment of RemoveActivity result;
+     *          - Treatment of EditActivity result;
+     *          - Treatment of AddActivity result;
      * Created: 10/04/16
      * Creator: Lucas Gabriel N. Milagres
      */
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);
 
         // Treatment of RemoveActivity result
-        if(requestCode==0)
-        {
+        if(requestCode==0) {
             // Treatment of "OK" result
-            if(resultCode==RESULT_OK)
-            {
-                String code=data.getStringExtra("code");
-                if(code!=null)
-                {
+            if (resultCode == RESULT_OK) {
+                String code = data.getStringExtra("code");
+                if (code != null) {
                     // Removes item from registeredDevicesList
                     for (int count = 0; count < registeredDevicesList.size(); count++)
-                        if (registeredDevicesList.get(count).getCode().equals(code))
-                        {
+                        if (registeredDevicesList.get(count).getCode().equals(code)) {
                             registeredDevicesList.remove(registeredDevicesList.get(count));
-                            count=registeredDevicesList.size();
+                            count = registeredDevicesList.size();
 
                             // Refresh ExpandableListView
                             SetExpandable();
                             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
                             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
                         }
-                }
-                else
-                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.RegisteredDeviceRemoveNullCodeError),Toast.LENGTH_SHORT).show();
+                } else
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceRemoveNullCodeError), Toast.LENGTH_SHORT).show();
+            }
+        }
+
+        // Treatment of EditActivity and AddActivity results
+        else if((requestCode==1)||(requestCode==2))
+        {
+            // Treatment of "OK" result
+            if (resultCode == RESULT_OK)
+            {
+                RegisteredDeviceItem registeredDeviceItem = data.getParcelableExtra("registeredDeviceItem");
+                if (registeredDeviceItem != null) {
+                    for (int count = 0; count < registeredDevicesList.size(); count++)
+                        if (registeredDevicesList.get(count).getCode().equals(registeredDeviceItem.getCode()))
+                        {
+                            registeredDevicesList.set(count,registeredDeviceItem);
+                            count = registeredDevicesList.size();
+                        }
+                } else
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceEditNullCodeError), Toast.LENGTH_SHORT).show();
             }
         }
     }

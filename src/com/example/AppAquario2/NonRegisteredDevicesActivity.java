@@ -4,16 +4,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.net.wifi.ScanResult;
 import android.content.BroadcastReceiver;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,8 @@ import java.util.List;
  * Class: NonRegisteredDevicesActivity
  * Version: 1.0
  * Parameters: registeredDevicesList
- * Return: Activity result
+ * Return: - Activity result
+ *         - registeredDevicesList
  * Perform: All actions in non_registered_devices layout
  * Created: 13/04/16
  * Creator: Lucas Gabriel N. Milagres
@@ -185,6 +185,70 @@ public class NonRegisteredDevicesActivity extends Activity
         int parents=expandableList.getCount();
         for(int pos=0;pos<parents;pos++)
             expandableList.expandGroup(pos,false);
+    }
+
+    /**
+     * Function: callEdit
+     * Version: 1.0
+     * Parameters: Void
+     * Return: void
+     * Perform: - Finds registeredDeviceItem;
+     *          - Calls edit activity.
+     * Created: 16/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void callEdit(View view)
+    {
+        if(adapter.getSelectedItem()!=null)
+        {
+            // Finds registeredDeviceItem
+            String name=adapter.getSelectedItem();
+            String code=name.substring(0,name.indexOf(" - "));
+            RegisteredDeviceItem registeredDeviceItem=new RegisteredDeviceItem(code,null,null,null,null);
+
+            // Calls edit dialog (request 1)
+            Intent sendIntent = new Intent(this,RegisteredDeviceEditActivity.class);
+            sendIntent.putExtra("registeredDeviceItem", registeredDeviceItem);
+            startActivityForResult(sendIntent, 1);
+        }
+    }
+
+    /**
+     * Function: onActivityResult
+     * Version: 1.0
+     * Parameters: - requestCode;
+     *             - resultCode;
+     *             - data.
+     * Return: void
+     * Perform: - Treatment of EditActivity result;
+     * Created: 10/04/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Treatment of EditActivity result
+        if(requestCode==1) {
+            // Treatment of "OK" result
+            if (resultCode == RESULT_OK)
+            {
+                RegisteredDeviceItem registeredDeviceItem = data.getParcelableExtra("registeredDeviceItem");
+                if (registeredDeviceItem != null)
+                {
+                    //Returns registeredDeviceItem to the parent activity
+                    Intent resultIntent = new Intent();
+                    setResult(Activity.RESULT_OK, resultIntent);
+                    resultIntent.putExtra("registeredDeviceItem",registeredDeviceItem);
+
+                    //finishes the activity
+                    finish();
+                }
+                else
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceEditNullCodeError), Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     /**

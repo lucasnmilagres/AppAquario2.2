@@ -75,6 +75,7 @@
             android:id="@+id/registered_devices_edit_button"
             android:background="@color/registered_devices_ok_and_cancel_background_color"
             android:scaleType="fitXY"
-            android:src="@drawable/edit_icon"/>
+            android:src="@drawable/edit_icon"
+            android:onClick="callEdit"/>
     </LinearLayout>
 </LinearLayout>

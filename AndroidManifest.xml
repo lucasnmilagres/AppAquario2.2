@@ -111,6 +111,11 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
         </activity>
         <activity
+            android:name=".RegisteredDeviceEditActivity"
+            android:label="Registered Devices Edit"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        </activity>
+        <activity
             android:name=".AboutActivity"
             android:label="About"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">

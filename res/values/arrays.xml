@@ -14,10 +14,12 @@
         <item>Light Devices</item>
         <item>Temperature Devices</item>
         <item>Digital Outputs</item>
+        <item>Others</item>
     </string-array>
     <string-array name="registered_devices_code_prefix_list">
         <item>LG</item>
         <item>TM</item>
         <item>DO</item>
+        <item>OT</item>
     </string-array>
 </resources>

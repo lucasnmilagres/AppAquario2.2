@@ -79,11 +79,11 @@ public class SplashActivity extends Activity {
         boolean[] cloudEnabledArray = {true, false, true, false, true};
         boolean[] thunderEnabledArray = {true, false, true, false, true};
         ArrayList<RegisteredDeviceItem> registeredDevicesList=new ArrayList<>();
-        registeredDevicesList.add(new RegisteredDeviceItem("TM001","Sensor Temp. Marinho","Temperature Devices"));
-        registeredDevicesList.add(new RegisteredDeviceItem("TM002","Sensor Temp. Plantado1","Temperature Devices"));
-        registeredDevicesList.add(new RegisteredDeviceItem("TM003","Sensor Temp. Plantado2","Temperature Devices"));
-        registeredDevicesList.add(new RegisteredDeviceItem("LT001","Luz 1","Light Devices"));
-        registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices"));
+        registeredDevicesList.add(new RegisteredDeviceItem("TM001","Sensor Temp. Marinho","Temperature Devices",null,null));
+        registeredDevicesList.add(new RegisteredDeviceItem("TM002","Sensor Temp. Plantado1","Temperature Devices",null,null));
+        registeredDevicesList.add(new RegisteredDeviceItem("TM003","Sensor Temp. Plantado2","Temperature Devices",null,null));
+        registeredDevicesList.add(new RegisteredDeviceItem("LT001","Luz 1","Light Devices","WifiA","123456"));
+        registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices","WifiB","654321"));
 
         Intent intent = new Intent(this, RegisteredDevicesActivity.class);
         intent.putExtra("channelsNamesList", channelNames);

@@ -180,7 +180,20 @@
     <item name="non_registered_devices_headerbackground_color" type="color">#00ffffff</item>
     <item name="non_registered_devices_generalbackground_color" type="color">#ff000000</item>
     <item name="non_registered_devices_ok_and_cancel_background_color" type="color">#00000000</item>
-    
+
+    <!--Registered Devices Edit-->
+    <item name="registered_devices_edit_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="registered_devices_edit_headerbackground_color" type="color">#00ffffff</item>
+    <item name="registered_devices_edit_generalbackground_color" type="color">#ff000000</item>
+    <item name="registered_devices_edit_ok_and_cancel_background_color" type="color">#00000000</item>
+    <item name="registered_devices_edit_code_text_color" type="color">#ff125369</item>
+    <item name="registered_devices_edit_name_textview_color" type="color">#ff125369</item>
+    <item name="registered_devices_edit_name_edittext_color" type="color">#ff125369</item>
+    <item name="registered_devices_edit_ssid_textview_color" type="color">#ff125369</item>
+    <item name="registered_devices_edit_ssid_edittext_color" type="color">#ff125369</item>
+    <item name="registered_devices_edit_password_textview_color" type="color">#ff125369</item>
+    <item name="registered_devices_edit_password_edittext_color" type="color">#ff125369</item>
+
     <!--About Screen Colors-->
     <item name="about_body_background_color" type="color">#ffbb7766</item>
     <item name="about_body_text_color" type="color">#ff000000</item>

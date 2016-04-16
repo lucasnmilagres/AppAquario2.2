@@ -305,6 +305,31 @@
     <item name="non_registered_devices_listview_bottom_margin" type="dimen">10dp</item>
     <item name="non_registered_devices_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
     <item name="non_registered_devices_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--Registered Devices Edit Sizes-->
+    <item name="registered_devices_edit_container_height" type="dimen">360dp</item>
+    <item name="registered_devices_edit_container_width" type="dimen">300dp</item>
+    <item name="registered_devices_edit_header_height_dimension" type="dimen">80dp</item>
+    <item name="registered_devices_edit_footer_height_dimension" type="dimen">50dp</item>
+    <item name="registered_devices_edit_code_height" type="dimen">50dp</item>
+    <item name="registered_devices_edit_color_buttons_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_edit_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Registered Devices Edit Text-->
+    <item name="registered_devices_edit_code_text_dimension" type="dimen">30sp</item>
+    <item name="registered_devices_edit_name_textview_dimension" type="dimen">15sp</item>
+    <item name="registered_devices_edit_name_edittext_dimension" type="dimen">15sp</item>
+    <item name="registered_devices_edit_ssid_textview_dimension" type="dimen">15sp</item>
+    <item name="registered_devices_edit_ssid_edittext_dimension" type="dimen">15sp</item>
+    <item name="registered_devices_edit_password_textview_dimension" type="dimen">15sp</item>
+    <item name="registered_devices_edit_password_edittext_dimension" type="dimen">15sp</item>
+    <!--Registered Devices Edit Margins-->
+    <item name="registered_devices_edit_top_margin_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_edit_name_between_margin_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_edit_ssid_between_margin_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_edit_password_between_margin_dimension" type="dimen">20dp</item>
+    <item name="registered_devices_edit_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
+    <item name="registered_devices_edit_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+    <item name="registered_devices_edit_body_lateral_margins" type="dimen">10dp</item>
     
     <!--About Sizes-->
     <item name="about_header_height_dimension" type="dimen">50dp</item>

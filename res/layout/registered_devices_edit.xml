@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/registered_devices_edit_generalbackground_color">
+
+    <ImageView
+        android:id="@+id/registered_devices_edit_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/registered_devices_edit_header_height_dimension"
+        android:scaleType="fitXY"
+        android:src="@drawable/registered_devices_edit_header"
+        android:background="@color/registered_devices_edit_headerbackground_color"/>
+
+    <LinearLayout
+        android:id="@+id/registered_devices_edit_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/registered_devices_edit_body_background"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/registered_devices_edit_buttons_container"
+            android:layout_width="@dimen/registered_devices_edit_container_width"
+            android:layout_height="@dimen/registered_devices_edit_container_height"
+            android:orientation="vertical"
+            android:background="@drawable/registered_devices_edit_container_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registered_devices_edit_code_height"
+                android:text="@string/registered_devices_edit_code_default"
+                android:textSize="@dimen/registered_devices_edit_code_text_dimension"
+                android:textColor="@color/registered_devices_edit_code_text_color"
+                android:gravity="center"
+                android:id="@+id/registered_devices_edit_code"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/registered_devices_edit_body_lateral_margins"
+                android:layout_marginRight="@dimen/registered_devices_edit_body_lateral_margins"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:id="@+id/registered_devices_edit_spinner"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registered_devices_edit_row2"
+                android:layout_marginTop="@dimen/registered_devices_edit_top_margin_dimension"
+                android:layout_marginLeft="@dimen/registered_devices_edit_body_lateral_margins"
+                android:layout_marginRight="@dimen/registered_devices_edit_body_lateral_margins">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/registered_devices_edit_name_label"
+                    android:id="@+id/registered_devices_edit_name_TextView"
+                    android:textColor="@color/registered_devices_edit_name_textview_color"
+                    android:layout_marginRight="@dimen/registered_devices_edit_name_between_margin_dimension"
+                    android:textSize="@dimen/registered_devices_edit_name_textview_dimension"
+                    android:singleLine="true"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:ems="@integer/registered_devices_names_max_length"
+                    android:id="@+id/registered_devices_edit_name_EditText"
+                    android:textColor="@color/registered_devices_edit_name_edittext_color"
+                    android:gravity="center"
+                    android:textSize="@dimen/registered_devices_edit_name_edittext_dimension"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registered_devices_edit_row3"
+                android:layout_marginTop="@dimen/registered_devices_edit_top_margin_dimension"
+                android:layout_marginLeft="@dimen/registered_devices_edit_body_lateral_margins"
+                android:layout_marginRight="@dimen/registered_devices_edit_body_lateral_margins">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/registered_devices_edit_ssid_label"
+                    android:id="@+id/registered_devices_edit_ssid_TextView"
+                    android:textColor="@color/registered_devices_edit_ssid_textview_color"
+                    android:layout_marginRight="@dimen/registered_devices_edit_ssid_between_margin_dimension"
+                    android:textSize="@dimen/registered_devices_edit_ssid_textview_dimension"
+                    android:singleLine="true"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:id="@+id/registered_devices_edit_ssid_EditText"
+                    android:textColor="@color/registered_devices_edit_ssid_edittext_color"
+                    android:gravity="center"
+                    android:textSize="@dimen/registered_devices_edit_ssid_edittext_dimension"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registered_devices_edit_row4"
+                android:layout_marginTop="@dimen/registered_devices_edit_top_margin_dimension"
+                android:layout_marginLeft="@dimen/registered_devices_edit_body_lateral_margins"
+                android:layout_marginRight="@dimen/registered_devices_edit_body_lateral_margins">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/registered_devices_edit_password_label"
+                    android:id="@+id/registered_devices_edit_password_TextView"
+                    android:textColor="@color/registered_devices_edit_password_textview_color"
+                    android:layout_marginRight="@dimen/registered_devices_edit_password_between_margin_dimension"
+                    android:textSize="@dimen/registered_devices_edit_password_textview_dimension"
+                    android:singleLine="true"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/registered_devices_edit_password_EditText"
+                    android:textColor="@color/registered_devices_edit_password_edittext_color"
+                    android:gravity="center"
+                    android:textSize="@dimen/registered_devices_edit_password_edittext_dimension"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/registered_devices_edit_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/registered_devices_edit_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/registered_devices_edit_footer_background">
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_edit_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_edit_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_edit_ok_button"
+            android:layout_marginRight="@dimen/registered_devices_edit_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/registered_devices_edit_ok_and_cancel_background_color"
+            android:src="@drawable/ok_icon"
+            android:onClick="acceptChanges"/>
+
+        <ImageButton
+            android:layout_width="@dimen/registered_devices_edit_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/registered_devices_edit_ok_and_cancel_buttons_dimension"
+            android:id="@+id/registered_devices_edit_cancel_button"
+            android:background="@color/registered_devices_edit_ok_and_cancel_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="finishActivity"/>
+    </LinearLayout>
+</LinearLayout>
