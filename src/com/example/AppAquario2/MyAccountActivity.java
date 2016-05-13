@@ -6,6 +6,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.ExpandableListView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 /**
@@ -20,33 +23,42 @@ import java.util.ArrayList;
 public class MyAccountActivity  extends Activity
     {
         // Create ArrayList to hold parent Items and Child Items
-        private ArrayList<String> parentItems = new ArrayList<String>();
-        private ArrayList<Object> childItems = new ArrayList<Object>();
+        private ArrayList<String> parentItems = new ArrayList<>();
+        private ArrayList<Object> childItems = new ArrayList<>();
+
+        LinearLayout parentLayout;
 
         @Override
         public void onCreate(Bundle savedInstanceState)
         {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.my_account);
-            // Create Expandable List and set it's properties
-            ExpandableListView expandableList = (ExpandableListView) findViewById(R.id.my_account_expandableListView);
-            expandableList.setGroupIndicator(null);
-            // Set the Items of Parent
-            setGroupParents();
-            // Set The Child Data
-            setChildData();
+            try {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.my_account);
+                parentLayout=(LinearLayout)findViewById(R.id.my_account_parent_layout);
+                // Create Expandable List and set it's properties
+                ExpandableListView expandableList = (ExpandableListView) findViewById(R.id.my_account_expandableListView);
+                expandableList.setGroupIndicator(null);
+                // Set the Items of Parent
+                setGroupParents();
+                // Set The Child Data
+                setChildData();
 
-            // Create the Adapter
-            MyExpandableAdapter adapter = new MyExpandableAdapter(parentItems, childItems);
-            adapter.setInflater((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE), this);
+                // Create the Adapter
+                MyExpandableAdapter adapter = new MyExpandableAdapter(parentItems, childItems);
+                adapter.setInflater((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE), this);
 
-            // Set the Adapter to expandableList
-            expandableList.setAdapter(adapter);
+                // Set the Adapter to expandableList
+                expandableList.setAdapter(adapter);
 
-            // Expands all parents
-            ExpandAllParents(expandableList);
+                // Expands all parents
+                ExpandAllParents(expandableList);
+            }
+            catch (Exception e)
+            {
+                Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
+                finish();
+            }
         }
-
 
         /**
          * Function: setGroupParents

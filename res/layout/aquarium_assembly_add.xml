@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/aquarium_assembly_add_width_dimension"
+              android:layout_height="@dimen/aquarium_assembly_add_height_dimension"
+              android:layout_gravity="center"
+              android:background="@color/aquarium_assembly_add_body_background_color">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aquarium_assembly_add_header_height_dimension"
+        android:id="@+id/aquarium_assembly_add_header"
+        android:scaleType="fitXY"
+        android:src="@drawable/aquarium_assembly_add_header"/>
+
+    <LinearLayout
+        android:id="@+id/aquarium_assembly_add_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/aquarium_assembly_add_body_background"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/aquarium_assembly_add_buttons_container"
+            android:layout_width="@dimen/aquarium_assembly_add_container_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/aquarium_assembly_add_container_top_and_bottom_margins"
+            android:layout_marginBottom="@dimen/aquarium_assembly_add_container_top_and_bottom_margins"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/aquarium_assembly_add_container_background">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/aquarium_assembly_add_lateral_margins"
+                android:layout_marginRight="@dimen/aquarium_assembly_add_lateral_margins"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:id="@+id/aquarium_assembly_add_spinner"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aquarium_assembly_add_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aquarium_assembly_add_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/aquarium_assembly_add_footer_background">
+
+        <ImageButton
+            android:layout_width="@dimen/aquarium_assembly_add_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/aquarium_assembly_add_ok_and_cancel_buttons_dimension"
+            android:id="@+id/aquarium_assembly_add_ok_button"
+            android:layout_marginRight="@dimen/aquarium_assembly_add_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/aquarium_assembly_add_ok_and_cancel_background_color"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/add_icon"
+            android:onClick="callAdd"/>
+
+        <ImageButton
+            android:layout_width="@dimen/aquarium_assembly_add_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/aquarium_assembly_add_ok_and_cancel_buttons_dimension"
+            android:id="@+id/aquarium_assembly_add_cancel_button"
+            android:background="@color/aquarium_assembly_add_ok_and_cancel_background_color"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="finishActivity"/>
+    </LinearLayout>
+</LinearLayout>

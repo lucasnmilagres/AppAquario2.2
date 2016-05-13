@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 /**
@@ -18,14 +19,24 @@ import android.widget.Toast;
  */
 public class RatingActivity extends Activity
 {
+    LinearLayout parentLayout;
+
     // Variables
     boolean clicked=false;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.rating);
+        try {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.rating);
+            parentLayout=(LinearLayout)findViewById(R.id.rating_parent_layout);
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
+            finish();
+        }
     }
 
     /**
@@ -70,6 +81,7 @@ public class RatingActivity extends Activity
         setResult(RESULT_OK,intent);
 
         // Finishes Activity
+        parentLayout.removeAllViews();
         finish();
     }
 
@@ -90,6 +102,7 @@ public class RatingActivity extends Activity
         setResult(RESULT_CANCELED,intent);
 
         // Finishes Activity
+        parentLayout.removeAllViews();
         finish();
     }
 }

@@ -26,7 +26,7 @@ import java.util.ArrayList;
  * Created: 25/03/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class SetttingsLightActivity extends Activity
+public class SettingsLightActivity extends Activity
 {
     //Array Lists
     ArrayList<Integer> colorsList;

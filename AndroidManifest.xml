@@ -86,14 +86,16 @@
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         </activity>
         <activity
-            android:name=".SetttingsLightActivity"
+            android:name=".SettingsLightActivity"
             android:label="Settings Light"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:parentActivityName=".SettingActivity">
         </activity>
         <activity
             android:name=".MyAccountActivity"
             android:label="My Account"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:parentActivityName=".SettingActivity">
         </activity>
         <activity
             android:name=".RegisteredDevicesActivity"
@@ -116,19 +118,33 @@
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         </activity>
         <activity
+            android:name=".AquariumAssemblyActivity"
+            android:label="Aquarium Assembly"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:parentActivityName=".SettingActivity">
+        </activity>
+        <activity
+            android:name=".AquariumAssemblyAddActivity"
+            android:label="Aquarium Assembly Add"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
             android:name=".RatingActivity"
             android:label="Rating"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:parentActivityName=".SettingActivity">
         </activity>
         <activity
             android:name=".ConnectionActivity"
             android:label="Connection"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:parentActivityName=".SettingActivity">
         </activity>
         <activity
             android:name=".AboutActivity"
             android:label="About"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:parentActivityName=".SettingActivity">
         </activity>
         <!--  Entry for RegisterActivity.class -->
         <activity android:name=".RegisterActivity"

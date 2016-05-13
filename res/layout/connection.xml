@@ -19,7 +19,8 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:background="@drawable/connection_body_background"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
         <LinearLayout
             android:id="@+id/connection_buttons_container"
             android:layout_width="@dimen/connection_container_width"

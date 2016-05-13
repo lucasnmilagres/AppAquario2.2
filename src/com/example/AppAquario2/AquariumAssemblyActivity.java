@@ -1,48 +1,57 @@
 package com.example.AppAquario2;
 
 import android.app.Activity;
-import android.app.ExpandableListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 
 /**
- * Class: RegisteredDevicesActivity
+ * Class: AquariumAssemblyActivity
  * Version: 1.0
- * Parameters: registeredDevicesList
- * Return: Activity result
- * Perform: All actions in registered_devices layout
- * Created: 04/04/16
+ * Parameters: - registeredDevicesList
+ *             - aquariumItem
+ * Return: - Activity result
+ *         - aquariumItem
+ * Perform: All actions in aquarium_assembly layout
+ * Created: 18/04/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class RegisteredDevicesActivity extends Activity {
+public class AquariumAssemblyActivity extends Activity
+{
     // Views
-    ExpandableListView expandableList = null;
+    private ExpandableListView expandableList=null;
 
     // Objects
-    MyExpandableAdapter adapter = null;
+    private MyExpandableAdapter adapter=null;
+    private AquariumItem aquariumItem=null;
 
-    // Create ArrayList to hold parent Items and Child Items
+    // ArrayLists
     private ArrayList<String> parentItems = new ArrayList<>();
     private ArrayList<Object> childItems = new ArrayList<>();
-    private ArrayList<RegisteredDeviceItem> registeredDevicesList;
+    private ArrayList<RegisteredDeviceItem> registeredDevicesList=null;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registered_devices);
+        setContentView(R.layout.aquarium_assembly);
 
         // Create Expandable List and set it's properties
-        expandableList = (ExpandableListView) findViewById(R.id.registered_devices_expandableListView);
+        expandableList = (ExpandableListView) findViewById(R.id.aquarium_assembly_expandableListView);
         expandableList.setGroupIndicator(null);
+
+        // Reads actual registeredSevicesList and aquariumItem
+        Intent sendIntent= getIntent();
+        registeredDevicesList=sendIntent.getParcelableArrayListExtra("registeredDevicesList");
+        aquariumItem = sendIntent.getParcelableExtra("aquariumItem");
 
         SetExpandable();
     }
@@ -56,7 +65,8 @@ public class RegisteredDevicesActivity extends Activity {
      * Created: 10/04/16
      * Creator: Lucas Gabriel N. Milagres
      */
-    public void SetExpandable() {
+    public void SetExpandable()
+    {
         // Set the Items of Parent
         setGroupParents();
         // Set The Child Data
@@ -109,7 +119,7 @@ public class RegisteredDevicesActivity extends Activity {
      * Version: 1.0
      * Parameters: Void
      * Return: void
-     * Perform: - Reads actual registered devices list
+     * Perform: - Reads actual aquariumItem
      *          - Categorize correctly registered devices parent types
      *          - Add child Items
      * Created: 06/04/16
@@ -117,10 +127,6 @@ public class RegisteredDevicesActivity extends Activity {
      */
     public void setChildData()
     {
-        // Reads actual registered devices list
-        Intent sendIntent= getIntent();
-        registeredDevicesList = sendIntent.getParcelableArrayListExtra("registeredDevicesList");
-
         // Categorize correctly registered devices parent types
         ArrayList<String>[] children=new ArrayList[parentItems.size()];
 
@@ -129,10 +135,10 @@ public class RegisteredDevicesActivity extends Activity {
             children[count]=new ArrayList<>();
         }
 
-        for (int count=0;count<registeredDevicesList.size();count++)
-            if(parentItems.contains(registeredDevicesList.get(count).getParentType()))
+        for (int count=0;count<aquariumItem.getRegisteredDeviceItemList().size();count++)
+            if(parentItems.contains(aquariumItem.getRegisteredDeviceItemList().get(count).getParentType()))
             {
-                children[parentItems.indexOf(registeredDevicesList.get(count).getParentType())].add(registeredDevicesList.get(count).getCode()+" - "+registeredDevicesList.get(count).getName());
+                children[parentItems.indexOf(aquariumItem.getRegisteredDeviceItemList().get(count).getParentType())].add(aquariumItem.getRegisteredDeviceItemList().get(count).getCode()+" - "+aquariumItem.getRegisteredDeviceItemList().get(count).getName());
             }
 
         // Add child Items
@@ -170,10 +176,10 @@ public class RegisteredDevicesActivity extends Activity {
     {
         if(adapter.getSelectedItem()!=null)
         {
-        // Finds child name
-        String name=adapter.getSelectedItem();
+            // Finds child name
+            String name=adapter.getSelectedItem();
 
-        // Calls remove dialog (request 0)
+            // Calls remove dialog (request 0)
             Intent sendIntent = new Intent(this,RegisteredDevicesRemoveActivity.class);
             sendIntent.putExtra("name", name);
             startActivityForResult(sendIntent, 0);
@@ -191,42 +197,11 @@ public class RegisteredDevicesActivity extends Activity {
      */
     public void callAddDevice(View view)
     {
-            // Calls add device dialog (request 2)
-            Intent sendIntent = new Intent(this,NonRegisteredDevicesActivity.class);
-            sendIntent.putExtra("registeredDevicesList",registeredDevicesList);
-            startActivityForResult(sendIntent, 2);
-    }
-
-    /**
-     * Function: callEdit
-     * Version: 1.0
-     * Parameters: Void
-     * Return: void
-     * Perform: - Finds registeredDeviceItem;
-     *          - Calls edit activity.
-     * Created: 16/04/16
-     * Creator: Lucas Gabriel N. Milagres
-     */
-    public void callEdit(View view)
-    {
-        if(adapter.getSelectedItem()!=null)
-        {
-            // Finds registeredDeviceItem
-            RegisteredDeviceItem registeredDeviceItem=new RegisteredDeviceItem(null,null,null,null,null);
-            String name=adapter.getSelectedItem();
-            String code=name.substring(0,name.indexOf(" - "));
-            for (int count = 0; count < registeredDevicesList.size(); count++)
-                if (registeredDevicesList.get(count).getCode().equals(code))
-                {
-                    registeredDeviceItem=registeredDevicesList.get(count);
-                    count=registeredDevicesList.size();
-                }
-
-            // Calls edit dialog (request 1)
-            Intent sendIntent = new Intent(this,RegisteredDeviceEditActivity.class);
-            sendIntent.putExtra("registeredDeviceItem", registeredDeviceItem);
-            startActivityForResult(sendIntent, 1);
-        }
+        // Calls add device dialog (request 2)
+        Intent sendIntent = new Intent(this,AquariumAssemblyAddActivity.class);
+        sendIntent.putExtra("registeredDevicesList",registeredDevicesList);
+        sendIntent.putExtra("aquariumItem",aquariumItem);
+        startActivityForResult(sendIntent, 2);
     }
 
     /**
@@ -237,9 +212,8 @@ public class RegisteredDevicesActivity extends Activity {
      *             - data.
      * Return: void
      * Perform: - Treatment of RemoveActivity result;
-     *          - Treatment of EditActivity result;
      *          - Treatment of AddActivity result;
-     * Created: 10/04/16
+     * Created: 18/04/16
      * Creator: Lucas Gabriel N. Milagres
      */
     @Override
@@ -253,11 +227,11 @@ public class RegisteredDevicesActivity extends Activity {
             if (resultCode == RESULT_OK) {
                 String code = data.getStringExtra("code");
                 if (code != null) {
-                    // Removes item from registeredDevicesList
-                    for (int count = 0; count < registeredDevicesList.size(); count++)
-                        if (registeredDevicesList.get(count).getCode().equals(code)) {
-                            registeredDevicesList.remove(registeredDevicesList.get(count));
-                            count = registeredDevicesList.size();
+                    // Removes item from aquariumItem
+                    for (int count = 0; count < aquariumItem.getRegisteredDeviceItemList().size(); count++)
+                        if (aquariumItem.getRegisteredDeviceItemList().get(count).getCode().equals(code)) {
+                            aquariumItem.getRegisteredDeviceItemList().remove(aquariumItem.getRegisteredDeviceItemList().get(count));
+                            count = aquariumItem.getRegisteredDeviceItemList().size();
 
                             // Refresh ExpandableListView
                             refreshExpandableListView();
@@ -267,35 +241,19 @@ public class RegisteredDevicesActivity extends Activity {
             }
         }
 
-        // Treatment of EditActivity and AddActivity results
-        else if((requestCode==1)||(requestCode==2))
+        // Treatment of AddActivity results
+        else if(requestCode==2)
         {
             // Treatment of "OK" result
             if (resultCode == RESULT_OK)
             {
                 RegisteredDeviceItem registeredDeviceItem = data.getParcelableExtra("registeredDeviceItem");
                 if (registeredDeviceItem != null) {
-
-                    // Edit device
-                    if (registeredDevicesList.contains(registeredDeviceItem)) {
-                        for (int count = 0; count < registeredDevicesList.size(); count++)
-                            if (registeredDevicesList.get(count).getCode().equals(registeredDeviceItem.getCode())) {
-                                registeredDevicesList.set(count, registeredDeviceItem);
-                                count = registeredDevicesList.size();
-                            }
-                    }
-
-                    // Add device
-                    else
-                    {
-                        registeredDevicesList.add(registeredDeviceItem);
-                        refreshExpandableListView();
-                    }
-                }
-                else
+                    aquariumItem.getRegisteredDeviceItemList().add(registeredDeviceItem);
+                    refreshExpandableListView();
+                } else
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceEditNullCodeError), Toast.LENGTH_SHORT).show();
             }
         }
     }
 }
-

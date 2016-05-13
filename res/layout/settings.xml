@@ -47,7 +47,8 @@
                         android:id="@+id/settings_imageButton1"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_my_account_icon"/>
+                        android:src="@drawable/settings_menu_my_account_icon"
+                        android:onClick="sendMyAccountActivity"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -64,7 +65,8 @@
                         android:id="@+id/settings_imageButton2"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_edit_icon"/>
+                        android:src="@drawable/settings_menu_edit_icon"
+                        android:onClick="sendSettingsLightActivity"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -81,7 +83,8 @@
                         android:id="@+id/settings_imageButton3"
                         android:background="@color/settings_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/settings_menu_system_icon" />
+                        android:src="@drawable/settings_menu_system_icon"
+                        android:onClick="sendAquariumAssemblyActivity"/>
                 </LinearLayout>
             </LinearLayout>
 

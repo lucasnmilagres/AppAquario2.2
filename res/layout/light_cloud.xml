@@ -355,7 +355,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/light_cloud_footer_height_dimension"
         android:gravity="center"
-        android:background="@drawable/light_cloud_footer_background">
+        android:background="@drawable/light_cloud_header">
 
         <ImageButton
             android:layout_width="@dimen/light_cloud_ok_and_cancel_buttons_dimension"

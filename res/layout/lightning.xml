@@ -46,7 +46,8 @@
                         android:id="@+id/buttonFree"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_free_icon"/>
+                        android:src="@drawable/lightning_menu_free_icon"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -80,7 +81,8 @@
                         android:id="@+id/buttonRandom"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_random_icon" />
+                        android:src="@drawable/lightning_menu_random_icon"
+                        android:onClick="sendLightRandom"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -104,7 +106,8 @@
                         android:id="@+id/buttonProgrammed"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_programmed_icon" />
+                        android:src="@drawable/lightning_menu_programmed_icon"
+                        android:onClick="sendLightRoutine"/>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/lightning_menu_row2_column2"
@@ -120,7 +123,8 @@
                         android:id="@+id/buttonLocation"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_location_icon" />
+                        android:src="@drawable/lightning_menu_location_icon"
+                        android:onClick="sendLightLocation"/>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/lightning_menu_row2_column3"
@@ -136,7 +140,8 @@
                         android:id="@+id/buttonSeasons"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_seasons_icon" />
+                        android:src="@drawable/lightning_menu_seasons_icon"
+                        android:onClick="sendLightSeason"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -160,7 +165,8 @@
                         android:id="@+id/buttonMoon"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_moon_icon" />
+                        android:src="@drawable/lightning_menu_moon_icon"
+                        android:onClick="sendLightMoon"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -177,7 +183,8 @@
                         android:id="@+id/buttonClouds"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_cloud_icon" />
+                        android:src="@drawable/lightning_menu_cloud_icon"
+                        android:onClick="sendLightCloud"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -194,7 +201,8 @@
                         android:id="@+id/buttonThunder"
                         android:background="@color/lightning_menu_buttonsbackground_color"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lightning_menu_thunder_icon"/>
+                        android:src="@drawable/lightning_menu_thunder_icon"
+                        android:onClick="sendLightThunder"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

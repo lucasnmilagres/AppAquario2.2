@@ -207,6 +207,20 @@
     <item name="connection_headerbackground_color" type="color">#00ffffff</item>
     <item name="connection_generalbackground_color" type="color">#ff000000</item>
     <item name="connection_ok_and_cancel_background_color" type="color">#00000000</item>
+
+    <!--Aquarium Assembly Colors-->
+    <item name="aquarium_assembly_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="aquarium_assembly_headerbackground_color" type="color">#00ffffff</item>
+    <item name="aquarium_assembly_generalbackground_color" type="color">#ff000000</item>
+    <item name="aquarium_assembly_ok_and_cancel_background_color" type="color">#00000000</item>
+
+    <!--Aquarium Assembly Add Devices Colors-->
+    <item name="aquarium_assembly_add_body_background_color" type="color">#ffbb7766</item>
+    <item name="aquarium_assembly_add_body_text_color" type="color">#ff000000</item>
+    <item name="aquarium_assembly_add_buttonsbackground_color" type="color">#00ffffff</item>
+    <item name="aquarium_assembly_add_headerbackground_color" type="color">#00ffffff</item>
+    <item name="aquarium_assembly_add_generalbackground_color" type="color">#ff000000</item>
+    <item name="aquarium_assembly_add_ok_and_cancel_background_color" type="color">#00000000</item>
     
     <!--About Screen Colors-->
     <item name="about_body_background_color" type="color">#ffbb7766</item>

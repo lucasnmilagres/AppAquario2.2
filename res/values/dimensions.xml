@@ -357,6 +357,34 @@
     <item name="connection_listview_lateral_margins" type="dimen">10dp</item>
     <item name="connection_listview_bottom_margin" type="dimen">10dp</item>
     <item name="connection_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--Aquarium Assembly Screen Sizes-->
+    <item name="aquarium_assembly_header_height_dimension" type="dimen">80dp</item>
+    <item name="aquarium_assembly_container_height" type="dimen">380dp</item>
+    <item name="aquarium_assembly_container_width" type="dimen">300dp</item>
+    <item name="aquarium_assembly_footer_height_dimension" type="dimen">50dp</item>
+    <item name="aquarium_assembly_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Aquarium Assembly Screen Margins-->
+    <item name="aquarium_assembly_listview_top_margin" type="dimen">10dp</item>
+    <item name="aquarium_assembly_listview_lateral_margins" type="dimen">10dp</item>
+    <item name="aquarium_assembly_listview_bottom_margin" type="dimen">10dp</item>
+    <item name="aquarium_assembly_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
+
+    <!--Aquarium Assembly Add Screen Sizes-->
+    <item name="aquarium_assembly_add_height_dimension" type="dimen">200dp</item>
+    <item name="aquarium_assembly_add_width_dimension" type="dimen">280dp</item>
+    <item name="aquarium_assembly_add_header_height_dimension" type="dimen">50dp</item>
+    <item name="aquarium_assembly_add_container_width" type="dimen">200dp</item>
+    <item name="aquarium_assembly_add_footer_height_dimension" type="dimen">50dp</item>
+    <item name="aquarium_assembly_add_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
+    <!--Aquarium Assembly Add Screen Texts-->
+    <item name="aquarium_assembly_add_body_text_dimension" type="dimen">15sp</item>
+    <item name="aquarium_assembly_add_copyright_text_dimension" type="dimen">10sp</item>
+    <!--Aquarium Assembly Add Screen Margins-->
+    <item name="aquarium_assembly_add_lateral_margins" type="dimen">10dp</item>
+    <item name="aquarium_assembly_add_container_top_and_bottom_margins" type="dimen">10dp</item>
+    <item name="aquarium_assembly_add_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
+    <item name="aquarium_assembly_add_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
     
     <!--About Sizes-->
     <item name="about_header_height_dimension" type="dimen">50dp</item>

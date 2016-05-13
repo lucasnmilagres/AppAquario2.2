@@ -12,11 +12,15 @@ import java.util.ArrayList;
  * Created: 16/04/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class AquariumItem implements Parcelable {
+public class AquariumItem implements Parcelable{
+    private String code;
+    private String name;
     private ArrayList<RegisteredDeviceItem> registeredDeviceItemList;
 
-    public AquariumItem(ArrayList<RegisteredDeviceItem> registeredDeviceItemList)
+    public AquariumItem(String code, String name, ArrayList<RegisteredDeviceItem> registeredDeviceItemList)
     {
+        this.code=code;
+        this.name=name;
         this.registeredDeviceItemList = registeredDeviceItemList;
     }
 
@@ -24,7 +28,25 @@ public class AquariumItem implements Parcelable {
 
     public void setRegisteredDeviceItemList(ArrayList<RegisteredDeviceItem> registeredDeviceItemList) { this.registeredDeviceItemList = registeredDeviceItemList; }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     protected AquariumItem(Parcel in) {
+        code = in.readString();
+        name = in.readString();
         if (in.readByte() == 0x01) {
             registeredDeviceItemList = new ArrayList<RegisteredDeviceItem>();
             in.readList(registeredDeviceItemList, RegisteredDeviceItem.class.getClassLoader());
@@ -40,6 +62,8 @@ public class AquariumItem implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(code);
+        dest.writeString(name);
         if (registeredDeviceItemList == null) {
             dest.writeByte((byte) (0x00));
         } else {

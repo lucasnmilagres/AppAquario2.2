@@ -78,9 +78,9 @@ public class ConnectionActivity extends Activity
      * Version: 1.0
      * Parameters: Void
      * Return: void
-     * Perform: - Reads actual registered devices list
+     * Perform: - Reads actual aquariumItem
      *          - Add parent Items
-     * Created: 06/04/16
+     * Created: 16/04/16
      * Creator: Lucas Gabriel N. Milagres
      */
     public void setGroupParents()
@@ -101,11 +101,11 @@ public class ConnectionActivity extends Activity
      * Version: 1.0
      * Parameters: Void
      * Return: void
-     * Perform: - Reads actual registered devices list
+     * Perform: - Reads actual aquariumItem
      *          - Categorize correctly registered devices parent types
      *          - Checks user connection
      *          - Add child Items
-     * Created: 06/04/16
+     * Created: 16/04/16
      * Creator: Lucas Gabriel N. Milagres
      */
     public void setChildData()

@@ -23,9 +23,6 @@ import java.util.ArrayList;
  */
 public class RegisteredDeviceEditActivity extends Activity
 {
-    // Views
-    ExpandableListView expandableList=null;
-
     // Objects
     RegisteredDeviceItem registeredDeviceItem;
 
