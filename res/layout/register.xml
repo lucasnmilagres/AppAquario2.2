@@ -81,23 +81,26 @@
 		  		android:layout_marginTop="5dip"
               android:textColor="@color/register_screen_password_edittext_color"/>
 		  <!-- Register Button -->		
-		  <Button android:id="@+id/btnRegister" 
-		  		android:layout_width="fill_parent"
-		  		android:layout_height="wrap_content"
-		  		android:layout_marginTop="10dip"
-		  		android:text="@string/register_screen_button"
-                android:background="@color/register_screen_buttonbackground_color"
-                android:textColor="@color/register_screen_buttontext_color"/>
+		  <Button android:id="@+id/btnRegister"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_marginTop="10dip"
+				  android:text="@string/register_screen_button"
+				  android:background="@color/register_screen_buttonbackground_color"
+				  android:textColor="@color/register_screen_buttontext_color"
+				  android:onClick="ConnectToDatabase"/>
 		  <!-- Link to Login Screen -->
-		  <TextView android:id="@+id/link_to_login" 
-		  		android:layout_width="fill_parent"
-		  		android:layout_height="wrap_content"
-		  		android:layout_marginTop="40dip"
-		  		android:layout_marginBottom="40dip"
-		  		android:text="@string/register_screen_has_account"
-		  		android:gravity="center"
-		  		android:textSize="20dip"
-		  		android:textColor="#025f7c"/>
+		  <TextView android:id="@+id/link_to_login"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="40dip"
+					android:layout_marginBottom="40dip"
+					android:text="@string/register_screen_has_account"
+					android:gravity="center"
+					android:textSize="20dip"
+					android:textColor="#025f7c"
+					android:onClick="finishActivity"
+					android:clickable="true"/>
 		    
 		</LinearLayout>
   		<!-- Registration Form Ends -->

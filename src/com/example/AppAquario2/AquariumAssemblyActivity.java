@@ -24,7 +24,7 @@ import java.util.ArrayList;
  * Created: 18/04/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class AquariumAssemblyActivity extends Activity
+public class AquariumAssemblyActivity extends MyExpandableActivity
 {
     // Views
     private ExpandableListView expandableList=null;

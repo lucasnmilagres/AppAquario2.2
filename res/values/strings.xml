@@ -28,6 +28,10 @@
     <string name="RegisteredDeviceEditNullCodeError">There was an error about your device. Try again.</string>
     <string name="login_data_error_msg">There was an error with your account information. Please, login again.</string>
 
+    <!--Server-->
+    <string name="server_get_user_info">http://192.168.25.61/CreeLed/GetUserInfo.php</string>
+    <string name="server_register_new_user">http://192.168.25.61/CreeLed/RegisterNewUser.php</string>
+
     <!--Light Default Mode Strings-->
     <string name="FreeMode">FreeMode</string>
     <string name="MoonMode">MoonMode</string>
@@ -86,6 +90,10 @@
     <string name="login_screen_register">New to Twitter? Register here</string>
     <string name="login_screen_forgot_password">Forgot your password?</string>
     <string name="login_screen_login">Login</string>
+    <string name="login_null_email">The email field is empty!</string>
+    <string name="login_null_password">The password field is empty!</string>
+    <string name="login_null_non_registered_email">This email is not registered!</string>
+    <string name="login_validation_error">Email and/or password doesn\'t match!</string>
 
     <!--Register Screen Strings-->
     <string name="register_screen_username">Email</string>
@@ -93,4 +101,5 @@
     <string name="register_screen_name">Full Name</string>
     <string name="register_screen_button">Register New Account</string>
     <string name="register_screen_has_account">Already has account? Login here</string>
+    <string name="reg_empty_field">Please, fill empty fields!</string>
 </resources>

@@ -151,6 +151,24 @@ public class Menu extends Activity {
         intent.putExtra("colorsList", colorsList);
         intent.putExtra("registeredDevicesList",registeredDevicesList);
         intent.putExtra("aquariumItem",aquariumItem);
-        startActivity(intent);
+        startActivityForResult(intent,8);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode==8)
+        {
+            if(resultCode!=RESULT_OK) {
+                // Sends Cancel result to parent
+                Intent intent =new Intent();
+                setResult(RESULT_CANCELED,intent);
+
+                // Finishes Activity
+                finish();
+            }
+        }
     }
 }

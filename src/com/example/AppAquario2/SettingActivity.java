@@ -46,7 +46,7 @@ public class SettingActivity extends Activity {
     public void sendMyAccountActivity(View view)
     {
         Intent myAccountIntent = new Intent(this, MyAccountActivity.class);
-        startActivity(myAccountIntent);
+        startActivityForResult(myAccountIntent, 0);
     }
 
     /**
@@ -163,5 +163,17 @@ public class SettingActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode==0)
+        {
+            if(resultCode!=RESULT_OK) {
+                // Sends Cancel result to parent
+                Intent intent =new Intent();
+                setResult(RESULT_CANCELED,intent);
+
+                // Finishes Activity
+                finish();
+            }
+        }
     }
 }

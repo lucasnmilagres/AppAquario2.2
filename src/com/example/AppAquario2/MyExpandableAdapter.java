@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class MyExpandableAdapter extends BaseExpandableListAdapter
 {
 
-    private Activity activity;
+    private MyExpandableActivity activity;
     private ArrayList<Object> childtems;
     private LayoutInflater inflater;
     private ArrayList<String> parentItems, child;
@@ -30,7 +30,7 @@ public class MyExpandableAdapter extends BaseExpandableListAdapter
         this.childtems = childern;
     }
 
-    public void setInflater(LayoutInflater inflater, Activity activity)
+    public void setInflater(LayoutInflater inflater, MyExpandableActivity activity)
     {
         this.inflater = inflater;
         this.activity = activity;
@@ -61,6 +61,7 @@ public class MyExpandableAdapter extends BaseExpandableListAdapter
             public void onClick(View view) {
                selectedItem=((ArrayList<String>)childtems.get(groupPosition)).get(childPosition);
                 view.setSelected(true);
+                activity.callOnChildClick(selectedItem);
             }
         });
         return convertView;

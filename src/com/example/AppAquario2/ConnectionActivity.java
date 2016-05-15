@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * Created: 01/04/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class ConnectionActivity extends Activity
+public class ConnectionActivity extends MyExpandableActivity
 {
     // Views
     ExpandableListView expandableList=null;

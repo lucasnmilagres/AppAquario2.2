@@ -28,7 +28,7 @@ import java.util.List;
  * Created: 13/04/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class NonRegisteredDevicesActivity extends Activity
+public class NonRegisteredDevicesActivity extends MyExpandableActivity
 {
     // ListView
     ExpandableListView expandableList=null;

@@ -48,23 +48,25 @@
 		  		android:textColor="@color/login_screen_user_textview_color"
 		  		android:text="@string/login_screen_username"/>
 		  <EditText android:layout_width="fill_parent"
-		  		android:layout_height="wrap_content"
-		  		android:layout_marginTop="5dip"
-		  		android:layout_marginBottom="20dip"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dip"
+					android:layout_marginBottom="20dip"
 					android:inputType="textEmailAddress"
 					android:textColor="@color/login_screen_user_edittext_color"
-					android:singleLine="true"/>
+					android:singleLine="true"
+					android:id="@+id/login_email"/>
 		  <!--  Password Label -->
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="@color/login_screen_password_textview_color"
 		  		android:text="@string/login_screen_password"/>
 		  <EditText android:layout_width="fill_parent"
-		  		android:layout_height="wrap_content"
-		  		android:layout_marginTop="5dip"
-		  		android:singleLine="true"
-		  		android:inputType="textPassword"
-			  	android:textColor="@color/login_screen_password_edittext_color"/>
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dip"
+					android:singleLine="true"
+					android:inputType="textPassword"
+					android:textColor="@color/login_screen_password_edittext_color"
+					android:id="@+id/login_password"/>
 		  <!-- Login button -->	
 		  <Button android:id="@+id/btnLogin" 
 		  		android:layout_width="fill_parent"
@@ -72,7 +74,8 @@
 		  		android:layout_marginTop="10dip"
 		  		android:text="@string/login_screen_login"
 			  	android:textColor="@color/login_screen_buttontext_color"
-			  	android:background="@color/login_screen_buttonbackground_color"/>
+			  	android:background="@color/login_screen_buttonbackground_color"
+			  android:onClick="ReadDatabase"/>
 		  <!-- Link to Registration Screen -->		
 		  <TextView android:id="@+id/link_to_register" 
 		  		android:layout_width="fill_parent"
@@ -82,7 +85,9 @@
 		  		android:text="@string/login_screen_register"
 		  		android:gravity="center"
 		  		android:textSize="20dip"
-		  		android:textColor="@color/login_screen_registertext_color"/>
+		  		android:textColor="@color/login_screen_registertext_color"
+			  android:onClick="sendRegisterActivity"
+			  android:clickable="true"/>
 
 			<TextView android:id="@+id/link_to_forget_password"
 					  android:layout_width="fill_parent"

@@ -23,7 +23,7 @@ import java.util.ArrayList;
  * Created: 04/04/16
  * Creator: Lucas Gabriel N. Milagres
  */
-public class RegisteredDevicesActivity extends Activity {
+public class RegisteredDevicesActivity extends MyExpandableActivity {
     // Views
     ExpandableListView expandableList = null;
 
