@@ -17,7 +17,8 @@
         android:id="@+id/temperature_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/temperature_body_background">
+        android:background="@drawable/temperature_body_background"
+        android:layout_weight="1">
         <LinearLayout
             android:id="@+id/temperature_container"
             android:layout_width="match_parent"
@@ -161,5 +162,34 @@
                 android:layout_marginRight="@dimen/temperature_chart_right_margin_dimension"
                 android:layout_marginBottom="@dimen/temperature_chart_bottom_margin_dimension" />
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/temperature_footer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/temperature_footer_height_dimension"
+        android:gravity="center"
+        android:background="@drawable/light_routine_footer_background"
+        android:layout_weight="0">
+
+        <ImageButton
+            android:layout_width="@dimen/temperature_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/temperature_ok_and_cancel_buttons_dimension"
+            android:id="@+id/temperature_ok_button"
+            android:layout_marginRight="@dimen/temperature_ok_to_cancel_button_between_margin_dimension"
+            android:scaleType="fitXY"
+            android:background="@color/temperature_ok_and_cancel_background_color"
+            android:src="@drawable/ok_icon"
+            android:onClick="CommitTempData"/>
+
+        <ImageButton
+            android:layout_width="@dimen/temperature_ok_and_cancel_buttons_dimension"
+            android:layout_height="@dimen/temperature_ok_and_cancel_buttons_dimension"
+            android:id="@+id/temperature_cancel_button"
+            android:background="@color/temperature_ok_and_cancel_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel_icon"
+            android:onClick="finishActivity"/>
     </LinearLayout>
 </LinearLayout>

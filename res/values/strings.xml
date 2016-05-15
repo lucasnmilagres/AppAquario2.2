@@ -31,6 +31,8 @@
     <!--Server-->
     <string name="server_get_user_info">http://192.168.25.61/CreeLed/GetUserInfo.php</string>
     <string name="server_register_new_user">http://192.168.25.61/CreeLed/RegisterNewUser.php</string>
+    <string name="server_get_temp_status">http://192.168.25.61/CreeLed/GetTempStatus.php</string>
+    <string name="server_set_temp_data">http://192.168.25.61/CreeLed/SetTempData.php</string>
 
     <!--Light Default Mode Strings-->
     <string name="FreeMode">FreeMode</string>
@@ -59,6 +61,7 @@
     <string name="temperature_screen_dialogMessage">Are you sure you want to submit the changes done?</string>
     <string name="temperature_screen_dialogPositiveButton">Yes</string>
     <string name="temperature_screen_dialogNegativeButton">Cancel</string>
+    <string name="temp_empty_field">Please, fill empty fields!</string>
 
     <!--Settings Light Strings-->
     <string name="settings_light_colorPicker_title">Choose Channel Color</string>

@@ -166,10 +166,10 @@ public class SettingActivity extends Activity {
 
         if(requestCode==0)
         {
-            if(resultCode!=RESULT_OK) {
+            if(resultCode==2) {
                 // Sends Cancel result to parent
                 Intent intent =new Intent();
-                setResult(RESULT_CANCELED,intent);
+                setResult(2,intent);
 
                 // Finishes Activity
                 finish();

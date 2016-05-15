@@ -142,6 +142,7 @@ public class Menu extends Activity {
 
     public void SendTemperatureActivity(View view) {
         Intent intent = new Intent(this, TemperatureActivity.class);
+        intent.putExtra("deviceCode","AQ001");
         startActivity(intent);
     }
 
@@ -161,11 +162,7 @@ public class Menu extends Activity {
 
         if(requestCode==8)
         {
-            if(resultCode!=RESULT_OK) {
-                // Sends Cancel result to parent
-                Intent intent =new Intent();
-                setResult(RESULT_CANCELED,intent);
-
+            if(resultCode==2) {
                 // Finishes Activity
                 finish();
             }

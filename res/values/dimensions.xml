@@ -194,6 +194,8 @@
     <item name="temperature_chart_YAxis_GridWidth_dimension" type="dimen">0.5dp</item>
     <item name="temperature_chart_minLimit_width_dimension" type="dimen">1dp</item>
     <item name="temperature_chart_maxLimit_width_dimension" type="dimen">1dp</item>
+    <item name="temperature_footer_height_dimension" type="dimen">50dp</item>
+    <item name="temperature_ok_and_cancel_buttons_dimension" type="dimen">40dp</item>
     <!--Temperature Screen Text-->
     <item name="temperature_temp_textview_dimension" type="dimen">15sp</item>
     <item name="temperature_temp_edittext_dimension" type="dimen">15sp</item>
@@ -220,6 +222,8 @@
     <item name="temperature_chart_bottom_margin_dimension" type="dimen">10dp</item>
     <item name="temperature_chart_left_margin_dimension" type="dimen">10dp</item>
     <item name="temperature_chart_right_margin_dimension" type="dimen">10dp</item>
+    <item name="temperature_ok_and_cancel_button_top_margin_dimension" type="dimen">10dp</item>
+    <item name="temperature_ok_to_cancel_button_between_margin_dimension" type="dimen">30dp</item>
 
     <!--Settings Menu Sizes-->
     <item name="settings_menu_header_height_dimension" type="dimen">80dp</item>

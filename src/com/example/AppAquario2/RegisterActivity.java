@@ -53,11 +53,29 @@ public class RegisterActivity extends Activity {
             Toast.makeText(this,getResources().getString(R.string.reg_empty_field),Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Function: finishActivity
+     * Version: 1.0
+     * Parameters: view
+     * Return: Void
+     * Perform: Finishes activity
+     * Created: 15/05/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
     public void finishActivity(View view)
     {
         finish();
     }
 
+    /**
+     * Function: finishActivity
+     * Version: 1.0
+     * Parameters: result_msg
+     * Return: Void
+     * Perform: Finishes activity
+     * Created: 15/05/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
     public void finishActivity(String result_msg)
     {
         try {

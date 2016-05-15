@@ -121,6 +121,8 @@
     <item name="temperature_chart_minLimit_label_color" type="color">#ff000000</item>
     <item name="temperature_chart_maxLimit_label_color" type="color">#ff000000</item>
 
+    <item name="temperature_ok_and_cancel_background_color" type="color">#00000000</item>
+
     <!--Settings Menu Colors-->
     <item name="settings_menu_buttonsbackground_color" type="color">#00ffffff</item>
     <item name="settings_menu_headerbackground_color" type="color">#00ffffff</item>

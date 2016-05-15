@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.YAxis;
@@ -14,6 +17,7 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  * Created by Lucas Milagres on 25-Mar-16.
@@ -27,8 +31,10 @@ public class TemperatureActivity extends Activity {
     ArrayList<String> chartXLabels; //Array list full with the X-Axis labels
 
     //Variables
-    int minTemp;
-    int maxTemp;
+    double minTemp;
+    double maxTemp;
+    float currentTemp;
+    String deviceCode;
 
     /**
      * Called when the activity is first created.
@@ -38,35 +44,63 @@ public class TemperatureActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.temperature);
 
-        RestoreUserTemperatureValues();
-        getChartPoints();
+        deviceCode=getIntent().getStringExtra("deviceCode");
+
+        AskForTempData();
+    }
+
+    /**
+     * Function: AskForTempData
+     * Version: 1.0
+     * Parameters: Void
+     * Returns: Void
+     * Performs: Starts communication with database to get data
+     * Created: 25/03/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    private void AskForTempData()
+    {
+        //Creates connection
+        String[] connectionData = new String[2];
+        connectionData[0] = getResources().getString(R.string.server_get_temp_status);
+        connectionData[1] = "?DeviceCode="+deviceCode;
+        new GetTempStatus(this).execute(connectionData);
     }
 
     /**
      * Function: RestoreTemperatureValues
      * Version: 1.0
-     * Parameters: Void
+     * Parameters: result
      * Returns: Void
      * Performs: Restores actual values for min and max temperatures, according to database
      * Created: 25/03/16
      * Creator: Lucas Gabriel N. Milagres
      */
-    private void RestoreUserTemperatureValues()
+    public void RestoreUserTemperatureValues(ArrayList<Map<String,Object>> result)
     {
-        minTemp=16;
-        maxTemp=10;
+        try {
+            minTemp = (double) result.get(0).get("MinSet");
+            maxTemp = (double) result.get(0).get("MaxSet");
 
-        EditText minTempField=(EditText)findViewById(R.id.temperature_minTemp_EditText);
-        minTempField.setText(Integer.toString(minTemp));
+            EditText minTempField = (EditText) findViewById(R.id.temperature_minTemp_EditText);
+            minTempField.setText(Double.toString(minTemp));
 
-        EditText maxTempField=(EditText)findViewById(R.id.temperature_maxTemp_EditText);
-        maxTempField.setText(Integer.toString(maxTemp));
+            EditText maxTempField = (EditText) findViewById(R.id.temperature_maxTemp_EditText);
+            maxTempField.setText(Double.toString(maxTemp));
+
+            getChartPoints(result);
+        }
+        catch (Exception e)
+        {
+            Log.e("TAG:",e.getMessage());
+            Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
     }
 
     /**
      * Function: getCharPoints
      * Version: 1.0
-     * Parameters: Void
+     * Parameters: result
      * Returns: Void
      * Performs: - Initializes lineChart object
      *          - Get the last 24 temperature data registered in the database and add to the array "chartPoints"
@@ -75,25 +109,16 @@ public class TemperatureActivity extends Activity {
      * Created: 25/03/16
      * Creator: Lucas Gabriel N. Milagres
      */
-    private void getChartPoints()
-    {
-        lineChart=(LineChart)findViewById(R.id.temperature_chart);
+    private void getChartPoints(ArrayList<Map<String,Object>> result) {
+        lineChart = (LineChart) findViewById(R.id.temperature_chart);
 
-        chartPoints=new ArrayList<Entry>();
-        chartPoints.add(new Entry(4f,0));
-        chartPoints.add(new Entry(8f,1));
-        chartPoints.add(new Entry(6f,2));
-        chartPoints.add(new Entry(12f,3));
-        chartPoints.add(new Entry(18f,4));
-        chartPoints.add(new Entry(9f,5));
+        chartPoints = new ArrayList<>();
+        chartXLabels = new ArrayList<>();
 
-        chartXLabels=new ArrayList<String>();
-        chartXLabels.add("January");
-        chartXLabels.add("February");
-        chartXLabels.add("March");
-        chartXLabels.add("April");
-        chartXLabels.add("May");
-        chartXLabels.add("June");
+        for (int i = result.size()-1; i >=0; i--) {
+            chartPoints.add(new Entry((float) ((double)result.get(i).get("CurrentTemp")), result.size()-1-i));
+            chartXLabels.add(result.get(i).get("Time").toString());
+        }
 
         LineDataSet dataSet = new LineDataSet(chartPoints, getResources().getString(R.string.temperature_screen_chartLineLabel));
         dataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
@@ -102,7 +127,6 @@ public class TemperatureActivity extends Activity {
 
         LineData data = new LineData(chartXLabels, dataSet);
         lineChart.setData(data);
-
 
         //Chart interaction settings
         lineChart.setTouchEnabled(true);
@@ -129,12 +153,12 @@ public class TemperatureActivity extends Activity {
         lineChart.getAxisLeft().setAxisLineWidth(getResources().getDimension(R.dimen.temperature_chart_YAxis_AxisWidth_dimension));
         lineChart.getAxisRight().setEnabled(false);
 
-        LimitLine minLimit = new LimitLine(minTemp, getResources().getString(R.string.temperature_screen_chartMinLimit));
+        LimitLine minLimit = new LimitLine((float) minTemp, getResources().getString(R.string.temperature_screen_chartMinLimit));
         minLimit.setLineColor(getResources().getColor(R.color.temperature_chart_minLimit_color));
         minLimit.setTextColor(getResources().getColor(R.color.temperature_chart_minLimit_label_color));
         minLimit.setLineWidth(getResources().getDimensionPixelSize(R.dimen.temperature_chart_minLimit_width_dimension));
         minLimit.setTextSize(getResources().getDimensionPixelSize(R.dimen.temperature_chart_minLimit_label_dimension));
-        LimitLine maxLimit=new LimitLine(maxTemp,getResources().getString(R.string.temperature_screen_chartMaxLimit));
+        LimitLine maxLimit=new LimitLine((float) maxTemp,getResources().getString(R.string.temperature_screen_chartMaxLimit));
         maxLimit.setLineColor(getResources().getColor(R.color.temperature_chart_maxLimit_color));
         maxLimit.setTextColor(getResources().getColor(R.color.temperature_chart_maxLimit_label_color));
         maxLimit.setLineWidth(getResources().getDimensionPixelSize(R.dimen.temperature_chart_maxLimit_width_dimension));
@@ -147,7 +171,7 @@ public class TemperatureActivity extends Activity {
 
         //Gets the most recent temperature registered
         TextView currentTempTextView = (TextView)findViewById(R.id.temperature_currentTemp_TextView);
-        float currentTemp=chartPoints.get(chartPoints.size()-1).getVal();
+        currentTemp=chartPoints.get(chartPoints.size()-1).getVal();
         currentTempTextView.setText(Float.toString(currentTemp)+"ºC");
 
         //Gets the higher and lower temperatures registered
@@ -166,75 +190,70 @@ public class TemperatureActivity extends Activity {
         higherTempTextView.setText(Float.toString(higherTemp)+"ºC");
     }
 
-    /**
-     * Function: getSettingsChange
-     * Version: 1.0
-     * Parameters: Void
-     * Return: change
-     * Perform: Tests if there was some change in the minTemp or maxTemp
-     * Created: 25/03/16
-     * Creator: Lucas Gabriel N. Milagres
-     */
-    private boolean getSettingsChange()
+        /**
+         * Function: CommitTempData
+         * Version: 1.0
+         * Parameters: view
+         * Returns: Void
+         * Performs: Starts communication with database to commit data
+         * Created: 15/05/16
+         * Creator: Lucas Gabriel N. Milagres
+         */
+    public void CommitTempData(View view)
     {
-        EditText minTempField = (EditText) findViewById(R.id.temperature_minTemp_EditText);
-        EditText maxTempField = (EditText) findViewById(R.id.temperature_maxTemp_EditText);
+        //Data validation
+        String minTempField = ((EditText) findViewById(R.id.temperature_minTemp_EditText)).getText().toString();
+        String maxTempField = ((EditText) findViewById(R.id.temperature_maxTemp_EditText)).getText().toString();
 
-        if(!minTempField.getText().equals(Integer.toString(minTemp)))
-            return true;
-        if(!maxTempField.getText().equals(Integer.toString(maxTemp)))
-            return true;
-
-        return false;
+        if((!minTempField.equals(""))&&(!maxTempField.equals(""))) {
+            //Creates connection
+            String[] connectionData = new String[5];
+            connectionData[0] = getResources().getString(R.string.server_set_temp_data);
+            connectionData[1] = "?DeviceCode=" + deviceCode;
+            connectionData[2] = "&MinSet=" + minTempField;
+            connectionData[3] = "&MaxSet=" + maxTempField;
+            connectionData[4]="&CurrentTemp="+Float.toString(currentTemp);
+            new SetTempData(this).execute(connectionData);
+        }
+        else
+        {
+            Toast.makeText(this,getResources().getString(R.string.temp_empty_field),Toast.LENGTH_SHORT).show();
+        }
     }
 
     /**
-     * Function: changesSavingDialog
+     * Function: finishActivity
      * Version: 1.0
-     * Parameters: Void
-     * Return: void
-     * Perform: Asks the user if he is sure about the changes he made
-     * Created: 25/03/16
-     * Creator: Lucas Gabriel N. Milagres
-     */
-    private void changesSavingDialog()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getResources().getString(R.string.temperature_screen_dialogTitle));
-        builder.setMessage(getResources().getString(R.string.temperature_screen_dialogMessage));
-        builder.setPositiveButton(getResources().getString(R.string.temperature_screen_dialogPositiveButton), new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        builder.setNegativeButton(getResources().getString(R.string.temperature_screen_dialogNegativeButton), new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        builder.show();
-    }
-
-    /**
-     * Function: onBackPressed
-     * Version: 1.0
-     * Parameters: Void
+     * Parameters: view
      * Return: Void
      * Perform: Finishes activity
-     * Created: 25/03/16
+     * Created: 15/05/16
      * Creator: Lucas Gabriel N. Milagres
      */
-    @Override
-    public void onBackPressed()
+    public void finishActivity(View view)
     {
-        if(getSettingsChange())
-            changesSavingDialog();
-
-        super.onBackPressed();
         finish();
+    }
+
+    /**
+     * Function: finishActivity
+     * Version: 1.0
+     * Parameters: result_msg
+     * Return: Void
+     * Perform: Finishes activity
+     * Created: 15/05/16
+     * Creator: Lucas Gabriel N. Milagres
+     */
+    public void finishActivity(String result_msg)
+    {
+        try {
+            Toast.makeText(this,result_msg,Toast.LENGTH_SHORT).show();
+            finish();
+        }
+        catch (Exception e)
+        {
+            Log.e("TAG:",e.getMessage());
+            Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -217,7 +217,7 @@ public class MyAccountActivity  extends MyExpandableActivity {
 
             // Sends Cancel result to parent
             Intent intent =new Intent();
-            setResult(RESULT_CANCELED,intent);
+            setResult(2,intent);
 
             // Finishes Activity
             finish();
