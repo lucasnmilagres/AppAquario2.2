@@ -28,24 +28,20 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2df0c7d-2e06-4eb7-897a-24311002cad9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/GetTempStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/SetTempData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/GetAquariumData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/GetDeviceData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.apk" afterPath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/AppAquario2.2/AppAquario2.2.unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/temperature.xml" afterPath="$PROJECT_DIR$/res/layout/temperature.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimensions.xml" afterPath="$PROJECT_DIR$/res/values/dimensions.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/AquariumItem.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/AquariumItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/Menu.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/MyAccountActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/MyAccountActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/RegisterActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/RegisterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/SettingActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/SettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/AppAquario2/TemperatureActivity.java" afterPath="$PROJECT_DIR$/src/com/example/AppAquario2/TemperatureActivity.java" />
     </list>
     <ignored path="AppAquario2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +69,42 @@
     <favorites_list name="AppAquario2.2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GetDeviceData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetDeviceData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6909091">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAquariumData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetAquariumData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,8 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/expandable_listview_child_item.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/RegisteredDeviceItem.java" />
         <option value="$PROJECT_DIR$/res/values/integers.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/RegisteredDeviceEdit.java" />
         <option value="$PROJECT_DIR$/res/values/arrays.xml" />
@@ -126,7 +155,6 @@
         <option value="$PROJECT_DIR$/res/layout/aquarium_assembly_add.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/RegisteredDeviceEditActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/AquariumAssemblyAddActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/AquariumItem.java" />
         <option value="$PROJECT_DIR$/res/layout/connection.xml" />
         <option value="$PROJECT_DIR$/res/layout/rating.xml" />
         <option value="$PROJECT_DIR$/res/layout/my_account.xml" />
@@ -141,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/LightCloudActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/light_cloud.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/ServerTasks.java" />
-        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SplashActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/MyExpandableActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/MyExpandableAdapter.java" />
@@ -156,14 +183,18 @@
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/GetTempStatus.java" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/res/values/dimensions.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/RegisterActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/temperature.xml" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/TemperatureActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SetTempData.java" />
-        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/SettingActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/AppAquario2/MyAccountActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/AquariumItem.java" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/GetDeviceData.java" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/GetAquariumData.java" />
+        <option value="$PROJECT_DIR$/src/com/example/AppAquario2/Menu.java" />
+        <option value="$PROJECT_DIR$/res/layout/temperature.xml" />
       </list>
     </option>
   </component>
@@ -848,7 +879,13 @@
       <option name="project" value="LOCAL" />
       <updated>1463287953795</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="-Creation of GetTempStatus and SetTempData communication Tasks;&#10;-Temperature communication done.&#10;&#10;">
+      <created>1463341935483</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1463341935483</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -862,7 +899,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -882,7 +919,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.41526717" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.41526717" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900763" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -940,14 +977,15 @@
     <MESSAGE value="-Created and finished connection layout;&#10;-Added action to settings layout connection button;&#10; -Created and finished ConnectionActivity;&#10;-Edited SettingActivity to support ConnectionActivity;&#10;-Edited SplashActivity to show desired data;&#10;-Created AquariumItem class;&#10;-Added new Activities to AndroidManifest xml;&#10;-Add connection pics;&#10;-Add values to colors and dimensions .xml.&#10;" />
     <MESSAGE value="-Many layouts, pictures and Activities added;&#10;-Logic is almost finished;&#10;-Screen sequence done.&#10;" />
     <MESSAGE value="-Creation of some of the communication Tasks;&#10;-Login,Register and MyAccount communication done;&#10;-Included Login and Register logic.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Creation of some of the communication Tasks;&#10;-Login,Register and MyAccount communication done;&#10;-Included Login and Register logic.&#10;" />
+    <MESSAGE value="-Creation of GetTempStatus and SetTempData communication Tasks;&#10;-Temperature communication done.&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Creation of GetTempStatus and SetTempData communication Tasks;&#10;-Temperature communication done.&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="303" />
+      <option name="time" value="361" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="AppAquario2.2">
@@ -960,37 +998,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/integers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14088398">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/AquariumItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6056702">
-          <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/content/Intent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3821" column="0" selection-start-line="3821" selection-start-column="0" selection-end-line="3821" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/connection.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05105105">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/rating.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1121,13 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.769231">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LightCloudActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13076924">
@@ -1177,13 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/RegisteredDevicesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/NonRegisteredDevicesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1225,14 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/light_routine.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1260,32 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="78" selection-start-line="77" selection-start-column="16" selection-end-line="78" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetTempStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.754717">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/RegisterNewUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5179487">
@@ -1304,17 +1263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/temperature.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="35" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/SettingsLightActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7064935">
@@ -1327,22 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33246753">
           <caret line="648" column="28" selection-start-line="648" selection-start-column="28" selection-end-line="648" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/MyAccountActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33766234">
-          <caret line="218" column="40" selection-start-line="218" selection-start-column="40" selection-end-line="218" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1367,26 +1299,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/TemperatureActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.638961">
-          <caret line="210" column="48" selection-start-line="210" selection-start-column="48" selection-end-line="210" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="56" selection-start-line="62" selection-start-column="8" selection-end-line="66" selection-end-column="56" />
           <folding>
-            <element signature="e#1794#1851#0" expanded="true" />
-            <element signature="e#3983#4051#0" expanded="true" />
-            <element signature="e#5083#5169#0" expanded="true" />
-            <element signature="e#5218#5298#0" expanded="true" />
-            <element signature="e#5347#5427#0" expanded="true" />
-            <element signature="e#5916#6002#0" expanded="true" />
-            <element signature="e#6054#6134#0" expanded="true" />
-            <element signature="e#6186#6266#0" expanded="true" />
-            <element signature="e#6382#6449#0" expanded="true" />
-            <element signature="e#6684#6772#0" expanded="true" />
-            <element signature="e#6804#6892#0" expanded="true" />
-            <element signature="e#6952#7019#0" expanded="true" />
-            <element signature="e#7254#7342#0" expanded="true" />
-            <element signature="e#7374#7462#0" expanded="true" />
-            <element signature="e#9823#9874#0" expanded="true" />
-            <element signature="e#10179#10180#0" expanded="true" />
-            <element signature="e#10203#10204#0" expanded="true" />
+            <element signature="e#9388#9443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/MyAccountActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="161" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9245284">
+          <caret line="36" column="75" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetTempStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="81" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9615383">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/RegisteredDevicesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="134" column="100" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/AquariumItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5979381">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+          <folding>
+            <element signature="e#10561#10798#0" expanded="false" />
+            <element signature="e#11955#12290#0" expanded="false" />
+            <element signature="e#12289#12290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetAquariumData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/temperature.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="183" column="35" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35324675">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding>
+            <element signature="e#2210#2250#0" expanded="true" />
+            <element signature="e#2495#2535#0" expanded="true" />
+            <element signature="e#2781#2821#0" expanded="true" />
+            <element signature="e#3064#3104#0" expanded="true" />
+            <element signature="e#3352#3392#0" expanded="true" />
+            <element signature="e#4531#4581#0" expanded="true" />
+            <element signature="e#4934#4993#0" expanded="true" />
+            <element signature="e#5455#5512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/AppAquario2/GetDeviceData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6909091">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -33,6 +33,8 @@
     <string name="server_register_new_user">http://192.168.25.61/CreeLed/RegisterNewUser.php</string>
     <string name="server_get_temp_status">http://192.168.25.61/CreeLed/GetTempStatus.php</string>
     <string name="server_set_temp_data">http://192.168.25.61/CreeLed/SetTempData.php</string>
+    <string name="server_get_aquarium_data">http://192.168.25.61/CreeLed/GetAquariumData.php</string>
+    <string name="server_get_device_data">http://192.168.25.61/CreeLed/GetDeviceData.php</string>
 
     <!--Light Default Mode Strings-->
     <string name="FreeMode">FreeMode</string>

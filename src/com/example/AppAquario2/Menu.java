@@ -2,10 +2,15 @@ package com.example.AppAquario2;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class Menu extends Activity {
 
@@ -120,7 +125,77 @@ public class Menu extends Activity {
         registeredDevicesList.add(new RegisteredDeviceItem("LT001","Luz 1","Light Devices","WifiA","123456"));
         registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices","WifiB","654321"));
 
-        aquariumItem=new AquariumItem("AQ002","Plantado1",registeredDevicesList);
+        SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.login_data_file), 0);
+        aquariumItem=new AquariumItem(sharedPreferences.getString("aquariumCode", "null"),null,new ArrayList<>());
+        askAquariumData();
+    }
+
+    private void askAquariumData()
+    {
+        //Creates connection
+        if(aquariumItem.getCode()!=null) {
+            String[] connectionData = new String[2];
+            connectionData[0] = getResources().getString(R.string.server_get_aquarium_data);
+            connectionData[1] = "?DeviceCode=" + aquariumItem.getCode();
+            new GetAquariumData(this).execute(connectionData);
+        }
+        else
+        {
+            aquariumItem.setCode(null);
+        }
+    }
+
+    public void askDevicesData(String deviceCode)
+    {
+        try {
+            //Creates connection
+            if (deviceCode != null) {
+                String[] connectionData = new String[2];
+                connectionData[0] = getResources().getString(R.string.server_get_device_data);
+                connectionData[1] = "?DeviceCode=" + deviceCode;
+                new GetDeviceData(this).execute(connectionData);
+            }
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+            Log.e("TAG",e.getMessage());
+        }
+    }
+
+    public void insertDeviceData(Map<String,String> result)
+    {
+        try
+        {
+            if(!result.get("DeviceCode").contains("AQ")) {
+                RegisteredDeviceItem registeredDeviceItem=new RegisteredDeviceItem(null,null,null,null,null);
+                registeredDeviceItem.setCode(result.get("DeviceCode"));
+                registeredDeviceItem.setName(result.get("DeviceName"));
+                registeredDeviceItem.setSsid(result.get("WifiSSID"));
+                registeredDeviceItem.setPassword(result.get("WifiPassword"));
+
+                String deviceCodePrefix=result.get("DeviceCode").substring(0,2);
+                ArrayList<String> codePrefixList=new ArrayList<>();
+                for (String prefix:getResources().getStringArray(R.array.registered_devices_code_prefix_list)) {
+                    codePrefixList.add(prefix);
+                }
+                ArrayList<String> parentTypeList=new ArrayList<>();
+                for (String parentType:getResources().getStringArray(R.array.registered_devices_code_list)) {
+                    parentTypeList.add(parentType);
+                }
+                registeredDeviceItem.setParentType(parentTypeList.get(codePrefixList.indexOf(deviceCodePrefix)));
+
+                aquariumItem.insertRegisteredDeviceItem(registeredDeviceItem);
+            }
+            else if(!result.get("DeviceCode").contains("AQ"))
+            {
+                aquariumItem.setName(result.get("DeviceName"));
+            }
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+        }
     }
 
     public void SendLightningActivity(View view) {
@@ -142,7 +217,7 @@ public class Menu extends Activity {
 
     public void SendTemperatureActivity(View view) {
         Intent intent = new Intent(this, TemperatureActivity.class);
-        intent.putExtra("deviceCode","AQ001");
+        intent.putExtra("deviceCode",aquariumItem.getCode());
         startActivity(intent);
     }
 

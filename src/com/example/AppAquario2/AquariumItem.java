@@ -28,6 +28,11 @@ public class AquariumItem implements Parcelable{
 
     public void setRegisteredDeviceItemList(ArrayList<RegisteredDeviceItem> registeredDeviceItemList) { this.registeredDeviceItemList = registeredDeviceItemList; }
 
+    public void insertRegisteredDeviceItem(RegisteredDeviceItem registeredDeviceItem)
+    {
+        this.registeredDeviceItemList.add(registeredDeviceItem);
+    }
+
     public String getCode() {
         return code;
     }

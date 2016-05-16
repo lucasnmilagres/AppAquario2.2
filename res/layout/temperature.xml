@@ -97,7 +97,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="26°C"
                 android:id="@+id/temperature_currentTemp_TextView"
                 android:textColor="@color/temperature_currentTemp_textview_color"
                 android:layout_marginTop="@dimen/temperature_currentTemp_top_margin_dimension"
@@ -125,7 +124,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="28°C"
                     android:id="@+id/temperature_maxTemp2_TextView"
                     android:textColor="@color/temperature_maxTemp2_textview_color"
                     android:textSize="@dimen/temperature_temp2_textview_dimension"
@@ -145,7 +143,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="24ºC"
                     android:id="@+id/temperature_minTemp2_TextView"
                     android:textColor="@color/temperature_minTemp2_textview_color"
                     android:textSize="@dimen/temperature_temp2_textview_dimension"
