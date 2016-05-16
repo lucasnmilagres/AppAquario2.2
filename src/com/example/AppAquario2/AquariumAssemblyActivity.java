@@ -26,17 +26,19 @@ import java.util.ArrayList;
  */
 public class AquariumAssemblyActivity extends MyExpandableActivity
 {
+    //Variables
+    int tmpCount=0;
+
     // Views
     private ExpandableListView expandableList=null;
 
     // Objects
     private MyExpandableAdapter adapter=null;
-    private AquariumItem aquariumItem=null;
+    private RegisteredDeviceItem tmpRegisteredDeviceItem=null;
 
     // ArrayLists
     private ArrayList<String> parentItems = new ArrayList<>();
     private ArrayList<Object> childItems = new ArrayList<>();
-    private ArrayList<RegisteredDeviceItem> registeredDevicesList=null;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -47,11 +49,6 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
         // Create Expandable List and set it's properties
         expandableList = (ExpandableListView) findViewById(R.id.aquarium_assembly_expandableListView);
         expandableList.setGroupIndicator(null);
-
-        // Reads actual registeredSevicesList and aquariumItem
-        Intent sendIntent= getIntent();
-        registeredDevicesList=sendIntent.getParcelableArrayListExtra("registeredDevicesList");
-        aquariumItem = sendIntent.getParcelableExtra("aquariumItem");
 
         SetExpandable();
     }
@@ -92,7 +89,7 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
      * Created: 18/04/16
      * Creator: Lucas Gabriel N. Milagres
      */
-    private void refreshExpandableListView()
+    public void refreshExpandableListView()
     {
         SetExpandable();
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -135,10 +132,10 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
             children[count]=new ArrayList<>();
         }
 
-        for (int count=0;count<aquariumItem.getRegisteredDeviceItemList().size();count++)
-            if(parentItems.contains(aquariumItem.getRegisteredDeviceItemList().get(count).getParentType()))
+        for (int count=0;count<GlobalObjects.aquariumItem.getRegisteredDeviceItemList().size();count++)
+            if(parentItems.contains(GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(count).getParentType()))
             {
-                children[parentItems.indexOf(aquariumItem.getRegisteredDeviceItemList().get(count).getParentType())].add(aquariumItem.getRegisteredDeviceItemList().get(count).getCode()+" - "+aquariumItem.getRegisteredDeviceItemList().get(count).getName());
+                children[parentItems.indexOf(GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(count).getParentType())].add(GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(count).getCode()+" - "+GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(count).getName());
             }
 
         // Add child Items
@@ -174,6 +171,8 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
      */
     public void callRemove(View view)
     {
+        tmpCount=0;
+
         if(adapter.getSelectedItem()!=null)
         {
             // Finds child name
@@ -186,6 +185,87 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
         }
     }
 
+    private void AddDeviceToAquarium()
+    {
+        if (tmpRegisteredDeviceItem != null)
+        {
+            try
+            {
+                //Creates connection
+                if(!tmpRegisteredDeviceItem.getCode().equals("null"))
+                {
+                    String[] connectionData = new String[3];
+                    connectionData[0] = getResources().getString(R.string.server_insert_device_to_aquarium);
+                    connectionData[1] = "?AquariumCode=" + GlobalObjects.aquariumItem.getCode();
+                    connectionData[2]= "&DeviceCode=" + tmpRegisteredDeviceItem.getCode();
+                    new InsertDeviceToAquarium(this).execute(connectionData);
+                }
+            }
+            catch (Exception e)
+            {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                tmpRegisteredDeviceItem=null;
+            }
+        }
+        else
+            Toast.makeText(this, getResources().getString(R.string.RegisteredDeviceEditNullCodeError), Toast.LENGTH_SHORT).show();
+    }
+
+    public void AddDeviceToAquariumResult(String result_msg)
+    {
+        try
+        {
+            if(!result_msg.contains("Invalid")) {
+                GlobalObjects.aquariumItem.getRegisteredDeviceItemList().add(tmpRegisteredDeviceItem);
+                refreshExpandableListView();
+            }
+            Toast.makeText(this,result_msg,Toast.LENGTH_SHORT).show();
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void RemoveDeviceFromAquarium(String deviceCode)
+    {
+        if (deviceCode != null) {
+            // Removes item from aquariumItem
+            for (int count = 0; count < GlobalObjects.aquariumItem.getRegisteredDeviceItemList().size(); count++)
+                if (GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(count).getCode().equals(deviceCode))
+                {
+                    try
+                    {
+                        tmpCount=count;
+
+                            String[] connectionData = new String[3];
+                            connectionData[0] = getResources().getString(R.string.server_remove_device_from_aquarium);
+                            connectionData[1] = "?AquariumCode=" + GlobalObjects.aquariumItem.getCode();
+                            connectionData[2]= "&DeviceCode=" + GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(tmpCount).getCode();
+                            new RemoveDeviceFromAquarium(this).execute(connectionData);
+                    }
+                    catch (Exception e)
+                    {
+                        Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+
+                    count = GlobalObjects.aquariumItem.getRegisteredDeviceItemList().size();
+                }
+        } else
+            Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceRemoveNullCodeError), Toast.LENGTH_SHORT).show();
+    }
+
+    public void RemoveDeviceFromAquariumResult(String result_msg) {
+        try {
+            if (!result_msg.contains("Invalid")) {
+                GlobalObjects.aquariumItem.getRegisteredDeviceItemList().remove(GlobalObjects.aquariumItem.getRegisteredDeviceItemList().get(tmpCount));
+                refreshExpandableListView();
+            }
+            Toast.makeText(this, result_msg, Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
     /**
      * Function: callAddDevice
      * Version: 1.0
@@ -197,10 +277,10 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
      */
     public void callAddDevice(View view)
     {
+        tmpRegisteredDeviceItem=null;
+
         // Calls add device dialog (request 2)
         Intent sendIntent = new Intent(this,AquariumAssemblyAddActivity.class);
-        sendIntent.putExtra("registeredDevicesList",registeredDevicesList);
-        sendIntent.putExtra("aquariumItem",aquariumItem);
         startActivityForResult(sendIntent, 2);
     }
 
@@ -224,21 +304,8 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
         // Treatment of RemoveActivity result
         if(requestCode==0) {
             // Treatment of "OK" result
-            if (resultCode == RESULT_OK) {
-                String code = data.getStringExtra("code");
-                if (code != null) {
-                    // Removes item from aquariumItem
-                    for (int count = 0; count < aquariumItem.getRegisteredDeviceItemList().size(); count++)
-                        if (aquariumItem.getRegisteredDeviceItemList().get(count).getCode().equals(code)) {
-                            aquariumItem.getRegisteredDeviceItemList().remove(aquariumItem.getRegisteredDeviceItemList().get(count));
-                            count = aquariumItem.getRegisteredDeviceItemList().size();
-
-                            // Refresh ExpandableListView
-                            refreshExpandableListView();
-                        }
-                } else
-                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceRemoveNullCodeError), Toast.LENGTH_SHORT).show();
-            }
+            if (resultCode == RESULT_OK)
+                RemoveDeviceFromAquarium(data.getStringExtra("code"));
         }
 
         // Treatment of AddActivity results
@@ -247,12 +314,8 @@ public class AquariumAssemblyActivity extends MyExpandableActivity
             // Treatment of "OK" result
             if (resultCode == RESULT_OK)
             {
-                RegisteredDeviceItem registeredDeviceItem = data.getParcelableExtra("registeredDeviceItem");
-                if (registeredDeviceItem != null) {
-                    aquariumItem.getRegisteredDeviceItemList().add(registeredDeviceItem);
-                    refreshExpandableListView();
-                } else
-                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.RegisteredDeviceEditNullCodeError), Toast.LENGTH_SHORT).show();
+                tmpRegisteredDeviceItem=data.getParcelableExtra("registeredDeviceItem");
+                AddDeviceToAquarium();
             }
         }
     }

@@ -28,8 +28,6 @@ public class Menu extends Activity {
     boolean[] cloudEnabledArray={true, false, true, false, true};
     boolean[] thunderEnabledArray={true, false, true, false, true};
     ArrayList<RegisteredDeviceItem> registeredDevicesList;
-    AquariumItem aquariumItem;
-
 
     /**
      * Called when the activity is first created.
@@ -126,22 +124,22 @@ public class Menu extends Activity {
         registeredDevicesList.add(new RegisteredDeviceItem("LT002","Luz 2","Light Devices","WifiB","654321"));
 
         SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.login_data_file), 0);
-        aquariumItem=new AquariumItem(sharedPreferences.getString("aquariumCode", "null"),null,new ArrayList<>());
+        GlobalObjects.aquariumItem=new AquariumItem(sharedPreferences.getString("aquariumCode", "null"),null,new ArrayList<>());
         askAquariumData();
     }
 
     private void askAquariumData()
     {
         //Creates connection
-        if(aquariumItem.getCode()!=null) {
+        if(!GlobalObjects.aquariumItem.getCode().equals("null")) {
             String[] connectionData = new String[2];
             connectionData[0] = getResources().getString(R.string.server_get_aquarium_data);
-            connectionData[1] = "?DeviceCode=" + aquariumItem.getCode();
+            connectionData[1] = "?DeviceCode=" + GlobalObjects.aquariumItem.getCode();
             new GetAquariumData(this).execute(connectionData);
         }
         else
         {
-            aquariumItem.setCode(null);
+            GlobalObjects.aquariumItem.setCode(null);
         }
     }
 
@@ -185,11 +183,11 @@ public class Menu extends Activity {
                 }
                 registeredDeviceItem.setParentType(parentTypeList.get(codePrefixList.indexOf(deviceCodePrefix)));
 
-                aquariumItem.insertRegisteredDeviceItem(registeredDeviceItem);
+                GlobalObjects.aquariumItem.insertRegisteredDeviceItem(registeredDeviceItem);
             }
             else if(!result.get("DeviceCode").contains("AQ"))
             {
-                aquariumItem.setName(result.get("DeviceName"));
+                GlobalObjects.aquariumItem.setName(result.get("DeviceName"));
             }
         }
         catch (Exception e)
@@ -217,7 +215,7 @@ public class Menu extends Activity {
 
     public void SendTemperatureActivity(View view) {
         Intent intent = new Intent(this, TemperatureActivity.class);
-        intent.putExtra("deviceCode",aquariumItem.getCode());
+        intent.putExtra("deviceCode",GlobalObjects.aquariumItem.getCode());
         startActivity(intent);
     }
 
@@ -225,8 +223,6 @@ public class Menu extends Activity {
         Intent intent = new Intent(this, SettingActivity.class);
         intent.putExtra("channelsNamesList", channelNames);
         intent.putExtra("colorsList", colorsList);
-        intent.putExtra("registeredDevicesList",registeredDevicesList);
-        intent.putExtra("aquariumItem",aquariumItem);
         startActivityForResult(intent,8);
     }
 
@@ -235,6 +231,7 @@ public class Menu extends Activity {
     {
         super.onActivityResult(requestCode, resultCode, data);
 
+        //SettingsActivity
         if(requestCode==8)
         {
             if(resultCode==2) {

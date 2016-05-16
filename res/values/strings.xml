@@ -35,6 +35,9 @@
     <string name="server_set_temp_data">http://192.168.25.61/CreeLed/SetTempData.php</string>
     <string name="server_get_aquarium_data">http://192.168.25.61/CreeLed/GetAquariumData.php</string>
     <string name="server_get_device_data">http://192.168.25.61/CreeLed/GetDeviceData.php</string>
+    <string name="server_get_registered_device_list">http://192.168.25.61/CreeLed/GetRegisteredDeviceList.php</string>
+    <string name="server_insert_device_to_aquarium">http://192.168.25.61/CreeLed/InsertDeviceToAquarium.php</string>
+    <string name="server_remove_device_from_aquarium">http://192.168.25.61/CreeLed/RemoveDeviceFromAquarium.php</string>
 
     <!--Light Default Mode Strings-->
     <string name="FreeMode">FreeMode</string>
@@ -64,6 +67,9 @@
     <string name="temperature_screen_dialogPositiveButton">Yes</string>
     <string name="temperature_screen_dialogNegativeButton">Cancel</string>
     <string name="temp_empty_field">Please, fill empty fields!</string>
+
+    <!--Settings Menu Strings-->
+    <string name="null_selected_aquarium">You have not selected an aquarium yet!</string>
 
     <!--Settings Light Strings-->
     <string name="settings_light_colorPicker_title">Choose Channel Color</string>

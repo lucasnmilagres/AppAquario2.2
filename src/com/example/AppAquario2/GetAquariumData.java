@@ -95,11 +95,9 @@ public class GetAquariumData extends AsyncTask<String,Void,ArrayList<String>>
         super.onPostExecute(result);
 
         try {
-            //if(result.size()>0) {
                 for (String deviceCode : result)
                     activity.askDevicesData(deviceCode);
                 activity.askDevicesData(aquariumCode);
-            //}
         }
         catch(Exception e)
         {

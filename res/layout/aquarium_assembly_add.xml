@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center"
-        android:background="@drawable/aquarium_assembly_add_body_background"
+        android:background="@drawable/aquarium_assembly_body_background"
         android:layout_weight="1">
         <LinearLayout
             android:id="@+id/aquarium_assembly_add_buttons_container"
@@ -29,7 +29,7 @@
             android:layout_marginBottom="@dimen/aquarium_assembly_add_container_top_and_bottom_margins"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@drawable/aquarium_assembly_add_container_background">
+            android:background="@drawable/aquarium_assembly_container_background">
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/aquarium_assembly_add_footer_height_dimension"
         android:gravity="center"
-        android:background="@drawable/aquarium_assembly_add_footer_background">
+        android:background="@drawable/aquarium_assembly_footer_background">
 
         <ImageButton
             android:layout_width="@dimen/aquarium_assembly_add_ok_and_cancel_buttons_dimension"

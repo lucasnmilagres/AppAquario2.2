@@ -12,23 +12,22 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
 /**
- * Created by Lucas Milagres on 15-May-16.
+ * Created by Lucas Milagres on 16-May-16.
  */
-public class GetDeviceData extends AsyncTask<String,Void,Map<String,String>>
+public class GetRegisteredDeviceList extends AsyncTask<String,Void,ArrayList<String>>
 {
     private Exception exception;
     Activity activity;
 
-    public GetDeviceData(Activity activity)
+    public GetRegisteredDeviceList(Activity activity)
     {
         this.activity=activity;
     }
 
-    protected Map<String,String> doInBackground(String... urls)
+    protected ArrayList<String> doInBackground(String... urls)
     {
         //the email data to send
         String result = "";
@@ -64,19 +63,17 @@ public class GetDeviceData extends AsyncTask<String,Void,Map<String,String>>
         }
 
         //parse json data
-        Map<String,String> deviceData=new HashMap<>();
+        ArrayList<String> aquariumData=new ArrayList<>();
         try
         {
             JSONObject json_data = new JSONObject(result);
             JSONArray jArray = json_data.getJSONArray("emparray");
-            JSONObject row=new JSONObject(jArray.getJSONObject(0).getString("row"));
 
-            deviceData.put("Index",row.getString("Index"));
-            deviceData.put("DeviceCode",row.getString("DeviceCode"));
-            deviceData.put("DeviceName",row.getString("DeviceName"));
-            deviceData.put("WifiSSID",row.getString("WifiSSID"));
-            deviceData.put("WifiPassword",row.getString("WifiPassword"));
-            deviceData.put("LastUpdate",row.getString("LastUpdate"));
+            for(int i=0;i<jArray.length();i++)
+            {
+                JSONObject row = new JSONObject(jArray.getJSONObject(i).getString("row"));
+                aquariumData.add(row.getString("DeviceCode"));
+            }
         }
         catch(JSONException e)
         {
@@ -85,17 +82,26 @@ public class GetDeviceData extends AsyncTask<String,Void,Map<String,String>>
 
         assert urlConnection != null;
         urlConnection.disconnect();
-        return deviceData;
+        return aquariumData;
     }
 
-    protected void onPostExecute(Map<String,String> result)
+    protected void onPostExecute(ArrayList<String> result)
     {
         super.onPostExecute(result);
-        if(activity.getLocalClassName().equals("Menu"))
-            ((Menu)activity).insertDeviceData(result);
-        if(activity.getLocalClassName().equals("AquariumAssemblyAddActivity"))
-            if(((AquariumAssemblyAddActivity)activity).insertDeviceData(result))
-                ((AquariumAssemblyAddActivity)activity).SpinnerInitialize();
+
+        try {
+            if(activity.getLocalClassName().equals("AquariumAssemblyAddActivity"))
+                ((AquariumAssemblyAddActivity)activity).getFlagValue(result.size());
+
+            for (String deviceCode : result)
+            {
+                if(activity.getLocalClassName().equals("AquariumAssemblyAddActivity"))
+                    ((AquariumAssemblyAddActivity)activity).askDevicesData(deviceCode);
+            }
+        }
+        catch(Exception e)
+        {
+            Log.e("log_tag", "Error parsing data " + e.toString());
+        }
     }
 }
-

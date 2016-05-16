@@ -11,7 +11,7 @@
         android:layout_height="@dimen/registered_devices_remove_header_height_dimension"
         android:id="@+id/registered_devices_remove_header"
         android:scaleType="fitXY"
-        android:src="@drawable/registered_devices_remove_header"/>
+        android:src="@drawable/menu_header"/>
 
     <TextView
         android:layout_width="match_parent"

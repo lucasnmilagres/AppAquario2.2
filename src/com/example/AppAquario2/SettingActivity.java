@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -17,8 +18,6 @@ public class SettingActivity extends Activity {
      * Called when the activity is first created.
      */
     // Objects
-    private AquariumItem aquariumItem;
-    private ArrayList<RegisteredDeviceItem> registeredDevicesList;
     private ArrayList<String> channelNames;
     private ArrayList<Integer> colorsList;
 
@@ -30,8 +29,6 @@ public class SettingActivity extends Activity {
         Intent sendIntent=getIntent();
         channelNames = sendIntent.getStringArrayListExtra("channelsNamesList");
         colorsList = sendIntent.getIntegerArrayListExtra("colorsList");
-        aquariumItem=sendIntent.getParcelableExtra("aquariumItem");
-        registeredDevicesList=sendIntent.getParcelableArrayListExtra("registeredDevicesList");
     }
 
     /**
@@ -123,7 +120,6 @@ public class SettingActivity extends Activity {
     public void sendConnectionActivity(View view)
     {
         Intent connectionIntent = new Intent(this, ConnectionActivity.class);
-        connectionIntent.putExtra("aquariumItem",aquariumItem);
         startActivity(connectionIntent);
     }
 
@@ -138,10 +134,14 @@ public class SettingActivity extends Activity {
      */
     public void sendAquariumAssemblyActivity(View view)
     {
-        Intent aquariumAssemblyIntent = new Intent(this, AquariumAssemblyActivity.class);
-        aquariumAssemblyIntent.putExtra("aquariumItem",aquariumItem);
-        aquariumAssemblyIntent.putExtra("registeredDevicesList",registeredDevicesList);
-        startActivity(aquariumAssemblyIntent);
+        if(GlobalObjects.aquariumItem.getCode()!=null) {
+            Intent aquariumAssemblyIntent = new Intent(this, AquariumAssemblyActivity.class);
+            startActivityForResult(aquariumAssemblyIntent,1);
+        }
+        else
+        {
+            Toast.makeText(this,getResources().getString(R.string.null_selected_aquarium),Toast.LENGTH_SHORT).show();
+        }
     }
 
     /**
@@ -164,6 +164,7 @@ public class SettingActivity extends Activity {
     {
         super.onActivityResult(requestCode, resultCode, data);
 
+        //MyAccountActivity
         if(requestCode==0)
         {
             if(resultCode==2) {

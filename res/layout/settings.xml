@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/settings_menu_header_height_dimension"
         android:scaleType="fitXY"
-        android:src="@drawable/settings_menu_header"
+        android:src="@drawable/menu_header"
         android:background="@color/settings_menu_headerbackground_color"/>
 
     <LinearLayout
@@ -18,13 +18,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:background="@drawable/settings_menu_body_background">
+        android:background="@drawable/menu_body_background">
         <LinearLayout
             android:id="@+id/settings_menu_buttons_container"
             android:layout_width="@dimen/settings_menu_container_width"
             android:layout_height="@dimen/settings_menu_container_height"
             android:orientation="vertical"
-            android:background="@drawable/settings_menu_container_background">
+            android:background="@drawable/menu_container_background">
             <LinearLayout
                 android:id="@+id/settings_menu_row1"
                 android:layout_width="fill_parent"

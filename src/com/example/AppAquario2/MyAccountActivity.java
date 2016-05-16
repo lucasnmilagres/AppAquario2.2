@@ -167,10 +167,9 @@ public class MyAccountActivity  extends MyExpandableActivity {
     @Override
     public void callOnChildClick(String selectedItem) {
         super.callOnChildClick(selectedItem);
+
         if(selectedItem.equals(getResources().getString(R.string.my_account_logout)))
-        {
             Logout(null);
-        }
     }
 
     /**
@@ -209,6 +208,8 @@ public class MyAccountActivity  extends MyExpandableActivity {
             SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.login_data_file), 0);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("email", null);
+            editor.putString("userCode", null);
+            editor.putString("aquariumCode",null);
             editor.apply();
 
             // Send LoginActivity

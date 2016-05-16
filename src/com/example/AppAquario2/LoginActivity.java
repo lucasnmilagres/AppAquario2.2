@@ -58,6 +58,7 @@ public class LoginActivity extends Activity {
                 SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.login_data_file), 0);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("email", email);
+                editor.putString("userCode", userInfo.get("Usercode"));
                 editor.putString("aquariumCode",userInfo.get("SelectedAquarium"));
                 editor.apply();
 
